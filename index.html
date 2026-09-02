@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EEG NeuroAction - Visor Interactivo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #0b2f5b;
+      margin: 0;
+      padding: 40px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 35px;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    }
+    h1 {
+      margin-top: 0;
+      color: #062b55;
+    }
+    .note {
+      background: #eef5ff;
+      border-left: 5px solid #1f6feb;
+      padding: 15px;
+      margin: 25px 0;
+      border-radius: 8px;
+      line-height: 1.5;
+    }
+    a.button {
+      display: inline-block;
+      background: #0b66c3;
+      color: white;
+      padding: 14px 22px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    a.button:hover {
+      background: #084f99;
+    }
+    .footer {
+      margin-top: 35px;
+      font-size: 0.9em;
+      color: #516070;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>EEG NeuroAction - Visor Interactivo</h1>
+
+    <p>
+      Esta página presenta el visor web de resultados del pipeline EEG NeuroAction,
+      orientado a la exploración de gráficas, variantes de limpieza, sujetos,
+      modelos y métricas asociadas al procesamiento EEG BANDPOWER.
+    </p>
+
+    <div class="note">
+      Los artefactos se interpretan como sospechas sobre características BANDPOWER.
+      Las figuras diagnósticas no implican confirmación fisiológica con EEG crudo,
+      EOG, EMG o ECG.
+    </div>
+
+    <a class="button" href="visor_interactivo_eeg.html">
+      Abrir visor interactivo EEG
+    </a>
+
+    <div class="footer">
+      Proyecto EEG NeuroAction - Resultados generados desde Kaggle.
+    </div>
+  </div>
+</body>
+</html>

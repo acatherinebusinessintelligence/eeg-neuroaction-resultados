@@ -1,0 +1,46 @@
+﻿sujeto,variante,total_figuras,tiene_scroll,tiene_topomap_alpha,tiene_topomap_betaH,tiene_topomap_gamma,tiene_spectral,tiene_matriz_confusion,modelable,graficable,observacion
+211260561,noOutliers,15,True,True,True,True,True,True,True,True,Completo
+211260561,sinArtefactosConservador,15,True,True,True,True,True,True,True,True,Completo
+211260561,sinArtefactosEstricto,15,True,True,True,True,True,True,True,True,Completo
+212260563,noOutliers,15,True,True,True,True,True,True,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+212260563,sinArtefactosConservador,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+212260563,sinArtefactosEstricto,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+212260567,noOutliers,15,True,True,True,True,True,True,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+212260567,sinArtefactosConservador,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+212260567,sinArtefactosEstricto,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+212260569,noOutliers,15,True,True,True,True,True,True,True,True,Completo
+212260569,sinArtefactosConservador,15,True,True,True,True,True,True,True,True,Completo
+212260569,sinArtefactosEstricto,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+212260666,noOutliers,15,True,True,True,True,True,True,True,True,Completo
+212260666,sinArtefactosConservador,15,True,True,True,True,True,True,True,True,Completo
+212260666,sinArtefactosEstricto,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+212260668,noOutliers,15,True,True,True,True,True,True,True,True,Completo
+212260668,sinArtefactosConservador,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+212260668,sinArtefactosEstricto,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+212260672,noOutliers,15,True,True,True,True,True,True,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+212260672,sinArtefactosConservador,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+212260672,sinArtefactosEstricto,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+222260671,noOutliers,15,True,True,True,True,True,True,True,True,Completo
+222260671,sinArtefactosConservador,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+222260671,sinArtefactosEstricto,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+22260552,noOutliers,15,True,True,True,True,True,True,True,True,Completo
+22260552,sinArtefactosConservador,15,True,True,True,True,True,True,True,True,Completo
+22260552,sinArtefactosEstricto,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+231260558,noOutliers,15,True,True,True,True,True,True,True,True,Completo
+231260558,sinArtefactosConservador,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+231260558,sinArtefactosEstricto,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+252260554,noOutliers,15,True,True,True,True,True,True,True,True,Completo
+252260554,sinArtefactosConservador,15,True,True,True,True,True,True,True,True,Completo
+252260554,sinArtefactosEstricto,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+252260556,noOutliers,15,True,True,True,True,True,True,True,True,Completo
+252260556,sinArtefactosConservador,15,True,True,True,True,True,True,True,True,Completo
+252260556,sinArtefactosEstricto,15,True,True,True,True,True,True,True,True,Completo
+252260670,noOutliers,15,True,True,True,True,True,True,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+252260670,sinArtefactosConservador,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+252260670,sinArtefactosEstricto,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+cano,noOutliers,15,True,True,True,True,True,True,True,True,Completo
+cano,sinArtefactosConservador,15,True,True,True,True,True,True,True,True,Completo
+cano,sinArtefactosEstricto,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+villanueva,noOutliers,15,True,True,True,True,True,True,True,True,Completo
+villanueva,sinArtefactosConservador,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."
+villanueva,sinArtefactosEstricto,8,True,True,True,True,True,False,False,True,"Esta variante no es modelable, pero se muestran figuras diagnosticas para explicar el efecto de la limpieza."

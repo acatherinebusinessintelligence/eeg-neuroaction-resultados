@@ -1,0 +1,23 @@
+﻿salida,existe,tamano_bytes,conteo_archivos,ruta
+processed_data/filtrado/reporte_filtrado.csv,True,4319,1,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/filtrado/reporte_filtrado.csv
+processed_data/filtrado/reporte_artefactos_sospechados_detalle.csv,True,33066241,1,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/filtrado/reporte_artefactos_sospechados_detalle.csv
+processed_data/filtrado/reporte_artefactos_sospechados_resumen.csv,True,25254,1,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/filtrado/reporte_artefactos_sospechados_resumen.csv
+processed_data/filtrado/reporte_limpieza_artefactos.csv,True,18370,1,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/filtrado/reporte_limpieza_artefactos.csv
+processed_data/figures/reporte_figuras_generadas.csv,True,237674,1,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/figures/reporte_figuras_generadas.csv
+processed_data/figures/dashboard_eeg_neuroaction.html,True,4659268,1,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/figures/dashboard_eeg_neuroaction.html
+processed_data/reports/evaluacion_sujetos.csv,True,8243,1,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/reports/evaluacion_sujetos.csv
+processed_data/reports/informe_evaluacion_resultados.html,True,184840,1,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/reports/informe_evaluacion_resultados.html
+processed_data/reports/visor_interactivo_eeg.html,True,5523135,1,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/reports/visor_interactivo_eeg.html
+processed_data/reports/reporte_visor_interactivo.csv,True,6397,1,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/reports/reporte_visor_interactivo.csv
+processed_data/reports/comparacion_variantes_limpieza_modelos.csv,True,5641,1,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/reports/comparacion_variantes_limpieza_modelos.csv
+processed_data/reports/validacion_salidas_pipeline.csv,True,4225,1,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/reports/validacion_salidas_pipeline.csv
+processed_data/reports/archivos_generados.csv,True,904843,1,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/reports/archivos_generados.csv
+processed_data/reports/resumen_eventos_txt.csv,True,3027,1,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/reports/resumen_eventos_txt.csv
+processed_data/reports/diagnostico_tiempos_csv_txt.csv,True,6871,1,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/reports/diagnostico_tiempos_csv_txt.csv
+processed_data/reports/resumen_exportacion_por_usuario.csv,True,13752,1,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/reports/resumen_exportacion_por_usuario.csv
+processed_data/reports/resumen_figuras_master.csv,True,1326,1,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/reports/resumen_figuras_master.csv
+processed_data/figures/scroll,True,0,60,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/figures/scroll
+processed_data/figures/topomaps,True,0,300,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/figures/topomaps
+processed_data/figures/spectral,True,0,60,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/figures/spectral
+processed_data/figures/resumen,True,0,60,/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/processed_data/figures/resumen
+ZIP final,True,427258583,1,/kaggle/working/run_20260902_145353_resultados_TESE.zip

@@ -1,0 +1,12 @@
+Resumen ejecutivo de evaluación EEG NeuroAction
+
+Los artefactos se reportan como sospechas sobre características BANDPOWER. No son confirmación fisiológica con EEG crudo, EOG, EMG o ECG.
+
+total_sujetos: 15
+aprobados_fuertes_sin_restricciones: 0
+interpretacion_aprobados_fuertes: Ningún sujeto quedó como aprobado fuerte sin restricciones. Sin embargo, varios sujetos presentaron modelos con desempeño fuerte; estos fueron degradados por baja representación de clases o alertas de artefactos sospechados.
+aprobados_moderados: 2
+en_revision: 11
+no_confiables: 2
+principales_alertas: limpieza=aceptable; modelo=aprobado moderado; artefactos: salto_max_abs > 1000 | z_max_abs > 500 | eventos altos en múltiples canales y bandas | limpieza=muy buena; modelo=aprobado fuerte; artefactos: salto_max_abs > 1000 | z_max_abs > 500 | eventos altos en múltiples canales y bandas; muestra baja: left:57 | pull:29 | push:3 | right:43; Caso especial: buen desempeño reportado en left, pull y right; push tiene poca representación. Topomaps alpha, betaH y gamma sugieren patrón frontal-central-temporal derecho. Posible componente muscular/no fisiológico residual, no confirmado. | limpieza=aceptable; modelo=aprobado fuerte; artefactos: salto_max_abs > 1000 | z_max_abs > 500 | eventos altos en múltiples canales y bandas; muestra baja: left:41 | pull:60 | push:19 | right:3 | limpieza=aceptable; modelo=aprobado fuerte; artefactos: eventos altos en múltiples canales y bandas; muestra baja: left:73 | pull:19 | push:107 | limpieza=aceptable; modelo=aprobado moderado; artefactos: salto_max_abs > 1000 | z_max_abs > 500 | eventos altos en múltiples canales y bandas; muestra baja: left:16 | pull:118 | push:29 | right:36
+recomendacion_final: Usar como evidencia fuerte solo sujetos aprobados; revisar o excluir sujetos con ruido residual dominante, muestra baja o desempeño no confiable.

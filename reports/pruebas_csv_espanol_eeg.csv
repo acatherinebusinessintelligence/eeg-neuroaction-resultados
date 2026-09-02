@@ -1,0 +1,5 @@
+﻿clave,sujeto,repeticion,tipo_prueba,acciones_requeridas,acciones_encontradas,cantidad_csv,archivos_csv,prueba_csv_completa
+cano_1ra_leftRight,cano,1ra,leftRight,left | right,left | right,2,derecha 1ra_Cano 1.csv | izquierda 1ra_Cano 1.csv,True
+cano_1ra_pushPull,cano,1ra,pushPull,pull | push,pull | push,2,empujar 1ra_Cano 1.csv | jalar 1ra_Cano 1.csv,True
+villanueva_2da_leftRight,villanueva,2da,leftRight,left | right,left | right,2,derecha 2da_Villanueva 1.csv | izquierda 2da_Villanueva 1.csv,True
+villanueva_2da_pushPull,villanueva,2da,pushPull,pull | push,pull | push,2,empujar 2da_Villanueva 1.csv | jalar 2da_Villanueva 1.csv,True

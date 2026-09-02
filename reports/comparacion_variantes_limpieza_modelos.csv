@@ -1,0 +1,46 @@
+﻿sujeto,variante,retencion_%,min_clase,modelable,motivo_no_modelable,mejor_modelo,Accuracy,Kappa,EXITO,dataset,clases_detectadas
+211260561,noOutliers,70.8,58,True,,MLP,77.34,0.6597,SI,211260561_all_noOutliers,left:232 | pull:58 | push:144 | right:69
+211260561,sinArtefactosConservador,80.1,47,True,,MLP,67.74,0.5361,no,211260561_all_sinArtefactosConservador,left:159 | pull:47 | push:128 | right:69
+211260561,sinArtefactosEstricto,58.4,32,True,,SMO_SVM,69.05,0.557,no,211260561_all_sinArtefactosEstricto,left:120 | pull:32 | push:84 | right:58
+212260563,noOutliers,80.5,3,False,min_clase < 10,SMO_SVM,95.45,0.9308,SI,212260563_all_noOutliers,left:57 | pull:29 | push:3 | right:43
+212260563,sinArtefactosConservador,59.1,8,False,min_clase < 10,,,,,,left:37 | pull:8 | right:33
+212260563,sinArtefactosEstricto,34.8,5,False,min_clase < 10; retencion_% < 50,,,,,,left:23 | pull:5 | right:18
+212260567,noOutliers,76.9,3,False,min_clase < 10,IBk_kNN,95.93,0.934,SI,212260567_all_noOutliers,left:41 | pull:60 | push:19 | right:3
+212260567,sinArtefactosConservador,69.1,1,False,min_clase < 10,,,,,,left:26 | pull:39 | push:19 | right:1
+212260567,sinArtefactosEstricto,27.6,1,False,min_clase < 10; retencion_% < 50,,,,,,left:13 | pull:20 | push:1
+212260569,noOutliers,75.7,19,True,,SMO_SVM,88.44,0.7907,SI,212260569_all_noOutliers,left:73 | pull:19 | push:107
+212260569,sinArtefactosConservador,65.3,13,True,,J48_C45,91.54,0.8493,SI,212260569_all_sinArtefactosConservador,left:50 | pull:13 | push:67
+212260569,sinArtefactosEstricto,43.2,10,False,retencion_% < 50,,,,,,left:33 | pull:10 | push:43
+212260666,noOutliers,75.7,16,True,,SMO_SVM,75.38,0.5666,no,212260666_all_noOutliers,left:16 | pull:118 | push:29 | right:36
+212260666,sinArtefactosConservador,61.8,12,True,,J48_C45,79.67,0.6902,SI,212260666_all_sinArtefactosConservador,left:16 | pull:65 | push:12 | right:30
+212260666,sinArtefactosEstricto,30.7,5,False,min_clase < 10; retencion_% < 50,,,,,,left:11 | pull:26 | push:5 | right:19
+212260668,noOutliers,87.7,48,True,,MLP,93.47,0.8998,SI,212260668_all_noOutliers,pull:73 | push:78 | right:48
+212260668,sinArtefactosConservador,69.8,2,False,min_clase < 10,,,,,,pull:73 | push:64 | right:2
+212260668,sinArtefactosEstricto,54.3,1,False,min_clase < 10,,,,,,pull:61 | push:46 | right:1
+212260672,noOutliers,71.8,8,False,min_clase < 10,IBk_kNN,88.3,0.8071,SI,212260672_all_noOutliers,left:8 | pull:51 | push:11 | right:24
+212260672,sinArtefactosConservador,58.5,2,False,min_clase < 10,,,,,,left:2 | pull:40 | push:7 | right:6
+212260672,sinArtefactosEstricto,35.1,1,False,min_clase < 10; retencion_% < 50,,,,,,left:1 | pull:27 | push:4 | right:1
+222260671,noOutliers,69.0,18,True,,RandomForest,72.51,0.4028,no,222260671_all_noOutliers,left:18 | pull:29 | push:18 | right:106
+222260671,sinArtefactosConservador,67.8,1,False,min_clase < 10,,,,,,left:1 | pull:17 | push:18 | right:80
+222260671,sinArtefactosEstricto,33.3,9,False,min_clase < 10; retencion_% < 50,,,,,,pull:9 | push:11 | right:37
+22260552,noOutliers,93.6,78,True,,MLP,88.62,0.8309,SI,22260552_all_noOutliers,left:239 | pull:556 | push:78 | right:419
+22260552,sinArtefactosConservador,50.5,37,True,,RandomForest,83.13,0.7374,SI,22260552_all_sinArtefactosConservador,left:191 | pull:301 | push:37 | right:123
+22260552,sinArtefactosEstricto,26.4,2,False,min_clase < 10; retencion_% < 50,,,,,,left:128 | pull:192 | push:19 | right:2
+231260558,noOutliers,72.9,64,True,,MLP,80.49,0.6982,SI,231260558_all_noOutliers,left:193 | pull:457 | push:64 | right:188
+231260558,sinArtefactosConservador,84.7,7,False,min_clase < 10,,,,,,left:156 | pull:426 | push:7 | right:175
+231260558,sinArtefactosEstricto,64.5,1,False,min_clase < 10,,,,,,left:97 | pull:344 | push:1 | right:140
+252260554,noOutliers,69.8,40,True,,RBFNetwork_aprox,74.35,0.5723,no,252260554_all_noOutliers,left:240 | pull:40 | push:211 | right:47
+252260554,sinArtefactosConservador,76.8,34,True,,RBFNetwork_aprox,71.67,0.5365,no,252260554_all_sinArtefactosConservador,left:183 | pull:39 | push:157 | right:34
+252260554,sinArtefactosEstricto,44.2,19,False,retencion_% < 50,,,,,,left:121 | pull:19 | push:76 | right:22
+252260556,noOutliers,91.8,116,True,,RBFNetwork_aprox,66.63,0.528,no,252260556_all_noOutliers,left:286 | pull:282 | push:155 | right:116
+252260556,sinArtefactosConservador,80.5,98,True,,RBFNetwork_aprox,69.93,0.5711,no,252260556_all_sinArtefactosConservador,left:238 | pull:216 | push:123 | right:98
+252260556,sinArtefactosEstricto,53.9,63,True,,RBFNetwork_aprox,66.81,0.525,no,252260556_all_sinArtefactosEstricto,left:149 | pull:149 | push:91 | right:63
+252260670,noOutliers,68.9,4,False,min_clase < 10,IBk_kNN,94.66,0.904,SI,252260670_all_noOutliers,left:7 | pull:4 | push:54 | right:66
+252260670,sinArtefactosConservador,63.4,3,False,min_clase < 10,,,,,,left:3 | push:38 | right:42
+252260670,sinArtefactosEstricto,32.8,1,False,min_clase < 10; retencion_% < 50,,,,,,left:1 | push:28 | right:14
+cano,noOutliers,94.0,35,True,,NaiveBayes,34.8,0.1752,no,cano_all_noOutliers,left:106 | pull:35 | push:235 | right:509
+cano,sinArtefactosConservador,70.6,33,True,,NaiveBayes,34.88,0.0318,no,cano_all_sinArtefactosConservador,left:63 | pull:33 | push:188 | right:341
+cano,sinArtefactosEstricto,44.3,15,False,retencion_% < 50,,,,,,left:49 | pull:15 | push:155 | right:173
+villanueva,noOutliers,91.7,16,True,,RBFNetwork_aprox,38.92,-0.1711,no,villanueva_all_noOutliers,left:16 | pull:367 | push:211 | right:38
+villanueva,sinArtefactosConservador,87.7,8,False,min_clase < 10,,,,,,left:8 | pull:326 | push:190 | right:30
+villanueva,sinArtefactosEstricto,57.0,5,False,min_clase < 10,,,,,,left:5 | pull:183 | push:150 | right:22

@@ -1,0 +1,61 @@
+﻿archivo,extension,sujeto,repeticion,tipo_prueba,accion,origen
+211260561_LeftRight.csv,.csv,211260561,unica,leftRight,left_right,txt_csv_prueba_completa
+211260561_LeftRight.txt,.txt,211260561,unica,leftRight,left_right,txt_csv_prueba_completa
+211260561_pullPush.csv,.csv,211260561,unica,pushPull,push_pull,txt_csv_prueba_completa
+211260561_pullPush.txt,.txt,211260561,unica,pushPull,push_pull,txt_csv_prueba_completa
+212260563_leftRight.csv,.csv,212260563,unica,leftRight,left_right,txt_csv_prueba_completa
+212260563_leftRight.txt,.txt,212260563,unica,leftRight,left_right,txt_csv_prueba_completa
+212260563_pullPush.csv,.csv,212260563,unica,pushPull,push_pull,txt_csv_prueba_completa
+212260563_pullPush.txt,.txt,212260563,unica,pushPull,push_pull,txt_csv_prueba_completa
+212260567_leftRight.csv,.csv,212260567,unica,leftRight,left_right,txt_csv_prueba_completa
+212260567_leftRight.txt,.txt,212260567,unica,leftRight,left_right,txt_csv_prueba_completa
+212260567_pullPush.csv,.csv,212260567,unica,pushPull,push_pull,txt_csv_prueba_completa
+212260567_pullPush.txt,.txt,212260567,unica,pushPull,push_pull,txt_csv_prueba_completa
+212260569PushPull.csv,.csv,212260569,unica,pushPull,push_pull,txt_csv_prueba_completa
+212260569PushPull.txt,.txt,212260569,unica,pushPull,push_pull,txt_csv_prueba_completa
+212260569_LeftRight.csv,.csv,212260569,unica,leftRight,left_right,txt_csv_prueba_completa
+212260569_LeftRight.txt,.txt,212260569,unica,leftRight,left_right,txt_csv_prueba_completa
+212260666_leftRight.csv,.csv,212260666,unica,leftRight,left_right,txt_csv_prueba_completa
+212260666_leftRight.txt,.txt,212260666,unica,leftRight,left_right,txt_csv_prueba_completa
+212260666_pullPush.csv,.csv,212260666,unica,pushPull,push_pull,txt_csv_prueba_completa
+212260666_pullPush.txt,.txt,212260666,unica,pushPull,push_pull,txt_csv_prueba_completa
+212260668_leftRight.csv,.csv,212260668,unica,leftRight,left_right,txt_csv_prueba_completa
+212260668_leftRight.txt,.txt,212260668,unica,leftRight,left_right,txt_csv_prueba_completa
+212260668_pullPush.csv,.csv,212260668,unica,pushPull,push_pull,txt_csv_prueba_completa
+212260668_pullPush.txt,.txt,212260668,unica,pushPull,push_pull,txt_csv_prueba_completa
+212260672_LeftRigth.csv,.csv,212260672,unica,leftRight,left_right,txt_csv_prueba_completa
+212260672_LeftRigth.txt,.txt,212260672,unica,leftRight,left_right,txt_csv_prueba_completa
+212260672_PushPull.csv,.csv,212260672,unica,pushPull,push_pull,txt_csv_prueba_completa
+212260672_PushPull.txt,.txt,212260672,unica,pushPull,push_pull,txt_csv_prueba_completa
+222260671LeftRigth.csv,.csv,222260671,unica,leftRight,left_right,txt_csv_prueba_completa
+222260671LeftRigth.txt,.txt,222260671,unica,leftRight,left_right,txt_csv_prueba_completa
+222260671PushPull.csv,.csv,222260671,unica,pushPull,push_pull,txt_csv_prueba_completa
+222260671PushPull.txt,.txt,222260671,unica,pushPull,push_pull,txt_csv_prueba_completa
+22260552_leftRight.csv,.csv,22260552,unica,leftRight,left_right,txt_csv_prueba_completa
+22260552_leftRight.txt,.txt,22260552,unica,leftRight,left_right,txt_csv_prueba_completa
+22260552_pullPush.csv,.csv,22260552,unica,pushPull,push_pull,txt_csv_prueba_completa
+22260552_pullPush.txt,.txt,22260552,unica,pushPull,push_pull,txt_csv_prueba_completa
+231260558_LeftRight.csv,.csv,231260558,unica,leftRight,left_right,txt_csv_prueba_completa
+231260558_LeftRight.txt,.txt,231260558,unica,leftRight,left_right,txt_csv_prueba_completa
+231260558_PulPush.csv,.csv,231260558,unica,pushPull,push_pull,txt_csv_prueba_completa
+231260558_PulPush.txt,.txt,231260558,unica,pushPull,push_pull,txt_csv_prueba_completa
+252260554_leftRight.csv,.csv,252260554,unica,leftRight,left_right,txt_csv_prueba_completa
+252260554_leftRight.txt,.txt,252260554,unica,leftRight,left_right,txt_csv_prueba_completa
+252260554_pullPush.csv,.csv,252260554,unica,pushPull,push_pull,txt_csv_prueba_completa
+252260554_pullPush.txt,.txt,252260554,unica,pushPull,push_pull,txt_csv_prueba_completa
+252260556_leftRight.csv,.csv,252260556,unica,leftRight,left_right,txt_csv_prueba_completa
+252260556_leftRight.txt,.txt,252260556,unica,leftRight,left_right,txt_csv_prueba_completa
+252260556_pullPush.csv,.csv,252260556,unica,pushPull,push_pull,txt_csv_prueba_completa
+252260556_pullPush.txt,.txt,252260556,unica,pushPull,push_pull,txt_csv_prueba_completa
+252260670_LeftRight.csv,.csv,252260670,unica,leftRight,left_right,txt_csv_prueba_completa
+252260670_LeftRight.txt,.txt,252260670,unica,leftRight,left_right,txt_csv_prueba_completa
+252260670_PushPull.csv,.csv,252260670,unica,pushPull,push_pull,txt_csv_prueba_completa
+252260670_PushPull.txt,.txt,252260670,unica,pushPull,push_pull,txt_csv_prueba_completa
+derecha 1ra_Cano 1.csv,.csv,cano,1ra,leftRight,right,csv_accion_individual
+derecha 2da_Villanueva 1.csv,.csv,villanueva,2da,leftRight,right,csv_accion_individual
+empujar 1ra_Cano 1.csv,.csv,cano,1ra,pushPull,push,csv_accion_individual
+empujar 2da_Villanueva 1.csv,.csv,villanueva,2da,pushPull,push,csv_accion_individual
+izquierda 1ra_Cano 1.csv,.csv,cano,1ra,leftRight,left,csv_accion_individual
+izquierda 2da_Villanueva 1.csv,.csv,villanueva,2da,leftRight,left,csv_accion_individual
+jalar 1ra_Cano 1.csv,.csv,cano,1ra,pushPull,pull,csv_accion_individual
+jalar 2da_Villanueva 1.csv,.csv,villanueva,2da,pushPull,pull,csv_accion_individual

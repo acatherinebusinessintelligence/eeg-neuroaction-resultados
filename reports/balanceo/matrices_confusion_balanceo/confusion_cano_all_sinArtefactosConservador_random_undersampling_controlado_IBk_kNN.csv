@@ -1,0 +1,5 @@
+﻿,pred_left,pred_pull,pred_push,pred_right
+real_left,20,2,0,41
+real_pull,0,19,9,5
+real_push,3,19,70,96
+real_right,87,44,147,63
