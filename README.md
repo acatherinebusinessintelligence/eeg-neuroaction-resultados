@@ -61,7 +61,8 @@ Clasifica la evidencia de modelado por sujeto (aprobado, revisión, no confiable
 └── docs/             # metodología, inventario y revisión de publicación
 ```
 
-Inventario detallado: [Resultados](docs/RESULTADOS.md)
+Inventario detallado: [Resultados](docs/RESULTADOS.md)  
+Pipeline de la corrida: [PIPELINE.md](docs/PIPELINE.md)
 
 ## Metodología
 
@@ -95,11 +96,17 @@ Citar este software con los metadatos de [`CITATION.cff`](CITATION.cff). El DOI 
 
 ## Licencia
 
-Pendiente de decisión. Hay incertidumbre sobre origen, consentimiento y derechos de los resultados derivados, por lo que **no se añade `LICENSE` todavía**.
+**No hay licencia definitiva de resultados.** Origen, consentimiento y derechos de publicación de los datos/resultados derivados **no están confirmados**. No se añade archivo `LICENSE` todavía.
 
-Propuesta documentada (no aplicada): código MIT; documentación CC BY 4.0; resultados derivados CC BY 4.0 solo si no hay restricciones de origen.
+Propuesta (no aplicada):
+
+- **Código:** MIT
+- **Documentación:** CC BY 4.0
+- **Resultados derivados:** pendiente de confirmar origen, consentimiento y derechos de publicación.
 
 Detalle: [Revisión para publicación](docs/REVISION_PUBLICACION.md)
+
+El repositorio **no está apto todavía para depósito permanente en Zenodo**.
 
 ## Estado del proyecto
 
@@ -107,7 +114,8 @@ Detalle: [Revisión para publicación](docs/REVISION_PUBLICACION.md)
 | --- | --- |
 | Documentación metodológica | Añadida en v0.9.0 |
 | Inventario de resultados | Añadido en v0.9.0 |
-| Revisión de publicación / privacidad | Añadida en v0.9.0; pendiente decisión humana |
+| Revisión de publicación / privacidad | Auditoría v0.9.0; **no apto aún para Zenodo** |
+| Identificadores | Inventariados; seudonimización **no ejecutada** |
 | `CITATION.cff` | 0.9.0, sin DOI |
 | Licencia | No aplicada todavía |
 | Tag / GitHub Release | No creado |
@@ -117,6 +125,9 @@ Detalle: [Revisión para publicación](docs/REVISION_PUBLICACION.md)
 ## Enlaces
 
 - [Metodología](docs/metodologia.md)
+- [Pipeline](docs/PIPELINE.md)
+- [Identificadores](docs/IDENTIFICADORES.md)
+- [Plan de seudonimización](docs/PLAN_PSEUDONIMIZACION.md) (no ejecutado)
 - [Revisión para publicación](docs/REVISION_PUBLICACION.md)
 - [Inventario de resultados](docs/RESULTADOS.md)
 - [CHANGELOG](CHANGELOG.md)

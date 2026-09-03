@@ -6,7 +6,7 @@
 **Estado:** candidata a primera versión estable.  
 **Fuente de esta descripción:** únicamente archivos presentes en `acatherinebusinessintelligence/eeg-neuroaction-resultados` (rama `main`).
 
-Las visualizaciones corresponden a características EEG BANDPOWER derivadas.
+Las visualizaciones corresponden a características EEG BANDPOWER derivadas y no equivalen a qEEG clínico normativo ni a confirmación fisiológica con EEG crudo/EOG/EMG/ECG.
 
 No deben presentarse como:
 
@@ -29,16 +29,22 @@ El README original indica que el repositorio fue **publicado desde Kaggle**.
 
 ## Naturaleza de los resultados
 
-Lo que hay aquí son **salidas derivadas**, no la señal continua original:
+Reinspección de extensiones en el árbol local (además de `.git`): `.png`, `.csv`, `.xlsx`, `.html`, `.md`, `.cff`, `.txt`. **Cero** archivos `.edf`, `.bdf`, `.fif`, `.set`, `.vhdr`, `.eeg`, `.cnt`, `.mat`, `.npy`, `.npz`, `.h5`. **Cero** `.py` / `.ipynb`.
 
-- reportes tabulares (CSV y XLSX);
-- figuras PNG (scroll, topomapas, espectros, resúmenes, matrices de confusión);
+Lo que hay aquí son **únicamente resultados derivados y agregados**, no EEG crudo:
+
+- reportes tabulares (CSV y XLSX) de métricas, inventarios y sospechas de artefactos;
+- figuras PNG (scroll, topomapas, espectros, resúmenes, matrices de confusión) construidas sobre BANDPOWER;
 - HTML de visor, dashboard e informe;
 - un resumen ejecutivo en texto.
 
+El detalle de artefactos (`fila` × canal × banda × `valor`) es una **matriz de características BANDPOWER derivadas**, no una serie de voltajes. No permite reconstruir EEG crudo, EOG, EMG ni ECG. Los timestamps de sesión están en otro archivo (`reports/diagnostico_tiempos_csv_txt.csv`) y datan capturas; no son muestras de señal.
+
 El dashboard y el visor advierten que los datos visualizados son características EEG tipo BANDPOWER por canal y banda; que los artefactos se reportan como **sospecha metodológica**; y que **no se afirma ICA, notch, pasa banda ni PSD cruda** cuando solo hay características BANDPOWER.
 
-No hay archivos `.edf` ni series EEG crudas en este repositorio. El listado `reports/archivos_generados.csv` menciona EDF generados en la corrida Kaggle, pero esos binarios no se versionaron aquí.
+El listado `reports/archivos_generados.csv` menciona EDF generados en la corrida Kaggle; esos binarios **no** están versionados aquí.
+
+Las visualizaciones corresponden a características EEG BANDPOWER derivadas y no equivalen a qEEG clínico normativo ni a confirmación fisiológica con EEG crudo/EOG/EMG/ECG.
 
 ## Archivos principales
 
@@ -206,6 +212,8 @@ Reproducible **como archivo de salidas**: los HTML y reportes pueden consultarse
 
 No es reproducible **como experimento computacional** desde este repositorio: faltan datos fuente, código, semillas, entorno y el notebook/script de Kaggle.
 
+Trazabilidad de la corrida: [PIPELINE.md](PIPELINE.md).
+
 La cadena observada es:
 
 **fuente computacional (Kaggle, corrida `run_20260902_145353`)** → **procesamiento (no versionado aquí)** → **reportes** → **visualizaciones** → **GitHub / GitHub Pages**.
@@ -223,7 +231,7 @@ Fuera de alcance, según las propias advertencias del visor y del dashboard:
 
 ## Advertencias de interpretación
 
-Las visualizaciones corresponden a características EEG BANDPOWER derivadas.
+Las visualizaciones corresponden a características EEG BANDPOWER derivadas y no equivalen a qEEG clínico normativo ni a confirmación fisiológica con EEG crudo/EOG/EMG/ECG.
 
 No deben presentarse como:
 
@@ -240,18 +248,26 @@ Los artefactos se interpretan como sospechas sobre características BANDPOWER. L
 
 Este repositorio **no documenta**:
 
-- protocolo experimental (instrucciones, duración de ensayo, dispositivo, tasa de muestreo, montaje más allá de los nombres de canal observados, filtrado analógico/digital);
-- significado y especificación del “protocolo TESE”;
-- cuaderno o script de Kaggle que produjo `run_20260902_145353`;
-- URL exacta del dataset Kaggle de origen y su licencia;
-- consentimiento informado, dictamen ético y base legal de los registros;
-- si los códigos numéricos de sujeto son seudónimos o identificadores institucionales;
-- por qué dos sujetos están etiquetados con apellidos;
-- definición operativa de “5 movimientos” del dashboard;
-- hiperparámetros de cada clasificador y criterio exacto de `EXITO`;
-- fórmula de BANDPOWER, ventanas temporales y referencia usada para topomapas;
-- si `RBFNetwork_aprox` es una aproximación de un clasificador Weka u otro entorno;
-- relación de autoría con otros nombres que puedan aparecer en recursos Kaggle externos (no se añaden coautores aquí por falta de evidencia **en este** repositorio);
-- ORCID y afiliación institucional de la autora.
+- protocolo experimental;
+- protocolo TESE;
+- origen exacto del dataset;
+- consentimiento/licencia de publicación;
+- significado formal de identificadores;
+- definición operativa de BANDPOWER;
+- hiperparámetros exactos;
+- pipeline reproducible fuente.
+
+Detalle de huecos ya observados, sin inventar valores:
+
+- instrucciones de tarea, dispositivo, tasa de muestreo, montaje más allá de los nombres de canal, filtrado analógico/digital;
+- umbrales y software del “protocolo TESE”;
+- cuaderno o script de Kaggle de `run_20260902_145353` y URL/licencia del dataset fuente;
+- consentimiento, dictamen ético y base legal;
+- si los códigos numéricos son seudónimos o identificadores institucionales, y por qué dos sujetos son apellidos;
+- fórmula de BANDPOWER, ventanas y referencia de topomapas;
+- hiperparámetros de cada clasificador y criterio de `EXITO`;
+- ORCID y afiliación institucional.
 
 Hasta completar esos puntos, cualquier descripción de “adquisición EEG” que no esté en estos archivos sería invención y debe evitarse.
+
+Inventario de IDs: [IDENTIFICADORES.md](IDENTIFICADORES.md). Plan (no ejecutado): [PLAN_PSEUDONIMIZACION.md](PLAN_PSEUDONIMIZACION.md).

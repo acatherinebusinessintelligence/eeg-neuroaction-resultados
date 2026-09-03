@@ -1,0 +1,3 @@
+# Ignore local secrets and identity maps
+# Direct identifier ↔ pseudonym mapping. Never commit, release, or deposit.
+docs/MAPA_PSEUDONIMIZACION_LOCAL.md

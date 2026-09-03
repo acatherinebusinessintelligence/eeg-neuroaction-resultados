@@ -69,13 +69,68 @@ Este repositorio **no tiene** `LICENSE` ni declaración de licencia en el README
 
 - **Código:** MIT
 - **Documentación:** CC BY 4.0
-- **Resultados derivados:** CC BY 4.0 **solamente si** no existen restricciones de origen, consentimiento o licencia.
+- **Resultados derivados:** pendiente de confirmar origen, consentimiento y derechos de publicación. No hay licencia definitiva de resultados.
 
 Hasta esa confirmación humana, **no se añade archivo `LICENSE`**.
+
+**Advertencia (sin licencia definitiva de resultados):**
+
+- **Código:** propuesta MIT (no aplicada).
+- **Documentación:** propuesta CC BY 4.0 (no aplicada como archivo `LICENSE`).
+- **Resultados derivados:** pendiente de confirmar origen, consentimiento y derechos de publicación. **No se crea licencia definitiva para los resultados en esta versión.**
+
+## Fechas y timestamps
+
+Archivo de sesión: `reports/diagnostico_tiempos_csv_txt.csv` (26 filas; 13 sujetos numéricos; **no** incluye `cano` ni `villanueva`).
+
+Columnas Unix de calendario: `timestamp_min`, `timestamp_max`, `txt_time_min`, `txt_time_max`. Convertidas a UTC caen entre **2026-05-19 y 2026-06-08**. Datán capturas por sujeto; no son fechas de nacimiento.
+
+Columnas relativas (duración y desfase CSV–TXT): `duracion_csv_segundos`, `duracion_txt_segundos`, `diferencia_inicio_csv_txt`, `diferencia_fin_csv_txt`.
+
+El identificador de corrida `run_20260902_145353` aparece en HTML y rutas Kaggle (reloj de *pipeline*, no de participante).
+
+El detalle de artefactos **no** tiene columnas de tiempo.
+
+No se modificaron fechas en esta auditoría.
+
+| Clase | Recurso | Clasificación |
+| --- | --- | --- |
+| A. Necesarias para reproducibilidad | `duracion_csv_segundos`, `duracion_txt_segundos`, `diferencia_inicio_csv_txt`, `diferencia_fin_csv_txt`; `filas_csv`, `eventos_txt`, `conteo_clases` | Permiten comprobar alineación CSV–TXT y duración de registro **sin** fecha de calendario. |
+| A. Necesarias para reproducibilidad | Identificador de corrida `run_20260902_145353` | Nombra el lote computacional. No es un ID de sujeto. |
+| B. No necesarias para publicación | `timestamp_min`, `timestamp_max`, `txt_time_min`, `txt_time_max` como Unix absoluto | Permiten vincular cada sujeto numérico a un día/hora de sesión. Pueden generalizarse (p. ej. conservar solo duraciones) sin cambiar métricas de modelos. |
+| C. Inciertas | Si algún PNG o XLSX incrusta la misma marca temporal (no inspeccionado por OCR/binario) | Requiere revisión humana. |
+| C. Inciertas | Generalizar timestamps vs. perder auditoría de sincronización CSV–TXT | Las columnas A bastan para la sincronización relativa; las B no hacen falta para citar BANDPOWER/modelos. |
+
+Riesgo: las marcas B, combinadas con apellidos o códigos institucionales, facilitan reidentificación. No se asume que sean anónimas.
+
+## Criterios previos a Zenodo
+
+Debe cumplirse:
+
+- [ ] Identificadores revisados
+- [ ] Pseudonimización aprobada
+- [ ] Fechas/timestamps revisados
+- [ ] Consentimiento o base de publicación confirmada
+- [ ] Licencia de resultados definida
+- [ ] Metodología mínima documentada
+- [ ] Archivos a preservar identificados
+- [ ] Material excluido de Zenodo definido
+- [ ] CITATION.cff validado
+- [ ] Release candidate revisada
+
+Estado actual:
+
+**NO APTO TODAVÍA PARA DEPÓSITO PERMANENTE.**
+
+Esto es una decisión de publicación, no una evaluación científica de los resultados.
+
+Material que no debe ir a Zenodo mientras exista el mapa de identidad: `docs/MAPA_PSEUDONIMIZACION_LOCAL.md` (gitignored). Tras seudonimizar, reescribir o excluir `docs/IDENTIFICADORES.md` si aún lista IDs originales.
 
 ## Qué no se hizo en esta revisión
 
 - no se borró ningún archivo;
 - no se modificaron CSV, XLSX, PNG ni HTML de resultados;
+- no se ejecutó la seudonimización;
 - no se creó tag, GitHub Release ni DOI;
+- no se hizo push;
 - no se conectó Zenodo.

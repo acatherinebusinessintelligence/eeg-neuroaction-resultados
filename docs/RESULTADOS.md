@@ -94,10 +94,23 @@ Tipos de figura por sujeto: `resumen_visual`, `scroll_promedio_bandas`, `spectra
 
 El visor incrustado declara `figuras_generadas: 528` en sus métricas globales; el árbol `figures/` más las matrices de `reports/balanceo/` suma más archivos porque hay copias organizadas por carpeta y PNG de balanceo.
 
-## Artefactos sospechados
+## Artefactos sospechados (estructura, no interpretación clínica)
 
-- Detalle: `reports/reporte_artefactos_sospechados_detalle.csv` / `.xlsx` (122 279 filas).
+- Detalle: `reports/reporte_artefactos_sospechados_detalle.csv` / `.xlsx` (**122 279 filas**).
 - Resumen: `reports/reporte_artefactos_sospechados_resumen.csv` / `.xlsx` (365 filas).
+
+Columnas del detalle: `sujeto`, `movimiento`, `archivo`, `fila`, `canal`, `banda`, `columna`, `valor`, `z_robusto`, `z_salto`, `tipo_artefacto_sospechado`, `nivel_confirmacion`, `removido`, `observacion`.
+
+| Pregunta estructural | Hallazgo |
+| --- | --- |
+| ¿Identificadores? | Sí: `sujeto` y `archivo` (15 IDs, incluidos apellidos). |
+| ¿Timestamps / fechas? | No hay columnas de tiempo ni fecha en este archivo. |
+| ¿Métricas? | Sí: `valor` (BANDPOWER derivado), `z_robusto`, `z_salto`; etiquetas de tipo y `nivel_confirmacion`. |
+| ¿Señal cruda? | No. No hay voltajes continuos, EDF ni series temporales de EEG. |
+| ¿Datos derivados? | Sí. Las 122 279 filas tienen `nivel_confirmacion = sospecha_sobre_bandpower` y `removido = no`. La `observacion` reitera que la clasificación es heurística sobre BANDPOWER. |
+| ¿Movimientos en el detalle? | `all`, `left`, `right`, `pull`, `push` (conteos de filas; no se interpretan aquí). |
+
+Este archivo es el principal volumen de características derivadas por sujeto. Requiere revisión humana antes de un depósito permanente; no se modificó en esta auditoría.
 
 ## Dashboards e informes
 
@@ -113,9 +126,10 @@ Ya listados en la primera tabla. El dashboard muestra, entre otras tarjetas de e
 
 ## Lo que no está en este repositorio
 
-- código fuente del pipeline;
-- notebooks;
-- EEG crudo / EDF / BDF;
+- código fuente del pipeline y notebooks (0 archivos `.py` / `.ipynb`);
+- EEG crudo / EDF / BDF / FIF / NPY / MAT (0 en el árbol local);
 - ZIP citados por `reports/index_kaggle.html`;
 - XLSX individuales `*_Comparativa_Modelos_Final.xlsx`;
-- `LICENSE`, `CITATION.cff` y `CHANGELOG.md` en el estado original de `main` (se añaden en v0.9.0 salvo `LICENSE`, pendiente de decisión sobre datos).
+- `LICENSE` (pendiente de origen, consentimiento y derechos de publicación).
+
+Documentación de auditoría añadida en v0.9.0: `docs/IDENTIFICADORES.md`, `docs/PLAN_PSEUDONIMIZACION.md`, `docs/PIPELINE.md`. El mapa local de identidad no se versiona.
