@@ -63,11 +63,11 @@ Se distinguen capas. La autoría del recurso citable no implica titularidad conj
 Afiliaciones:
 
 1. Griselda Cortés Barrera — Tecnológico de Estudios Superiores de Ecatepec (TESE), México
-2. Alejandra Catherine Montaña Acevedo — Encargada de la automatización del proceso de datos: transformación, verificación con inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub. No se declara institución adicional.
+2. Alejandra Catherine Montaña Acevedo — Coinvestigadora, Corporación Universitaria Minuto de Dios (Uniminuto). Encargada de la automatización del proceso de datos: transformación, verificación con inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub.
 3. Jesús Manuel Olivares Ceja — Apoyo en proyecto
 4. Jhacer Kharen Ruiz Garduño — Apoyo en proyecto
 
-Los ítems 2–4 son roles confirmados por Alejandra Catherine Montaña Acevedo, no nombres de institución. “Apoyo en proyecto” no implica titularidad del código.
+Los ítems 3–4 son roles confirmados por Alejandra Catherine Montaña Acevedo, no nombres de institución. “Apoyo en proyecto” no implica titularidad del código. El ítem 2 combina afiliación institucional (Uniminuto) y rol técnico, ambos confirmados por la autora.
 
 **TESE** = Tecnológico de Estudios Superiores de Ecatepec. País: México.
 
@@ -88,6 +88,7 @@ Los resultados derivados pueden redistribuirse con atribución adecuada a:
 
 - los autores del dataset/proyecto (lista anterior);
 - Tecnológico de Estudios Superiores de Ecatepec (TESE), México, cuando corresponda;
+- Corporación Universitaria Minuto de Dios (Uniminuto), cuando corresponda (afiliación documentada de Alejandra Catherine Montaña Acevedo como coinvestigadora);
 - el laboratorio descrito públicamente como National Laboratory in Artificial Intelligence and Data Science (con la salvedad de procedencia de esa denominación).
 
 No existe autorización para reconstruir identidades ni para presentar los códigos de sujeto como nombres reales. `cano` y `villanueva` son códigos institucionales pseudonimizados (riesgo **Bajo / controlado**). Este repositorio **no declara anonimato absoluto**.
@@ -176,7 +177,7 @@ Este repositorio es un **archivo de resultados**, no el estudio experimental com
 - limitaciones y nivel de reproducibilidad;
 - licencias (MIT código; CC BY 4.0 docs y resultados).
 
-Estado de esos ítems: **cumplidos en documentación v1.0.0 RC**, con laboratorio solo parcialmente nombrado (biografía Kaggle). Roles de tres autores documentados (automatización/software; apoyo en proyecto); no se inventan instituciones.
+Estado de esos ítems: **cumplidos en documentación v1.0.0 RC**, con laboratorio solo parcialmente nombrado (biografía Kaggle). Afiliación de Alejandra Catherine Montaña Acevedo: coinvestigadora, Corporación Universitaria Minuto de Dios (Uniminuto), más rol técnico. Jesús Manuel Olivares Ceja y Jhacer Kharen Ruiz Garduño: apoyo en proyecto.
 
 ### Deseable para reproducción completa (no necesariamente bloqueante)
 

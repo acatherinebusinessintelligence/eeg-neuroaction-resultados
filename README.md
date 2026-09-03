@@ -81,12 +81,12 @@ Los cuatro autores anteriores figuran como autores del recurso **EEG NeuroAction
 
 ### Afiliaciones y roles documentados
 
-Fuente de Griselda Cortés Barrera: ficha Kaggle / TESE. Fuente de los demás roles: confirmación de Alejandra Catherine Montaña Acevedo. No se inventan instituciones no dichas.
+Fuente de Griselda Cortés Barrera: ficha Kaggle / TESE. Afiliación y rol de Alejandra Catherine Montaña Acevedo, y roles de Jesús Manuel Olivares Ceja y Jhacer Kharen Ruiz Garduño: confirmación de Alejandra Catherine Montaña Acevedo. No se inventan instituciones no dichas.
 
 | Autor | Afiliación o rol documentado |
 | --- | --- |
 | Griselda Cortés Barrera | Tecnológico de Estudios Superiores de Ecatepec (TESE), México |
-| Alejandra Catherine Montaña Acevedo | Encargada de la automatización del proceso de datos: transformación, verificación con inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub. No se declara aquí una institución adicional. |
+| Alejandra Catherine Montaña Acevedo | Coinvestigadora, Corporación Universitaria Minuto de Dios (Uniminuto). Encargada de la automatización del proceso de datos: transformación, verificación con inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub. |
 | Jesús Manuel Olivares Ceja | Apoyo en proyecto |
 | Jhacer Kharen Ruiz Garduño | Apoyo en proyecto |
 
@@ -169,7 +169,7 @@ La referencia de [`CITATION.cff`](CITATION.cff) corresponde al recurso **EEG Neu
 Autores del recurso citable (mismo orden que la ficha Kaggle [EEG 25-1](https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data)):
 
 1. Griselda Cortés Barrera (Tecnológico de Estudios Superiores de Ecatepec, TESE, México)
-2. Alejandra Catherine Montaña Acevedo (automatización del proceso de datos, transformación, verificación con IA y desarrollo de software; código base en Kaggle y GitHub)
+2. Alejandra Catherine Montaña Acevedo (Coinvestigadora, Corporación Universitaria Minuto de Dios (Uniminuto); automatización del proceso de datos, transformación, verificación con IA y desarrollo de software; código base en Kaggle y GitHub)
 3. Jesús Manuel Olivares Ceja (apoyo en proyecto)
 4. Jhacer Kharen Ruiz Garduño (apoyo en proyecto)
 
@@ -189,7 +189,7 @@ Enlaces:
 - [Licencia de documentación](LICENSE-DOCS.md)
 - [Licencia de resultados](LICENSE-RESULTS.md)
 
-La reutilización de resultados debe reconocer a los autores del dataset/proyecto EEG 25-1, a Tecnológico de Estudios Superiores de Ecatepec (TESE) cuando corresponda, y al laboratorio descrito públicamente como National Laboratory in Artificial Intelligence and Data Science.
+La reutilización de resultados debe reconocer a los autores del dataset/proyecto EEG 25-1, a Tecnológico de Estudios Superiores de Ecatepec (TESE) cuando corresponda, a Corporación Universitaria Minuto de Dios (Uniminuto) cuando corresponda, y al laboratorio descrito públicamente como National Laboratory in Artificial Intelligence and Data Science.
 
 Denominación del laboratorio tomada de la biografía pública de Griselda Cortés Barrera en la ficha Kaggle del dataset. No se afirma un nombre institucional oficial en español ni se inventa un acrónimo.
 

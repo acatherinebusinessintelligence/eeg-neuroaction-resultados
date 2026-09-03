@@ -27,6 +27,6 @@ Cuando se reutilice información de procedencia del dataset/proyecto, debe recon
 - Jesús Manuel Olivares Ceja
 - Jhacer Kharen Ruiz Garduño
 
-y, cuando corresponda, a Tecnológico de Estudios Superiores de Ecatepec (TESE), México, y al laboratorio descrito públicamente como National Laboratory in Artificial Intelligence and Data Science (denominación tomada de la biografía pública de Griselda Cortés Barrera en esa ficha).
+y, cuando corresponda, a Tecnológico de Estudios Superiores de Ecatepec (TESE), México, a Corporación Universitaria Minuto de Dios (Uniminuto), y al laboratorio descrito públicamente como National Laboratory in Artificial Intelligence and Data Science (denominación tomada de la biografía pública de Griselda Cortés Barrera en esa ficha).
 
 Esta licencia cubre la documentación, no el código (véase `LICENSE-CODE`) ni, por sí sola, los resultados derivados (véase `LICENSE-RESULTS.md`). No implica que los autores del dataset sean titulares del copyright del código fuente del repositorio.

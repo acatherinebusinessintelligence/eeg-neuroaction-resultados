@@ -36,7 +36,7 @@ El código del repositorio mantiene copyright de Alejandra Catherine Montaña Ac
 Afiliación o rol documentado:
 
 - Griselda Cortés Barrera — Tecnológico de Estudios Superiores de Ecatepec (TESE), México
-- Alejandra Catherine Montaña Acevedo — Encargada de la automatización del proceso de datos: transformación, verificación con inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub. No se declara institución adicional.
+- Alejandra Catherine Montaña Acevedo — Coinvestigadora, Corporación Universitaria Minuto de Dios (Uniminuto). Encargada de la automatización del proceso de datos: transformación, verificación con inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub.
 - Jesús Manuel Olivares Ceja — Apoyo en proyecto
 - Jhacer Kharen Ruiz Garduño — Apoyo en proyecto
 
@@ -77,7 +77,7 @@ CC BY 4.0
 Resultados derivados:  
 CC BY 4.0
 
-Atribución a los autores del proyecto EEG 25-1, a TESE cuando corresponda y al laboratorio descrito públicamente. El código permanece bajo MIT con copyright de Alejandra Catherine Montaña Acevedo. La autoría del recurso científico no implica titularidad conjunta del software. La licencia de resultados no otorga derechos adicionales sobre datos fuente de terceros.
+Atribución a los autores del proyecto EEG 25-1, a TESE cuando corresponda, a Corporación Universitaria Minuto de Dios (Uniminuto) cuando corresponda, y al laboratorio descrito públicamente. El código permanece bajo MIT con copyright de Alejandra Catherine Montaña Acevedo. La autoría del recurso científico no implica titularidad conjunta del software. La licencia de resultados no otorga derechos adicionales sobre datos fuente de terceros.
 
 ## Limitaciones
 

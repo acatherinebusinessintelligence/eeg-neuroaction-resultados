@@ -35,6 +35,7 @@ Los resultados derivados publicados en este repositorio deben atribuirse a:
 y reconocer, cuando corresponda:
 
 - Tecnológico de Estudios Superiores de Ecatepec (TESE)
+- Corporación Universitaria Minuto de Dios (Uniminuto)
 - National Laboratory in Artificial Intelligence and Data Science
 
 Fuente de autoría del proyecto/dataset: ficha Kaggle [EEG 25-1](https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data).
