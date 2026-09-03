@@ -28,8 +28,16 @@ This file documents the preparation version; it does not create a GitHub Release
 - Timestamps: riesgo bajo/moderado sujeto a contexto temporal; se conservan.
 - Criterios Zenodo: próximo a apto; no plenamente apto.
 
+### Changed (autoría y procedencia)
+
+- Autores según ficha Kaggle EEG 25-1: Griselda Cortés Barrera; Alejandra Catherine Montaña Acevedo; Jesús Manuel Olivares Ceja; Jhacer Kharen Ruiz Garduño.
+- TESE = Tecnológico de Estudios Superiores de Ecatepec, México.
+- Dataset fuente documentado: https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data
+- Laboratorio (parcial): National Laboratory in Artificial Intelligence and Data Science (biografía pública en Kaggle; sin traducción oficial ni acrónimo inventado).
+- `CITATION.cff` y `LICENSE-RESULTS.md` actualizados para atribución múltiple.
+
 ### Notes
 
-- No se pasó a v1.0.0: faltan el nombre formal del laboratorio, revisión definitiva de timestamps, metodología experimental mínima y release candidate.
+- No se pasó a v1.0.0: faltan metodología experimental mínima, revisión definitiva de timestamps y release candidate.
 - No se modificaron CSV, XLSX, PNG ni HTML de resultados.
 - No se creó tag, GitHub Release, Zenodo ni DOI.

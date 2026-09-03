@@ -27,12 +27,19 @@ No cubre:
 
 ## Atribución
 
-La reutilización requiere atribución a:
+La reutilización requiere reconocimiento a:
 
-1. la autora, Alejandra Catherine Montaña Acevedo;
-2. el laboratorio correspondiente que originó o facilitó el trabajo experimental.
+1. los autores del dataset/proyecto, según la ficha Kaggle [EEG 25-1](https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data):
+   - Griselda Cortés Barrera
+   - Alejandra Catherine Montaña Acevedo
+   - Jesús Manuel Olivares Ceja
+   - Jhacer Kharen Ruiz Garduño
+2. Tecnológico de Estudios Superiores de Ecatepec (TESE), México, cuando corresponda (afiliación documentada de Griselda Cortés Barrera);
+3. el laboratorio descrito públicamente como **National Laboratory in Artificial Intelligence and Data Science**.
 
-Nombre formal del laboratorio: pendiente de incorporar.
+Denominación del laboratorio tomada de la biografía pública de Griselda Cortés Barrera en la ficha Kaggle del dataset. No se afirma que ese sea el nombre institucional oficial registrado en español, ni se inventa un acrónimo.
+
+No se afirma propiedad institucional más allá de lo documentado.
 
 ## Límites
 

@@ -16,8 +16,6 @@ Copyright (c) 2026 Alejandra Catherine Montaña Acevedo
 
 ## Atribución
 
-Al reutilizar o adaptar esta documentación, debe darse crédito a Alejandra Catherine Montaña Acevedo y, cuando se cite el trabajo experimental asociado, al laboratorio correspondiente.
-
-Nombre formal del laboratorio: pendiente de incorporar.
+Al reutilizar o adaptar esta documentación, debe darse crédito a los autores documentados en la ficha Kaggle del dataset [EEG 25-1](https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data) (Griselda Cortés Barrera; Alejandra Catherine Montaña Acevedo; Jesús Manuel Olivares Ceja; Jhacer Kharen Ruiz Garduño), a Tecnológico de Estudios Superiores de Ecatepec (TESE), México, cuando corresponda, y al laboratorio descrito públicamente como National Laboratory in Artificial Intelligence and Data Science (denominación tomada de la biografía pública de Griselda Cortés Barrera en esa ficha).
 
 Esta licencia cubre la documentación, no el código (véase `LICENSE-CODE`) ni, por sí sola, los resultados derivados (véase `LICENSE-RESULTS.md`).

@@ -4,7 +4,7 @@
 
 **Versión de preparación:** v0.9.0  
 **Estado:** candidata a primera versión estable.  
-**Fuente de esta descripción:** únicamente archivos presentes en `acatherinebusinessintelligence/eeg-neuroaction-resultados` (rama `main`).
+**Fuente de esta descripción:** archivos del repositorio `acatherinebusinessintelligence/eeg-neuroaction-resultados` (rama `main`) y la ficha Kaggle del dataset [EEG 25-1](https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data).
 
 Las visualizaciones corresponden a características EEG BANDPOWER derivadas y no equivalen a qEEG clínico normativo ni a confirmación fisiológica con EEG crudo/EOG/EMG/ECG.
 
@@ -26,6 +26,34 @@ Este repositorio publica un **visor web y resultados técnicos** del pipeline EE
 La descripción del repositorio en GitHub lo formula así: visor web y resultados técnicos del pipeline EEG NeuroAction para el procesamiento, limpieza, visualización y clasificación de señales EEG asociadas a movimientos motores.
 
 El README original indica que el repositorio fue **publicado desde Kaggle**.
+
+## Dataset fuente
+
+**Dataset:** EEG 25-1  
+**Fuente:** Kaggle  
+**URL:** <https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data>
+
+Autores (orden de la ficha oficial):
+
+- Griselda Cortés Barrera
+- Alejandra Catherine Montaña Acevedo
+- Jesús Manuel Olivares Ceja
+- Jhacer Kharen Ruiz Garduño
+
+Esta ficha se utiliza como fuente de procedencia y autoría.
+
+## Autoría y afiliaciones
+
+| Autor | Afiliación |
+| --- | --- |
+| Griselda Cortés Barrera | Tecnológico de Estudios Superiores de Ecatepec (TESE), México |
+| Alejandra Catherine Montaña Acevedo | Afiliación pendiente de confirmación |
+| Jesús Manuel Olivares Ceja | Afiliación pendiente de confirmación |
+| Jhacer Kharen Ruiz Garduño | Afiliación pendiente de confirmación |
+
+**TESE** = Tecnológico de Estudios Superiores de Ecatepec. País: México.
+
+Laboratorio (formulación prudente): **National Laboratory in Artificial Intelligence and Data Science**. Denominación tomada de la biografía pública de Griselda Cortés Barrera en la ficha Kaggle del dataset. No se traduce a un nombre institucional oficial en español ni se inventa un acrónimo. No se afirma propiedad institucional más allá de lo documentado.
 
 ## Naturaleza de los resultados
 
@@ -124,7 +152,7 @@ El visor documenta tres variantes de modelado/comparación:
 
 Existe además la variante visual `cleanSmooth` en figuras y en `reports/resumen_figuras_kaggle.csv`. Este repositorio no documenta el algoritmo de suavizado.
 
-El visor indica que `noOutliers` elimina “outliers estadísticos detectados por el protocolo TESE”. **No hay en este repo una especificación del protocolo TESE** (umbrales, fórmulas, software o referencia bibliográfica).
+El visor indica que `noOutliers` elimina “outliers estadísticos detectados por el protocolo TESE”. **TESE** = Tecnológico de Estudios Superiores de Ecatepec (México). Eso identifica la institución asociada a la corrida (`TESE_pruebas`); **no** especifica umbrales, fórmulas ni software del protocolo de outliers.
 
 ### Tipos de artefacto sospechado
 
@@ -259,29 +287,28 @@ Los artefactos se interpretan como sospechas sobre características BANDPOWER. L
 
 ## Información metodológica pendiente de documentar
 
-Este repositorio **no documenta**:
+Resuelto o parcialmente resuelto con la ficha Kaggle [EEG 25-1](https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data):
 
-- protocolo experimental;
-- protocolo TESE;
-- origen exacto del dataset (URL/licencia del conjunto fuente);
-- nombre formal del laboratorio (atribución de redistribución);
-- significado formal de los códigos numéricos de sujeto;
+- TESE = Tecnológico de Estudios Superiores de Ecatepec, México (**resuelto**);
+- fuente del dataset y URL (**resuelto**);
+- autores del dataset/proyecto (**resuelto**);
+- laboratorio: National Laboratory in Artificial Intelligence and Data Science (**parcialmente resuelto**; denominación de la biografía pública de Griselda Cortés Barrera en Kaggle, no un nombre oficial registrado en español).
+
+Este repositorio **aún no documenta**:
+
+- protocolo experimental exacto;
 - definición operativa de BANDPOWER;
-- hiperparámetros exactos;
-- pipeline reproducible fuente.
+- hiperparámetros;
+- notebook fuente;
+- detalles completos de adquisición EEG;
+- umbrales y software del “protocolo TESE” de outliers;
+- significado formal de los códigos numéricos de sujeto;
+- afiliaciones de Alejandra Catherine Montaña Acevedo, Jesús Manuel Olivares Ceja y Jhacer Kharen Ruiz Garduño;
+- dictamen ético versionado aquí;
+- ORCID.
 
-La redistribución de **resultados derivados** está autorizada, con atribución a la autora y al laboratorio correspondiente. `cano` y `villanueva` están confirmados como códigos institucionales pseudonimizados.
+La redistribución de **resultados derivados** está autorizada, con atribución a los autores, a TESE cuando corresponda y al laboratorio descrito públicamente. `cano` y `villanueva` están confirmados como códigos institucionales pseudonimizados.
 
-Detalle de huecos ya observados, sin inventar valores:
+Hasta completar los pendientes, cualquier descripción de adquisición EEG que no esté en estos archivos o en la ficha Kaggle citada sería invención y debe evitarse.
 
-- instrucciones de tarea, dispositivo, tasa de muestreo, montaje más allá de los nombres de canal, filtrado analógico/digital;
-- umbrales y software del “protocolo TESE”;
-- cuaderno o script de Kaggle de `run_20260902_145353`;
-- dictamen ético versionado en este repositorio;
-- fórmula de BANDPOWER, ventanas y referencia de topomapas;
-- hiperparámetros de cada clasificador y criterio de `EXITO`;
-- ORCID y afiliación institucional.
-
-Hasta completar esos puntos, cualquier descripción de “adquisición EEG” que no esté en estos archivos sería invención y debe evitarse.
-
-Inventario de IDs: [IDENTIFICADORES.md](IDENTIFICADORES.md). Plan (no ejecutado): [PLAN_PSEUDONIMIZACION.md](PLAN_PSEUDONIMIZACION.md).
+Inventario de IDs: [IDENTIFICADORES.md](IDENTIFICADORES.md). Pipeline: [PIPELINE.md](PIPELINE.md).

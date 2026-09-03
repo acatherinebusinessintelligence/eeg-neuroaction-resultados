@@ -30,11 +30,11 @@ La revisión siguiente **no declara anonimato absoluto**. Los códigos de sujeto
 | `reports/evaluacion_sujetos.csv` e `informe_evaluacion_resultados.html` | Medio | Contienen métricas, alertas de artefactos y comentarios técnicos por sujeto. No se encontraron correos, documentos de identidad ni diagnósticos clínicos nominativos. Los IDs `cano` y `villanueva` son códigos institucionales pseudonimizados (confirmación de la autora). | Conservar para trazabilidad. No reidentificar. |
 | `reports/reporte_artefactos_sospechados_detalle.csv` y `.xlsx` | Medio-alto | 122 279 filas con `sujeto`, `archivo`, `fila`, `canal`, `banda`, `valor` y tipo de artefacto sospechado. Son características BANDPOWER derivadas, no EEG crudo. Siguen siendo datos biométricos derivados por código de sujeto. El XLSX pesa ~8,2 MB. | Redistribución de resultados autorizada; no declarar anonimato absoluto. Valorar si el detalle fila a fila es necesario en Zenodo o si basta el resumen. |
 | `reports/diagnostico_tiempos_csv_txt.csv` | Riesgo bajo/moderado sujeto a contexto temporal | Incluye Unix de sesión (`timestamp_min` / `timestamp_max` y equivalentes TXT), entre 2026-05-19 y 2026-06-08 (UTC). No hay evidencia en este repositorio de que permitan reidentificación **directa**. Datán capturas por código de sujeto. | Conservar por ahora (alineación CSV–TXT). Revisión definitiva pendiente. No eliminar automáticamente. Ver sección de timestamps. |
-| Columnas `ruta` / `ruta_archivo` en varios CSV (`reports/archivos_generados.csv`, `reports/reporte_figuras_generadas.csv`, `reports/resumen_exportacion_por_usuario.csv`, `reports/validacion_salidas_pipeline.csv`, `reports/verificacion_kaggle_salidas.csv`) | Bajo en lo personal; medio en procedencia | Las rutas encontradas son de Kaggle (`/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/...`). No se encontraron rutas `C:\Users\...`, `/Users/...` ni OneDrive con nombres personales. El segmento `TESE_pruebas` nombra un contexto de corrida no documentado en este repositorio. | No se hallaron rutas locales con nombres personales. Documentar el significado de `TESE_pruebas` antes de archivar. Requiere revisión humana del contexto institucional. |
+| Columnas `ruta` / `ruta_archivo` en varios CSV (`reports/archivos_generados.csv`, `reports/reporte_figuras_generadas.csv`, `reports/resumen_exportacion_por_usuario.csv`, `reports/validacion_salidas_pipeline.csv`, `reports/verificacion_kaggle_salidas.csv`) | Bajo en lo personal | Las rutas encontradas son de Kaggle (`/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/...`). **TESE** = Tecnológico de Estudios Superiores de Ecatepec (México). No se encontraron rutas locales con nombres personales. | Conservar. TESE identifica la institución de la corrida, no un laboratorio con acrónimo inventado. |
 | `reports/resumen_exportacion_por_usuario.csv` | Medio | El nombre del archivo usa “usuario”. El contenido inspeccionado lista `sujeto`, `archivo`, `tipo`, `filas` y ruta Kaggle. No se vieron correos. | Requiere revisión humana del término “usuario” frente a “sujeto” y de los identificadores contenidos. |
 | Visor, dashboard e informe HTML (`visor_interactivo_eeg.html`, `dashboard_eeg_neuroaction.html`, `informe_evaluacion_resultados.html` y copias en `reports/` / `figures/`) | Bajo / controlado en IDs; residual en embebido | Embeden tablas por código de sujeto, incluidas las etiquetas `cano` y `villanueva` (códigos institucionales pseudonimizados). GitHub Pages los hace consultables. | No modificar HTML de resultados. No presentar códigos como nombres reales. |
 | Figuras PNG en `figures/` (1 747 PNG en el repositorio, más 612 PNG de matrices de balanceo bajo `reports/balanceo/`) | Bajo / controlado en IDs | Los nombres de archivo y carpetas incluyen códigos de sujeto, no nombres reales confirmados. | Conservar. OCR de cada PNG no realizado. |
-| Consentimiento, ética y origen de los datos fuente | Parcialmente resuelto | La autora confirma que **los resultados pueden redistribuirse** con atribución al laboratorio. El nombre formal del laboratorio no está en este repositorio. No hay dictamen ético versionado aquí. | Incorporar el nombre formal del laboratorio. No inventarlo. Redistribución de resultados autorizada; no reidentificar. |
+| Consentimiento, ética y origen de los datos fuente | Parcialmente resuelto | Resultados redistribuibles. Fuente: dataset Kaggle [EEG 25-1](https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data). Autores documentados en esa ficha. No hay dictamen ético versionado aquí. | Conservar atribución a autores, TESE cuando corresponda y el laboratorio descrito en la ficha. No reidentificar. |
 | Archivos XLSX en `reports/` (16 archivos) | No determinado por inspección binaria | Duplican reportes CSV. El detalle de artefactos es especialmente voluminoso. No se abrió el binario XLSX más allá de la correspondencia de nombres con CSV. | Requiere revisión humana antes de publicación permanente. No modificar. |
 | Correos electrónicos | No encontrado | Búsqueda en `.csv`, `.html`, `.txt` y `.md`: 0 coincidencias con patrón de correo. | No se encontró evidencia de correos en los archivos de texto inspeccionados. |
 | Documentos de identidad (CURP, RFC, DNI u homologables) | No encontrado | No aparecieron columnas ni tokens con esos nombres en los CSV de reporte inspeccionados. | Sin evidencia en esta inspección. No equivale a una auditoría completa de XLSX/PNG. |
@@ -51,13 +51,39 @@ En la inspección de texto de CSV, HTML, TXT y Markdown:
 
 Eso **no** permite afirmar anonimato absoluto.
 
+## Autoría y procedencia
+
+Fuente de autoría: ficha Kaggle del dataset [EEG 25-1](https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data).
+
+Autores (mismo orden):
+
+1. Griselda Cortés Barrera — Tecnológico de Estudios Superiores de Ecatepec (TESE), México
+2. Alejandra Catherine Montaña Acevedo — Afiliación pendiente de confirmación
+3. Jesús Manuel Olivares Ceja — Afiliación pendiente de confirmación
+4. Jhacer Kharen Ruiz Garduño — Afiliación pendiente de confirmación
+
+**TESE** = Tecnológico de Estudios Superiores de Ecatepec. País: México.
+
+Laboratorio: **National Laboratory in Artificial Intelligence and Data Science**. Denominación tomada de la biografía pública de Griselda Cortés Barrera en la ficha Kaggle del dataset. No se traduce a un nombre institucional oficial en español ni se inventa un acrónimo. No se afirma propiedad institucional más allá de lo documentado.
+
+## Dataset fuente
+
+- **Dataset:** EEG 25-1
+- **Fuente:** Kaggle
+- **URL:** <https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data>
+- **Autores:** Griselda Cortés Barrera; Alejandra Catherine Montaña Acevedo; Jesús Manuel Olivares Ceja; Jhacer Kharen Ruiz Garduño
+
+Esta ficha se utiliza como fuente de procedencia y autoría.
+
 ## Condiciones de redistribución
 
-Los resultados derivados pueden redistribuirse con atribución adecuada a la autora y al laboratorio que originó o facilitó el trabajo experimental.
+Los resultados derivados pueden redistribuirse con atribución adecuada a:
 
-Nombre formal del laboratorio: pendiente de incorporar.
+- los autores del dataset/proyecto (lista anterior);
+- Tecnológico de Estudios Superiores de Ecatepec (TESE), México, cuando corresponda;
+- el laboratorio descrito públicamente como National Laboratory in Artificial Intelligence and Data Science (con la salvedad de procedencia de esa denominación).
 
-No existe autorización para reconstruir identidades ni para presentar los códigos de sujeto como nombres reales.
+No existe autorización para reconstruir identidades ni para presentar los códigos de sujeto como nombres reales. `cano` y `villanueva` son códigos institucionales pseudonimizados (riesgo **Bajo / controlado**). Este repositorio **no declara anonimato absoluto**.
 
 ## Revisión de licencias
 
@@ -73,13 +99,13 @@ Texto oficial CC BY 4.0: <https://creativecommons.org/licenses/by/4.0/>
 
 | Componente | Qué hay en este repositorio | Licencia aplicada |
 | --- | --- | --- |
-| Código de interfaz | HTML/CSS/JS del visor, dashboard, `index.html` e informe | MIT (`LICENSE-CODE`). Titular: Alejandra Catherine Montaña Acevedo, 2026. |
-| Documentación | `README.md`, `CHANGELOG.md`, `docs/` | CC BY 4.0 (`LICENSE-DOCS.md`). |
-| Resultados derivados | CSV, XLSX, PNG, HTML de evaluación, matrices, métricas | CC BY 4.0 (`LICENSE-RESULTS.md`). Redistribución autorizada por la autora. Requiere atribución a la autora y al laboratorio correspondiente. No otorga derechos adicionales sobre datos fuente de terceros. No autoriza reidentificación. |
+| Código de interfaz | HTML/CSS/JS del visor, dashboard, `index.html` e informe | MIT (`LICENSE-CODE`). Copyright (c) 2026 Alejandra Catherine Montaña Acevedo. |
+| Documentación | `README.md`, `CHANGELOG.md`, `docs/` | CC BY 4.0 (`LICENSE-DOCS.md`). Atribución a los cuatro autores documentados, TESE cuando corresponda y el laboratorio descrito en Kaggle. |
+| Resultados derivados | CSV, XLSX, PNG, HTML de evaluación, matrices, métricas | CC BY 4.0 (`LICENSE-RESULTS.md`). Redistribución autorizada. Requiere reconocimiento a los autores del dataset/proyecto, a TESE cuando corresponda y al laboratorio descrito públicamente. No otorga derechos adicionales sobre datos fuente de terceros. No autoriza reidentificación. |
 | Datos fuente | CSV/TXT EEG originales **no están** en este repositorio | Fuera de estas licencias. |
 | Archivos de terceros | Plotly.js v2.35.2 embebido (MIT de Plotly, Inc.) | Conservar atribución. No relicenciar Plotly. |
 
-**Advertencia:** no hay licencia definitiva única tipo `LICENSE` que cubra todo el árbol. Usar los tres archivos según el tipo de material. El nombre formal del laboratorio sigue pendiente.
+**Advertencia:** no hay un único archivo `LICENSE` que cubra todo el árbol. Usar los tres archivos según el tipo de material. No se afirma propiedad institucional más allá de lo documentado.
 
 ## Fechas y timestamps
 
@@ -113,19 +139,22 @@ Debe cumplirse:
 - [x] Identificadores revisados
 - [x] Pseudonimización confirmada
 - [x] Redistribución autorizada
+- [x] Autores documentados
+- [x] TESE identificado
+- [x] Fuente Kaggle documentada
 - [x] Licencia de resultados definida
-- [ ] Nombre formal del laboratorio incorporado
+- [~] Laboratorio identificado parcialmente
 - [ ] Timestamps revisados definitivamente
-- [ ] Metodología mínima completada
+- [ ] Metodología experimental mínima completada
 - [ ] Archivos de release revisados
 - [x] CITATION.cff validado
 - [ ] Release candidate revisada
 
 Estado actual:
 
-**Próximo a apto para depósito permanente.**
+**Próximo a apto para depósito permanente.** Versión **0.9.0**.
 
-No está todavía plenamente apto: faltan el nombre formal del laboratorio, la revisión definitiva de timestamps, metodología experimental mínima y la revisión de una release candidate. `CITATION.cff` está validado (schema 1.2.0, sin DOI).
+No se pasa todavía a v1.0.0: siguen pendientes la metodología experimental mínima, la revisión definitiva de timestamps y la revisión de una release candidate. El laboratorio está identificado de forma **parcial**. `CITATION.cff` está validado (schema 1.2.0, sin DOI).
 
 Esto es una decisión de publicación, no una evaluación científica de los resultados.
 
@@ -135,8 +164,8 @@ El mapa local `docs/MAPA_PSEUDONIMIZACION_LOCAL.md` permanece gitignored y **no*
 
 - no se borró ningún archivo;
 - no se modificaron CSV, XLSX, PNG ni HTML de resultados;
-- no se recodificaron identificadores (no era necesario para `cano`/`villanueva`);
+- no se recodificaron identificadores;
 - no se creó tag, GitHub Release ni DOI;
 - no se hizo push;
 - no se conectó Zenodo;
-- no se inventó el nombre del laboratorio.
+- no se inventaron ORCID, correos, acrónimo de laboratorio ni un nombre institucional oficial en español para el laboratorio.

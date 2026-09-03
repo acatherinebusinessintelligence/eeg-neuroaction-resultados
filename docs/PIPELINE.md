@@ -12,7 +12,7 @@ Este documento describe solo lo verificable en este repositorio. No hay notebook
 | --- | --- |
 | Identificador | `run_20260902_145353` |
 | Fecha/hora inferida del nombre | 2026-09-02, 14:53:53 (convención del directorio; no hay reloj independiente en el repo) |
-| Contexto de carpeta | `TESE_pruebas` (significado no documentado aquí) |
+| Contexto de carpeta | `TESE_pruebas`. **TESE** = Tecnológico de Estudios Superiores de Ecatepec (México) |
 | Sujetos en evaluación | 15 (`reports/evaluacion_sujetos.csv`) |
 | ZIP de origen citado | `run_20260902_145353_resultados_TESE.zip` (~427 MB según `reports/verificacion_kaggle_salidas.csv`) — **no está** en este GitHub |
 
@@ -38,9 +38,11 @@ Publicación GitHub / GitHub Pages
 
 ### Fuente de datos
 
-Pendiente de documentación.
+Dataset **EEG 25-1** en Kaggle: <https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data>
 
-Lo verificable: los reportes *nombran* 60 archivos fuente CSV/TXT (pruebas `leftRight` y `pushPull`) y 8 CSV de acción individual en español. Esos archivos **no están** en este repositorio. El README indica publicación desde Kaggle. No hay URL de dataset ni licencia de origen en este repo.
+Autores de esa ficha: Griselda Cortés Barrera; Alejandra Catherine Montaña Acevedo; Jesús Manuel Olivares Ceja; Jhacer Kharen Ruiz Garduño.
+
+Los CSV/TXT de señal **no están** versionados en este GitHub; los reportes nombran 60 archivos fuente (pruebas `leftRight` y `pushPull`) y 8 CSV de acción individual. Esta ficha se usa como procedencia y autoría, no como notebook ejecutable.
 
 ### Preprocesamiento
 

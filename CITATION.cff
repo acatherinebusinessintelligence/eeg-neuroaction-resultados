@@ -4,10 +4,17 @@ type: software
 title: "EEG NeuroAction: resultados, análisis y visualización interactiva"
 version: "0.9.0"
 date-released: "2026-09-03"
-abstract: "Web viewer and technical results from the EEG NeuroAction pipeline for exploring BANDPOWER-derived EEG features, cleaning variants, motor-class models, and interactive visualizations. This repository archives published outputs from a Kaggle run; it does not include raw EEG or the computational pipeline source."
+abstract: "Web viewer and technical results from the EEG NeuroAction pipeline for exploring BANDPOWER-derived EEG features, cleaning variants, motor-class models, and interactive visualizations. This repository archives published outputs from a Kaggle run; it does not include raw EEG or the computational pipeline source. Provenance and authorship follow the Kaggle dataset EEG 25-1."
 authors:
+  - given-names: "Griselda"
+    family-names: "Cortés Barrera"
+    affiliation: "Tecnológico de Estudios Superiores de Ecatepec (TESE), México"
   - given-names: "Alejandra Catherine"
     family-names: "Montaña Acevedo"
+  - given-names: "Jesús Manuel"
+    family-names: "Olivares Ceja"
+  - given-names: "Jhacer Kharen"
+    family-names: "Ruiz Garduño"
 license: MIT
 repository-code: "https://github.com/acatherinebusinessintelligence/eeg-neuroaction-resultados"
 url: "https://github.com/acatherinebusinessintelligence/eeg-neuroaction-resultados"
