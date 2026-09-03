@@ -75,7 +75,7 @@ Las visualizaciones corresponden a características EEG BANDPOWER derivadas. No 
 - No hay EEG crudo, EOG, EMG ni ECG en este repositorio.
 - No hay scripts ni notebooks que regeneren las métricas.
 - Los artefactos son sospechas sobre BANDPOWER, no confirmación fisiológica.
-- Algunos identificadores de sujeto son apellidos; ver la revisión de publicación.
+- Los códigos de sujeto (`cano`, `villanueva` y códigos numéricos) no deben interpretarse como nombres reales ni usarse para reidentificar.
 - No debe usarse como qEEG clínico, diagnóstico médico ni sustituto de evaluación clínica.
 
 ## Reproducibilidad
@@ -94,19 +94,29 @@ Versión de preparación: **0.9.0**
 
 Citar este software con los metadatos de [`CITATION.cff`](CITATION.cff). El DOI de Zenodo se añadirá **solo cuando exista**; no hay DOI en esta versión.
 
-## Licencia
-
-**No hay licencia definitiva de resultados.** Origen, consentimiento y derechos de publicación de los datos/resultados derivados **no están confirmados**. No se añade archivo `LICENSE` todavía.
-
-Propuesta (no aplicada):
+## Licencias y atribución
 
 - **Código:** MIT
 - **Documentación:** CC BY 4.0
-- **Resultados derivados:** pendiente de confirmar origen, consentimiento y derechos de publicación.
+- **Resultados derivados:** CC BY 4.0
 
-Detalle: [Revisión para publicación](docs/REVISION_PUBLICACION.md)
+Enlaces:
 
-El repositorio **no está apto todavía para depósito permanente en Zenodo**.
+- [Licencia del código](LICENSE-CODE)
+- [Licencia de documentación](LICENSE-DOCS.md)
+- [Licencia de resultados](LICENSE-RESULTS.md)
+
+La reutilización de resultados debe reconocer también al laboratorio correspondiente.
+
+Nombre formal del laboratorio: pendiente de incorporar.
+
+La licencia de resultados no otorga derechos adicionales sobre datos fuente de terceros y no autoriza reidentificación de participantes.
+
+Texto oficial CC BY 4.0: <https://creativecommons.org/licenses/by/4.0/>
+
+Detalle de publicación: [Revisión para publicación](docs/REVISION_PUBLICACION.md)
+
+Estado Zenodo: **próximo a apto para depósito permanente** (faltan el nombre del laboratorio y otros checks). No hay tag `v1.0.0` ni DOI.
 
 ## Estado del proyecto
 
@@ -114,10 +124,10 @@ El repositorio **no está apto todavía para depósito permanente en Zenodo**.
 | --- | --- |
 | Documentación metodológica | Añadida en v0.9.0 |
 | Inventario de resultados | Añadido en v0.9.0 |
-| Revisión de publicación / privacidad | Auditoría v0.9.0; **no apto aún para Zenodo** |
-| Identificadores | Inventariados; seudonimización **no ejecutada** |
-| `CITATION.cff` | 0.9.0, sin DOI |
-| Licencia | No aplicada todavía |
+| Revisión de publicación / privacidad | Códigos institucionales confirmados; **próximo a apto para Zenodo** |
+| Identificadores | `cano` / `villanueva`: códigos institucionales pseudonimizados (no nombres reales) |
+| Licencias | MIT (código); CC BY 4.0 (docs y resultados derivados) |
+| `CITATION.cff` | 0.9.0, `license: MIT`, sin DOI |
 | Tag / GitHub Release | No creado |
 | Zenodo / DOI | No creado |
 | Convención futura | v1.0.0, v1.1.0, v2.0.0 |
@@ -127,7 +137,10 @@ El repositorio **no está apto todavía para depósito permanente en Zenodo**.
 - [Metodología](docs/metodologia.md)
 - [Pipeline](docs/PIPELINE.md)
 - [Identificadores](docs/IDENTIFICADORES.md)
-- [Plan de seudonimización](docs/PLAN_PSEUDONIMIZACION.md) (no ejecutado)
+- [Plan de identificadores](docs/PLAN_PSEUDONIMIZACION.md)
 - [Revisión para publicación](docs/REVISION_PUBLICACION.md)
 - [Inventario de resultados](docs/RESULTADOS.md)
 - [CHANGELOG](CHANGELOG.md)
+- [Licencia del código](LICENSE-CODE)
+- [Licencia de documentación](LICENSE-DOCS.md)
+- [Licencia de resultados](LICENSE-RESULTS.md)

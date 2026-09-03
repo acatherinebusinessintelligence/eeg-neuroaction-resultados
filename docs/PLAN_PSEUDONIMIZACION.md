@@ -1,10 +1,12 @@
 # Plan de seudonimización (no ejecutado)
 
-**Estado:** propuesta. **No se ha sustituido ningún archivo de resultados.**
+**Estado:** cerrado para `cano` y `villanueva`; no se sustituyen archivos de resultados.
 
-Objetivo futuro: reemplazar identificadores de sujeto por `S01`–`S15` según el mapa local no publicado, sin recalcular métricas ni borrar historial sin documentarlo.
+Confirmación de la autora: `cano` y `villanueva` **ya son códigos institucionales pseudonimizados**. No deben interpretarse como nombres reales. **No se recodifican** a `S01`/`S02`.
 
-El mapa identificador ↔ pseudónimo está en `docs/MAPA_PSEUDONIMIZACION_LOCAL.md` (**gitignored**; no va a release ni Zenodo).
+Un mapa local opcional (`docs/MAPA_PSEUDONIMIZACION_LOCAL.md`) permanece gitignored y **no** debe ir a release ni Zenodo. No usar ese mapa para reconstruir identidades.
+
+El resto de esta nota conserva el inventario de *dónde aparecen* los códigos, por si en el futuro se decide recodificar solo identificadores numéricos. **No ejecutar sustituciones ahora.**
 
 ## Archivos afectados
 
@@ -97,25 +99,15 @@ Captions/títulos: el visor y el informe muestran el ID en tablas y pies de matr
 6. **GitHub Pages** sirve `index.html` → `visor_interactivo_eeg.html`. Un visor a medias sustituido rompe el sitio público.
 7. **`run_20260902_145353`** no es un ID de sujeto. No sustituir.
 
-## Estrategia de sustitución (futura; no ejecutar ahora)
+## Estrategia de sustitución
 
-1. Congelar un commit de auditoría (este).
-2. Aprobar el mapa local fuera de git.
-3. Trabajar en una rama, no en un rewrite destructivo de `main` sin documentar.
-4. Renombrar carpetas y archivos de más específico a más general.
-5. Reemplazar tokens en CSV/HTML/MD con matching de identificador completo.
-6. Reescribir XLSX desde los CSV ya sustituidos o con librería de hojas, **copiando celdas numéricas sin recálculo**.
-7. Actualizar las tres copias de visor/dashboard/informe.
-8. Reescribir o excluir `docs/IDENTIFICADORES.md` del depósito permanente.
-9. No commitear el mapa local.
-10. Validar (abajo) antes de cualquier tag.
+**No ejecutar.** `cano` y `villanueva` se conservan como códigos institucionales. No hay recodificación a `S01`–`S15` en esta preparación.
 
-## Validaciones necesarias (cuando se ejecute)
+Si en el futuro se recodificaran solo códigos numéricos, habría que hacerlo en una rama, sin recalcular métricas y sin publicar el mapa local.
 
-- Cero coincidencias de `cano`, `villanueva`, `Cano`, `Villanueva` en texto y rutas, salvo este plan histórico si se conserva.
-- Cero coincidencias de los 13 códigos numéricos como tokens de sujeto (no como fragmentos de métricas).
-- El visor abre, filtra 15 sujetos `S01`–`S15` y carga miniaturas.
-- Conteos de filas CSV y de PNG idénticos a los actuales.
-- Columnas de métricas (`accuracy`, `kappa`, `valor`, `z_robusto`, etc.) byte-a-byte iguales salvo el identificador de sujeto/ruta.
-- `CITATION.cff` sigue válido y sin DOI inventado.
+## Validaciones de esta preparación
+
+- Los códigos `cano` y `villanueva` se documentan como institucionales, no como nombres reales.
+- No se declara anonimato absoluto.
 - `docs/MAPA_PSEUDONIMIZACION_LOCAL.md` sigue ausente de `git ls-files`.
+- No se modifican CSV, XLSX, PNG ni HTML de resultados.

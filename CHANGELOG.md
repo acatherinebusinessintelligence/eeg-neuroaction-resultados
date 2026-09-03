@@ -18,9 +18,18 @@ This file documents the preparation version; it does not create a GitHub Release
 - README ampliado (visor, dashboard, informe, estructura, citación, estado v0.9.0).
 - Auditoría de publicación: `docs/IDENTIFICADORES.md`, `docs/PLAN_PSEUDONIMIZACION.md`, `docs/PIPELINE.md`, criterios previos a Zenodo, clasificación de timestamps, `.gitignore` para el mapa local de identidad.
 - Aclaración estructural del detalle de 122 279 artefactos (BANDPOWER derivado, sin EEG crudo).
+- `LICENSE-CODE` (MIT), `LICENSE-DOCS.md` (CC BY 4.0), `LICENSE-RESULTS.md` (CC BY 4.0).
+
+### Changed
+
+- Confirmación de la autora: `cano` y `villanueva` son códigos institucionales pseudonimizados (no nombres reales); riesgo documentado como bajo/controlado.
+- Redistribución de resultados autorizada, con atribución a la autora y al laboratorio (nombre formal pendiente).
+- `CITATION.cff`: campo `license: MIT`; versión **0.9.0** (v1.0.0 diferida).
+- Timestamps: riesgo bajo/moderado sujeto a contexto temporal; se conservan.
+- Criterios Zenodo: próximo a apto; no plenamente apto.
 
 ### Notes
 
+- No se pasó a v1.0.0: faltan el nombre formal del laboratorio, revisión definitiva de timestamps, metodología experimental mínima y release candidate.
 - No se modificaron CSV, XLSX, PNG ni HTML de resultados.
-- No se creó tag, GitHub Release ni publicación Zenodo.
-- No se añadió `LICENSE` mientras exista incertidumbre sobre datos y resultados derivados.
+- No se creó tag, GitHub Release, Zenodo ni DOI.

@@ -8,6 +8,7 @@ abstract: "Web viewer and technical results from the EEG NeuroAction pipeline fo
 authors:
   - given-names: "Alejandra Catherine"
     family-names: "Montaña Acevedo"
+license: MIT
 repository-code: "https://github.com/acatherinebusinessintelligence/eeg-neuroaction-resultados"
 url: "https://github.com/acatherinebusinessintelligence/eeg-neuroaction-resultados"
 keywords:

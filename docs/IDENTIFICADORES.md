@@ -1,41 +1,38 @@
 # Identificadores de sujeto
 
-Inventario de identificadores únicos encontrados en el repositorio. **No se asume anonimato.**
+Inventario de identificadores únicos. **No se declara anonimato absoluto.** Los códigos **no deben presentarse como nombres reales** ni usarse para reidentificar participantes.
 
 **Versión de preparación:** v0.9.0  
 **Fuente canónica de la lista:** columna `sujeto` de `reports/evaluacion_sujetos.csv` (15 valores únicos).  
-**Métrica de apariciones:** número de archivos en los que el identificador aparece en la **ruta** o en **contenido de texto inspeccionable** (`.csv`, `.html`, `.txt`, `.md`). No incluye coincidencias dentro de PNG/XLSX binarios. Las cadenas en HTML están infladas porque el visor y el dashboard embeben tablas.
+**Métrica de apariciones:** número de archivos en los que el identificador aparece en la **ruta** o en **contenido de texto inspeccionable** (`.csv`, `.html`, `.txt`, `.md`).
 
-La asignación concreta identificador ↔ pseudónimo **no se versiona aquí**. Vive solo en el archivo local `docs/MAPA_PSEUDONIMIZACION_LOCAL.md` (gitignored). Tras una futura sustitución, este inventario debe reescribirse o excluirse de Zenodo.
+Confirmación de la autora (2026-09-03): `cano` y `villanueva` son **códigos institucionales ya pseudonimizados**. No deben interpretarse como nombres personales. Su uso público está autorizado en la redistribución de resultados. No hay autorización para reidentificar.
 
-Regla de numeración (reproducible, aún no aplicada):
+No se aplica recodificación a `S01`–`S15` en esta versión: los identificadores se conservan. Un mapa local opcional permanece gitignored y no debe publicarse.
 
-1. `cano` → S01, `villanueva` → S02 (orden fijo de apellidos).
-2. Resto de identificadores únicos, ordenados como cadenas Unicode, → S03 … S15.
-
-| Identificador actual | Tipo | Nº de apariciones | Riesgo aparente | Propuesta de pseudónimo |
+| Identificador actual | Tipo | Nº de apariciones | Riesgo aparente | Propuesta |
 | --- | --- | --- | --- | --- |
-| cano | Apellido usado como ID de sujeto | 224 archivos | Alto | S01 |
-| villanueva | Apellido usado como ID de sujeto | 161 archivos | Alto | S02 |
-| 211260561 | Código de sujeto; significado no documentado | 289 archivos | Medio; no determinado | S03 |
-| 212260563 | Código de sujeto; significado no documentado | 143 archivos | Medio; no determinado | S04 |
-| 212260567 | Código de sujeto; significado no documentado | 143 archivos | Medio; no determinado | S05 |
-| 212260569 | Código de sujeto; significado no documentado | 186 archivos | Medio; no determinado | S06 |
-| 212260666 | Código de sujeto; significado no documentado | 226 archivos | Medio; no determinado | S07 |
-| 212260668 | Código de sujeto; significado no documentado | 163 archivos | Medio; no determinado | S08 |
-| 212260672 | Código de sujeto; significado no documentado | 143 archivos | Medio; no determinado | S09 |
-| 222260671 | Código de sujeto; significado no documentado | 163 archivos | Medio; no determinado | S10 |
-| 22260552 | Código de sujeto; significado no documentado | 226 archivos | Medio; no determinado | S11 |
-| 231260558 | Código de sujeto; significado no documentado | 163 archivos | Medio; no determinado | S12 |
-| 252260554 | Código de sujeto; significado no documentado | 226 archivos | Medio; no determinado | S13 |
-| 252260556 | Código de sujeto; significado no documentado | 289 archivos | Medio; no determinado | S14 |
-| 252260670 | Código de sujeto; significado no documentado | 143 archivos | Medio; no determinado | S15 |
+| cano | Código institucional pseudonimizado | 224 archivos | Bajo / controlado | Conservar (no es un nombre real) |
+| villanueva | Código institucional pseudonimizado | 161 archivos | Bajo / controlado | Conservar (no es un nombre real) |
+| 211260561 | Código de sujeto; significado formal no documentado en el repo | 289 archivos | Medio; no determinado | Conservar; no presentar como nombre real |
+| 212260563 | Código de sujeto; significado formal no documentado en el repo | 143 archivos | Medio; no determinado | Conservar; no presentar como nombre real |
+| 212260567 | Código de sujeto; significado formal no documentado en el repo | 143 archivos | Medio; no determinado | Conservar; no presentar como nombre real |
+| 212260569 | Código de sujeto; significado formal no documentado en el repo | 186 archivos | Medio; no determinado | Conservar; no presentar como nombre real |
+| 212260666 | Código de sujeto; significado formal no documentado en el repo | 226 archivos | Medio; no determinado | Conservar; no presentar como nombre real |
+| 212260668 | Código de sujeto; significado formal no documentado en el repo | 163 archivos | Medio; no determinado | Conservar; no presentar como nombre real |
+| 212260672 | Código de sujeto; significado formal no documentado en el repo | 143 archivos | Medio; no determinado | Conservar; no presentar como nombre real |
+| 222260671 | Código de sujeto; significado formal no documentado en el repo | 163 archivos | Medio; no determinado | Conservar; no presentar como nombre real |
+| 22260552 | Código de sujeto; significado formal no documentado en el repo | 226 archivos | Medio; no determinado | Conservar; no presentar como nombre real |
+| 231260558 | Código de sujeto; significado formal no documentado en el repo | 163 archivos | Medio; no determinado | Conservar; no presentar como nombre real |
+| 252260554 | Código de sujeto; significado formal no documentado en el repo | 226 archivos | Medio; no determinado | Conservar; no presentar como nombre real |
+| 252260556 | Código de sujeto; significado formal no documentado en el repo | 289 archivos | Medio; no determinado | Conservar; no presentar como nombre real |
+| 252260670 | Código de sujeto; significado formal no documentado en el repo | 143 archivos | Medio; no determinado | Conservar; no presentar como nombre real |
 
-Cada identificador tiene además 2 carpetas (`figures/<id>/`, `figures/por_sujeto/<id>/`).
+Clasificación de `cano` y `villanueva`: basada en confirmación de la autora de que se trata de códigos institucionales pseudonimizados.
 
-## Formas de aparición con apellido (no son sujetos extra)
+## Formas de aparición de los mismos códigos
 
-Cadenas halladas en columnas de inventario (`archivo`, `archivos_csv`), no como IDs adicionales:
+Cadenas en columnas de inventario (`archivo`, `archivos_csv`), no sujetos extra:
 
 - `derecha 1ra_Cano 1.csv`
 - `izquierda 1ra_Cano 1.csv`
@@ -46,12 +43,12 @@ Cadenas halladas en columnas de inventario (`archivo`, `archivos_csv`), no como 
 - `empujar 2da_Villanueva 1.csv`
 - `jalar 2da_Villanueva 1.csv`
 
-Riesgo aparente: alto. Deben reescribirse sin apellidos cuando se apruebe la seudonimización.
+Riesgo aparente: **Bajo / controlado** (mismos códigos institucionales; clasificación basada en confirmación de la autora). No reescribir como si fueran apellidos reales.
 
 ## Lo que no se encontró como identificador de sujeto
 
 - correos;
 - CURP / RFC / DNI;
-- nombres de pila distintos de los apellidos ya listados.
+- nombres de pila.
 
-Este inventario **no** declara que los códigos numéricos sean seudónimos.
+Este inventario **no** declara anonimato absoluto de los códigos numéricos.

@@ -204,7 +204,20 @@ El visor prioriza: scroll `noOutliers`, scroll `cleanSmooth`, topomapas alpha/be
 - Las métricas y figuras corresponden a **una corrida** (`run_20260902_145353`) y no deben recalcularse a partir de este repo.
 - Varias variantes no son “modelables” según `reports/reporte_visor_interactivo.csv`; en esos casos se muestran figuras diagnósticas.
 - El resumen ejecutivo indica 15 sujetos, 0 aprobados fuertes sin restricciones, 2 aprobados moderados, 11 en revisión y 2 no confiables. Esa clasificación es de **calidad de evidencia de modelado**, no un juicio clínico.
-- Identificadores de sujeto incluyen apellidos; ver [REVISION_PUBLICACION.md](REVISION_PUBLICACION.md).
+- Los códigos de sujeto no deben interpretarse como nombres reales; ver [Pseudonimización y privacidad](#pseudonimización-y-privacidad).
+
+## Pseudonimización y privacidad
+
+Los sujetos se representan mediante **códigos institucionales pseudonimizados**.
+
+- `cano` y `villanueva` son códigos institucionales ya pseudonimizados (confirmación de la autora). **No deben interpretarse como nombres reales.**
+- Los códigos numéricos de sujeto tampoco deben presentarse como nombres reales.
+- El uso público de estos códigos está autorizado en el contexto de redistribución de resultados.
+- **No existe autorización para intentar reidentificar participantes.**
+- Este repositorio **no declara anonimato absoluto.**
+- Los resultados publicados son **derivados** (BANDPOWER, métricas, figuras), no EEG crudo.
+
+Las visualizaciones corresponden a características EEG BANDPOWER derivadas y no equivalen a qEEG clínico normativo ni a confirmación fisiológica con EEG crudo/EOG/EMG/ECG.
 
 ## Reproducibilidad
 
@@ -250,20 +263,21 @@ Este repositorio **no documenta**:
 
 - protocolo experimental;
 - protocolo TESE;
-- origen exacto del dataset;
-- consentimiento/licencia de publicación;
-- significado formal de identificadores;
+- origen exacto del dataset (URL/licencia del conjunto fuente);
+- nombre formal del laboratorio (atribución de redistribución);
+- significado formal de los códigos numéricos de sujeto;
 - definición operativa de BANDPOWER;
 - hiperparámetros exactos;
 - pipeline reproducible fuente.
+
+La redistribución de **resultados derivados** está autorizada, con atribución a la autora y al laboratorio correspondiente. `cano` y `villanueva` están confirmados como códigos institucionales pseudonimizados.
 
 Detalle de huecos ya observados, sin inventar valores:
 
 - instrucciones de tarea, dispositivo, tasa de muestreo, montaje más allá de los nombres de canal, filtrado analógico/digital;
 - umbrales y software del “protocolo TESE”;
-- cuaderno o script de Kaggle de `run_20260902_145353` y URL/licencia del dataset fuente;
-- consentimiento, dictamen ético y base legal;
-- si los códigos numéricos son seudónimos o identificadores institucionales, y por qué dos sujetos son apellidos;
+- cuaderno o script de Kaggle de `run_20260902_145353`;
+- dictamen ético versionado en este repositorio;
 - fórmula de BANDPOWER, ventanas y referencia de topomapas;
 - hiperparámetros de cada clasificador y criterio de `EXITO`;
 - ORCID y afiliación institucional.
