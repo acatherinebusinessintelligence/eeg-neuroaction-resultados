@@ -3,8 +3,10 @@
 ## Metodología de procesamiento, análisis y visualización de resultados EEG
 
 **Versión de preparación:** v0.9.0  
-**Estado:** candidata a primera versión estable.  
+**Estado:** listo para v1.0.0 con limitaciones documentadas (el número de versión no se ha cambiado).  
 **Fuente de esta descripción:** archivos del repositorio `acatherinebusinessintelligence/eeg-neuroaction-resultados` (rama `main`) y la ficha Kaggle del dataset [EEG 25-1](https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data).
+
+Matriz de evidencia (elemento × fuente × estado): [EVIDENCIA_METODOLOGICA.md](EVIDENCIA_METODOLOGICA.md). Modelos: [MODELOS.md](MODELOS.md).
 
 Las visualizaciones corresponden a características EEG BANDPOWER derivadas y no equivalen a qEEG clínico normativo ni a confirmación fisiológica con EEG crudo/EOG/EMG/ECG.
 
@@ -73,6 +75,117 @@ El dashboard y el visor advierten que los datos visualizados son característica
 El listado `reports/archivos_generados.csv` menciona EDF generados en la corrida Kaggle; esos binarios **no** están versionados aquí.
 
 Las visualizaciones corresponden a características EEG BANDPOWER derivadas y no equivalen a qEEG clínico normativo ni a confirmación fisiológica con EEG crudo/EOG/EMG/ECG.
+
+### Clasificación estructural de este repositorio
+
+**C. contiene características derivadas.**
+
+- Extensiones presentes: PNG, CSV, XLSX, HTML, Markdown, CFF, TXT.
+- No hay EDF/BDF/FIF/MAT/NPY ni series de voltaje.
+- Los CSV versionados son reportes y una matriz `fila` × canal × banda × `valor` (BANDPOWER), no EEG crudo.
+- Las figuras se nombran como espectro BANDPOWER y topomapas por banda.
+
+El dataset Kaggle fuente se describe como grabaciones BCI crudas; esos archivos **no** están en este GitHub. `reports/archivos_generados.csv` lista EDF producidos en Kaggle que **tampoco** están versionados aquí.
+
+---
+
+## Protocolo experimental
+
+No se reconstruye un protocolo completo a partir de nombres de archivo. Lo que sigue está separado por grado de evidencia. Detalle: [EVIDENCIA_METODOLOGICA.md](EVIDENCIA_METODOLOGICA.md).
+
+### Confirmado
+
+- Este repositorio evalúa **15 sujetos** (`reports/evaluacion_sujetos.csv`; visor: `total_sujetos: 15`).
+- Pruebas reconocidas en reportes: `leftRight` y `pushPull` (30 archivos reconocidos de cada tipo en el inventario de 60).
+- Clases/etiquetas motoras en modelado y eventos: `left`, `right`, `pull`, `push`.
+- Los TXT de eventos también registran la etiqueta `neutral`.
+- La ficha Kaggle EEG 25-1 sitúa los datos fuente en un contexto de BCI de control motor intencional (movimientos direccionales left/right e interacción push/pull).
+
+### Parcialmente documentado
+
+- **Objetivo del estudio original:** descrito en la ficha Kaggle a nivel de dataset BCI; no hay protocolo de consigna versionado aquí.
+- **Neutral:** existe como etiqueta de evento y la ficha menciona estado neutral. No hay instrucciones de reposo.
+- **Duración:** en `reports/diagnostico_tiempos_csv_txt.csv`, `duracion_csv_segundos` va de ~82,8 s a ~358,8 s (26 filas; **13 sujetos numéricos**; no incluye `cano` ni `villanueva`). Es duración observada de archivos, no un tiempo de tarea prescrito.
+- **Calendario de captura:** Unix de esos 13 sujetos entre 2026-05-19 y 2026-06-08 (UTC). No define el diseño de sesiones.
+
+**Patrón observado en nombres de archivo** (no es protocolo confirmado):
+
+- `derecha` / `izquierda` / `empujar` / `jalar` en CSV fuente de `cano` y `villanueva` (`reports/pruebas_csv_espanol_eeg.csv`).
+- `1ra` (cano) y `2da` (villanueva) en esos mismos nombres; el inventario general marca `repeticion` = `unica` (52), `1ra` (4), `2da` (4).
+
+### Pendiente de documentación
+
+- instrucciones dadas a participantes;
+- estímulos y cues;
+- condiciones de laboratorio;
+- si left/right es ejecución, imaginación u otra tarea;
+- protocolo de reposo (ojos, duración prescrita);
+- número planeado de repeticiones y sesiones;
+- inclusión/exclusión de sujetos;
+- dictamen ético versionado aquí.
+
+---
+
+## Adquisición EEG
+
+No se dispone en este repositorio de documentación suficiente para reconstruir completamente el protocolo de adquisición.
+
+| Ítem | Hallazgo |
+| --- | --- |
+| Dispositivo | Ficha Kaggle: EMOTIV Insight y EMOTIV EPOC X. Sin asignación por sujeto. |
+| Canales en resultados derivados | AF3, AF4, F3, F4, F7, F8, FC5, FC6, O1, O2, P7, P8, T7, T8 (14 etiquetas en el detalle de artefactos). |
+| Frecuencia de muestreo | No documentada. |
+| Referencia | No documentada. |
+| Resolución | No documentada. |
+| Filtros de adquisición | No documentados. |
+| Formato fuente | Inventario: CSV y TXT reconocidos; archivos fuente no versionados aquí. |
+
+No se completan valores con conocimiento general sobre EEG ni con otros datasets.
+
+---
+
+## Definición operativa de BANDPOWER
+
+Lo verificable: hay **cinco nombres de banda** y un `valor` por canal y por `fila` en el detalle de artefactos, y figuras `spectral_bandpower` / topomapas por banda. El visor declara características BANDPOWER por canal y banda y **no** las iguala a PSD cruda ni a qEEG clínico.
+
+| Banda | Rango documentado | Tipo de medida | Fuente |
+| --- | --- | --- | --- |
+| theta | Rango no documentado. | Característica BANDPOWER derivada por canal (`valor`); no consta si es absoluta, relativa, log, PSD, Welch o promedio temporal. | `reports/reporte_artefactos_sospechados_detalle.csv`; topomapas `topomap_theta` |
+| alpha | Rango no documentado. | Igual | Mismo CSV; `topomap_alpha`; ficha Kaggle nombra Alpha sin Hz |
+| betal / betaL | Rango no documentado. | Igual | Mismo CSV (`betal`); figuras `topomap_betaL` |
+| betah / betaH | Rango no documentado. | Igual | Mismo CSV (`betah`); figuras `topomap_betaH` |
+| gamma | Rango no documentado. | Igual | Mismo CSV; `topomap_gamma`; ficha Kaggle nombra Gamma sin Hz |
+
+La ficha Kaggle menciona “standard frequency bands (e.g., Alpha, Beta, Gamma)” **sin Hertz**. No se asumen rangos de literatura.
+
+Las visualizaciones corresponden a características EEG BANDPOWER derivadas y no equivalen a qEEG clínico normativo ni a confirmación fisiológica con EEG crudo/EOG/EMG/ECG.
+
+---
+
+## Preprocesamiento
+
+### Confirmado (como salidas nombradas de la corrida)
+
+- Inventario de archivos fuente reconocidos y pares CSV/TXT.
+- Diagnóstico de tiempos CSV–TXT (Unix min/max, duraciones, desfases).
+- Reporte de filtrado con conteos `original`, `no_outliers`, `outliers_removidos`, `artefactos_robust_z`, `artefactos_saltos`, etc. (`reports/reporte_filtrado.csv`).
+- Sospechas de artefacto sobre BANDPOWER (detalle y resumen).
+- Variantes `noOutliers`, `sinArtefactosConservador`, `sinArtefactosEstricto` (y visual `cleanSmooth`; archivos `cleanNorm` listados en mapeo).
+- El visor describe qué **etiquetas de sospecha** elimina cada variante de modelado (ver sección de variantes más abajo).
+- El dashboard/visor **no afirma** ICA, notch, pasa banda ni PSD cruda cuando solo hay características BANDPOWER.
+
+### No documentado (no afirmar que ocurrió)
+
+- notch, bandpass u otros filtros de señal continua;
+- ICA;
+- clipping, interpolación;
+- ventanas, solapamiento, FFT, Welch, fórmula de PSD;
+- umbrales numéricos del “protocolo TESE” de outliers;
+- algoritmo de `cleanSmooth` / `cleanNorm`.
+
+La ficha Kaggle indica que el **dataset fuente** está pensado para filtrado, eliminación de artefactos y normalización posteriores. Eso es intención del dataset, **no** evidencia de que esta corrida aplicara esos pasos sobre EEG crudo.
+
+---
 
 ## Archivos principales
 
@@ -170,6 +283,8 @@ Estos nombres son etiquetas de sospecha sobre BANDPOWER, no confirmación con EE
 
 ### Modelos
 
+Tabla de hiperparámetros (todos **No documentados.**) y balanceo: [MODELOS.md](MODELOS.md).
+
 `reports/resultados_modelos_global.csv` lista clasificadores:
 
 - NaiveBayes
@@ -247,17 +362,33 @@ Los sujetos se representan mediante **códigos institucionales pseudonimizados**
 
 Las visualizaciones corresponden a características EEG BANDPOWER derivadas y no equivalen a qEEG clínico normativo ni a confirmación fisiológica con EEG crudo/EOG/EMG/ECG.
 
-## Reproducibilidad
+## Nivel de reproducibilidad
 
-Reproducible **como archivo de salidas**: los HTML y reportes pueden consultarse tal cual.
+Clasificación respaldada por evidencia (una sola categoría principal):
 
-No es reproducible **como experimento computacional** desde este repositorio: faltan datos fuente, código, semillas, entorno y el notebook/script de Kaggle.
+**Resultados preservados, con documentación parcial.**
+
+- Los HTML, CSV/XLSX de reporte y PNG de la corrida `run_20260902_145353` están versionados y son consultables.
+- La metodología experimental y de adquisición está **parcialmente** documentada (ficha Kaggle + inventarios).
+- No se clasifica como **pipeline parcialmente reconstruible** en sentido ejecutable: se puede **mapear etapas por nombres de salida**, no reejecutarlas.
+- No se clasifica como **pipeline completamente reproducible**.
+
+Elementos que impiden reproducción completa:
+
+- ausencia del notebook/código fuente en este repositorio (URL de kernel no encontrada; no se inventa);
+- ausencia de CSV/TXT de señal y de EDF;
+- BANDPOWER sin rangos Hz ni fórmula;
+- hiperparámetros, semillas y definición de `cv=bloques` no documentados;
+- umbrales de outliers/artefactos no documentados;
+- protocolo experimental incompleto (instrucciones, estímulos, dispositivo por sujeto, fs, referencia).
 
 Trazabilidad de la corrida: [PIPELINE.md](PIPELINE.md).
 
 La cadena observada es:
 
 **fuente computacional (Kaggle, corrida `run_20260902_145353`)** → **procesamiento (no versionado aquí)** → **reportes** → **visualizaciones** → **GitHub / GitHub Pages**.
+
+Esto es un **registro de resultados**, no un **pipeline totalmente reproducible**.
 
 ## Alcance científico
 
@@ -294,13 +425,12 @@ Resuelto o parcialmente resuelto con la ficha Kaggle [EEG 25-1](https://www.kagg
 - autores del dataset/proyecto (**resuelto**);
 - laboratorio: National Laboratory in Artificial Intelligence and Data Science (**parcialmente resuelto**; denominación de la biografía pública de Griselda Cortés Barrera en Kaggle, no un nombre oficial registrado en español).
 
-Este repositorio **aún no documenta**:
+Pendientes **deseables para reproducción completa** (declarados; no se inventan):
 
-- protocolo experimental exacto;
-- definición operativa de BANDPOWER;
-- hiperparámetros;
-- notebook fuente;
-- detalles completos de adquisición EEG;
+- protocolo experimental exhaustivo (instrucciones, estímulos, reposo);
+- adquisición completa (fs, referencia, dispositivo por sujeto, filtros de captura);
+- rangos Hz y fórmula de BANDPOWER;
+- hiperparámetros, semillas y notebook fuente;
 - umbrales y software del “protocolo TESE” de outliers;
 - significado formal de los códigos numéricos de sujeto;
 - afiliaciones de Alejandra Catherine Montaña Acevedo, Jesús Manuel Olivares Ceja y Jhacer Kharen Ruiz Garduño;
@@ -311,4 +441,4 @@ La redistribución de **resultados derivados** está autorizada, con atribución
 
 Hasta completar los pendientes, cualquier descripción de adquisición EEG que no esté en estos archivos o en la ficha Kaggle citada sería invención y debe evitarse.
 
-Inventario de IDs: [IDENTIFICADORES.md](IDENTIFICADORES.md). Pipeline: [PIPELINE.md](PIPELINE.md).
+Inventario de IDs: [IDENTIFICADORES.md](IDENTIFICADORES.md). Pipeline: [PIPELINE.md](PIPELINE.md). Evidencia: [EVIDENCIA_METODOLOGICA.md](EVIDENCIA_METODOLOGICA.md). Modelos: [MODELOS.md](MODELOS.md).

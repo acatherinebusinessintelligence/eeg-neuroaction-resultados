@@ -19,14 +19,18 @@ This file documents the preparation version; it does not create a GitHub Release
 - Auditoría de publicación: `docs/IDENTIFICADORES.md`, `docs/PLAN_PSEUDONIMIZACION.md`, `docs/PIPELINE.md`, criterios previos a Zenodo, clasificación de timestamps, `.gitignore` para el mapa local de identidad.
 - Aclaración estructural del detalle de 122 279 artefactos (BANDPOWER derivado, sin EEG crudo).
 - `LICENSE-CODE` (MIT), `LICENSE-DOCS.md` (CC BY 4.0), `LICENSE-RESULTS.md` (CC BY 4.0).
+- `docs/EVIDENCIA_METODOLOGICA.md`: matriz de evidencia (confirmado / parcialmente documentado / no documentado).
+- `docs/MODELOS.md`: clasificadores, métricas, balanceo; hiperparámetros no documentados.
+- Secciones de protocolo experimental, adquisición EEG, BANDPOWER y nivel de reproducibilidad en `docs/metodologia.md`.
+- Registro de corrida `run_20260902_145353` en `docs/PIPELINE.md` (registro de resultados ≠ pipeline reproducible).
 
 ### Changed
 
 - Confirmación de la autora: `cano` y `villanueva` son códigos institucionales pseudonimizados (no nombres reales); riesgo documentado como bajo/controlado.
 - Redistribución de resultados autorizada, con atribución a la autora y al laboratorio (nombre formal pendiente).
 - `CITATION.cff`: campo `license: MIT`; versión **0.9.0** (v1.0.0 diferida).
-- Timestamps: riesgo bajo/moderado sujeto a contexto temporal; se conservan.
-- Criterios Zenodo: próximo a apto; no plenamente apto.
+- Timestamps: decisión cerrada **CONSERVAR**; riesgo residual contextual; valores no modificados.
+- Criterios de publicación: **B. listo para v1.0.0 con limitaciones documentadas**; versión permanece 0.9.0; RC no creada.
 
 ### Changed (autoría y procedencia)
 
@@ -38,6 +42,7 @@ This file documents the preparation version; it does not create a GitHub Release
 
 ### Notes
 
-- No se pasó a v1.0.0: faltan metodología experimental mínima, revisión definitiva de timestamps y release candidate.
+- Decisión B: limitaciones (notebook ausente, hiperparámetros no documentados, Hz de BANDPOWER no documentados, protocolo experimental incompleto) están declaradas y no se inventan.
+- No se pasó el número de versión a v1.0.0.
 - No se modificaron CSV, XLSX, PNG ni HTML de resultados.
 - No se creó tag, GitHub Release, Zenodo ni DOI.

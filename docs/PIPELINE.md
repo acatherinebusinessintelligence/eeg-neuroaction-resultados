@@ -6,6 +6,10 @@
 
 Este documento describe solo lo verificable en este repositorio. No hay notebook ni script de pipeline versionado aquí.
 
+**El repositorio de resultados no contiene el notebook o código fuente completo que produjo todos los outputs.** No se encontró una URL de kernel/notebook Kaggle en este árbol; no se inventa.
+
+Esto es un **registro de resultados**, no un **pipeline totalmente reproducible**.
+
 ## Identificación de la corrida
 
 | Campo | Evidencia |
@@ -46,21 +50,19 @@ Los CSV/TXT de señal **no están** versionados en este GitHub; los reportes nom
 
 ### Preprocesamiento
 
-Pendiente de documentación.
-
-Lo verificable por nombres de salida: filtrado, outliers, variantes `noOutliers`, `cleanSmooth`, `sinArtefactosConservador`, `sinArtefactosEstricto`. El visor menciona “protocolo TESE” para outliers. No hay código, umbrales ni cuaderno.
+Nombres de salida verificables: filtrado, outliers, variantes `noOutliers`, `cleanSmooth`, `sinArtefactosConservador`, `sinArtefactosEstricto`. El visor menciona “protocolo TESE” para outliers. No hay código, umbrales ni cuaderno. Notch, ICA, bandpass, Welch y FFT: **no documentados** como procedimientos aplicados.
 
 `reports/archivos_generados.csv` lista EDF generados en Kaggle; **0 archivos EDF** en este GitHub.
 
 ### Características BANDPOWER
 
-Verificable: canales AF3, AF4, F3, F4, F7, F8, FC5, FC6, O1, O2, P7, P8, T7, T8; bandas theta, alpha, betal/betaL, betah/betaH, gamma.
+Verificable: canales AF3, AF4, F3, F4, F7, F8, FC5, FC6, O1, O2, P7, P8, T7, T8; bandas theta, alpha, betal/betaL, betah/betaH, gamma. Rangos en Hz: **Rango no documentado.** Tipo (absoluta/relativa/log/PSD): no consta más allá de “característica derivada por canal y banda”.
 
-El detalle de artefactos guarda un `valor` por `fila` × canal × banda, con `nivel_confirmacion = sospecha_sobre_bandpower`. No es EEG crudo. La fórmula de BANDPOWER, ventanas y referencia de topomapas: pendiente de documentación.
+El detalle de artefactos guarda un `valor` por `fila` × canal × banda, con `nivel_confirmacion = sospecha_sobre_bandpower`. No es EEG crudo.
 
 ### Evaluación / modelos
 
-Verificable: 7 clasificadores en `reports/resultados_modelos_global.csv`; 168 filas; `cv = bloques`. Comparación de 6 estrategias de balanceo. Hiperparámetros exactos: pendiente de documentación.
+Verificable: 7 clasificadores en `reports/resultados_modelos_global.csv`; 168 filas; `cv = bloques`. Comparación de 6 estrategias de balanceo. Hiperparámetros: **No documentados.** Detalle: [MODELOS.md](MODELOS.md).
 
 ### Reportes
 
@@ -92,3 +94,51 @@ No hay Actions en este repositorio que regeneren esas páginas. La conexión Kag
 - `*_Comparativa_Modelos_Final.xlsx` por sujeto
 - ZIP `run_20260902_145353_resultados_TESE.zip` y ZIP “por usuario”
 - Código / notebook de Kaggle
+
+---
+
+## Nivel de reproducibilidad
+
+**Resultados preservados, con documentación parcial.** No es un pipeline completamente reproducible. Ver [metodologia.md](metodologia.md#nivel-de-reproducibilidad).
+
+### Corrida reproducida / registrada
+
+**`run_20260902_145353`**
+
+| Distinción | Aplicación a esta corrida |
+| --- | --- |
+| Registro de resultados | **Sí.** HTML, reportes y figuras de GitHub corresponden a esta corrida. |
+| Pipeline totalmente reproducible | **No.** Falta el código fuente en este repositorio. |
+
+#### Qué archivos pertenecen a esa corrida
+
+Evidencia de pertenencia: el visor, el dashboard, el informe y `reports/index_kaggle.html` imprimen la ruta `/kaggle/working/outputs/TESE_pruebas/run_20260902_145353`. `reports/verificacion_kaggle_salidas.csv` y `reports/validacion_salidas_pipeline.csv` listan artefactos de esa ruta (reportes, figuras, ZIP).
+
+Presentes en este GitHub (mismo lote, reorganizados en la raíz / `reports/` / `figures/`):
+
+- visor, dashboard, informe HTML (y copias);
+- familia CSV/XLSX de `reports/` (evaluación, filtrado, artefactos, modelos, balanceo, inventario, verificación);
+- `reports/resumen_ejecutivo_resultados.txt`;
+- PNG en `figures/` y matrices de `reports/balanceo/`.
+
+Citados para esa corrida y **ausentes** de GitHub:
+
+- ZIP `run_20260902_145353_resultados_TESE.zip` (~427 MB) y ZIP “por usuario”;
+- directorio `processed_data/EDF/` (`*.edf`);
+- `*_Comparativa_Modelos_Final.xlsx` por sujeto;
+- notebook/script.
+
+#### Timestamps de la corrida (pipeline)
+
+El identificador `20260902_145353` es convención de directorio (2026-09-02, 14:53:53). No hay reloj independiente en el repo.
+
+Los Unix de **sesión de sujeto** están en `reports/diagnostico_tiempos_csv_txt.csv` (13 códigos numéricos; no `cano`/`villanueva`) y datan capturas, no el reloj del pipeline.
+
+#### Resultados, figuras, sujetos, modelos
+
+- 15 sujetos en `reports/evaluacion_sujetos.csv`.
+- Dashboard de esa corrida (texto embebido): 16 578 registros originales, 13 561 `noOutliers`, retención media 82.62 %, 3 009 outliers removidos, 122 279 artefactos sospechados.
+- Figuras: visor declara 528 generadas; el árbol Git incluye copias y 612 PNG de balanceo.
+- Modelos: 7 clasificadores en resultados globales; 6 estrategias de balanceo. Hiperparámetros no documentados.
+
+Matriz de evidencia: [EVIDENCIA_METODOLOGICA.md](EVIDENCIA_METODOLOGICA.md).

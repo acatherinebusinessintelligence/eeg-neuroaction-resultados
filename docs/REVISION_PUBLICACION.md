@@ -3,7 +3,7 @@
 Documento de preparación para una futura versión estable y un posible archivo citable en Zenodo.
 
 **Versión de preparación:** v0.9.0  
-**Estado:** próximo a apto para depósito permanente (no plenamente apto).  
+**Estado:** listo para v1.0.0 con limitaciones documentadas (versión actual 0.9.0; RC no creada).  
 **Fecha de revisión:** 2026-09-03  
 **Alcance:** inspección de nombres de archivo, encabezados CSV, filas de muestra y texto de reportes/HTML. No se modificó ningún resultado computacional.
 
@@ -29,7 +29,7 @@ La revisión siguiente **no declara anonimato absoluto**. Los códigos de sujeto
 | Códigos de sujeto numéricos (`211260561`, `212260563`, `212260567`, `212260569`, `212260666`, `212260668`, `212260672`, `222260671`, `22260552`, `231260558`, `252260554`, `252260556`, `252260670`) | Medio, no determinado | Identificadores estables. No deben presentarse como nombres reales. Este repositorio aún no documenta su significado formal (matrícula, código interno u otro). | No afirmar anonimato absoluto. No reconstruir identidades. |
 | `reports/evaluacion_sujetos.csv` e `informe_evaluacion_resultados.html` | Medio | Contienen métricas, alertas de artefactos y comentarios técnicos por sujeto. No se encontraron correos, documentos de identidad ni diagnósticos clínicos nominativos. Los IDs `cano` y `villanueva` son códigos institucionales pseudonimizados (confirmación de la autora). | Conservar para trazabilidad. No reidentificar. |
 | `reports/reporte_artefactos_sospechados_detalle.csv` y `.xlsx` | Medio-alto | 122 279 filas con `sujeto`, `archivo`, `fila`, `canal`, `banda`, `valor` y tipo de artefacto sospechado. Son características BANDPOWER derivadas, no EEG crudo. Siguen siendo datos biométricos derivados por código de sujeto. El XLSX pesa ~8,2 MB. | Redistribución de resultados autorizada; no declarar anonimato absoluto. Valorar si el detalle fila a fila es necesario en Zenodo o si basta el resumen. |
-| `reports/diagnostico_tiempos_csv_txt.csv` | Riesgo bajo/moderado sujeto a contexto temporal | Incluye Unix de sesión (`timestamp_min` / `timestamp_max` y equivalentes TXT), entre 2026-05-19 y 2026-06-08 (UTC). No hay evidencia en este repositorio de que permitan reidentificación **directa**. Datán capturas por código de sujeto. | Conservar por ahora (alineación CSV–TXT). Revisión definitiva pendiente. No eliminar automáticamente. Ver sección de timestamps. |
+| `reports/diagnostico_tiempos_csv_txt.csv` | Riesgo bajo/moderado sujeto a contexto temporal | Incluye Unix de sesión (`timestamp_min` / `timestamp_max` y equivalentes TXT), entre 2026-05-19 y 2026-06-08 (UTC). No hay evidencia en este repositorio de que permitan reidentificación **directa**. Datán capturas por código de sujeto numérico. **Decisión: CONSERVAR.** | Conservar valores. No modificar. Ver sección de timestamps. |
 | Columnas `ruta` / `ruta_archivo` en varios CSV (`reports/archivos_generados.csv`, `reports/reporte_figuras_generadas.csv`, `reports/resumen_exportacion_por_usuario.csv`, `reports/validacion_salidas_pipeline.csv`, `reports/verificacion_kaggle_salidas.csv`) | Bajo en lo personal | Las rutas encontradas son de Kaggle (`/kaggle/working/outputs/TESE_pruebas/run_20260902_145353/...`). **TESE** = Tecnológico de Estudios Superiores de Ecatepec (México). No se encontraron rutas locales con nombres personales. | Conservar. TESE identifica la institución de la corrida, no un laboratorio con acrónimo inventado. |
 | `reports/resumen_exportacion_por_usuario.csv` | Medio | El nombre del archivo usa “usuario”. El contenido inspeccionado lista `sujeto`, `archivo`, `tipo`, `filas` y ruta Kaggle. No se vieron correos. | Requiere revisión humana del término “usuario” frente a “sujeto” y de los identificadores contenidos. |
 | Visor, dashboard e informe HTML (`visor_interactivo_eeg.html`, `dashboard_eeg_neuroaction.html`, `informe_evaluacion_resultados.html` y copias en `reports/` / `figures/`) | Bajo / controlado en IDs; residual en embebido | Embeden tablas por código de sujeto, incluidas las etiquetas `cano` y `villanueva` (códigos institucionales pseudonimizados). GitHub Pages los hace consultables. | No modificar HTML de resultados. No presentar códigos como nombres reales. |
@@ -111,50 +111,115 @@ Texto oficial CC BY 4.0: <https://creativecommons.org/licenses/by/4.0/>
 
 Archivo de sesión: `reports/diagnostico_tiempos_csv_txt.csv` (26 filas; 13 sujetos numéricos; **no** incluye `cano` ni `villanueva`).
 
-Columnas Unix de calendario: `timestamp_min`, `timestamp_max`, `txt_time_min`, `txt_time_max`. Convertidas a UTC caen entre **2026-05-19 y 2026-06-08**. Datán capturas por sujeto; no son fechas de nacimiento.
+### Campos y granularidad
 
-Columnas relativas (duración y desfase CSV–TXT): `duracion_csv_segundos`, `duracion_txt_segundos`, `diferencia_inicio_csv_txt`, `diferencia_fin_csv_txt`.
+| Campo | Granularidad | Relación con sujetos |
+| --- | --- | --- |
+| `timestamp_min`, `timestamp_max` | Unix (segundos con fracción) de sesión CSV | 13 códigos numéricos; una o dos pruebas (`leftRight` / `pushPull`) por sujeto en este archivo |
+| `txt_time_min`, `txt_time_max` | Unix de eventos TXT | Mismos 13 códigos |
+| `duracion_csv_segundos`, `duracion_txt_segundos` | Segundos relativos | Útiles para comprobar duración **sin** calendario |
+| `diferencia_inicio_csv_txt`, `diferencia_fin_csv_txt` | Segundos de desfase | Alineación CSV–TXT |
+| `filas_csv`, `eventos_txt`, `conteo_clases` | Conteos | No son reloj |
+| `run_20260902_145353` | Identificador de corrida | Reloj de *pipeline*, no de participante |
 
-El identificador de corrida `run_20260902_145353` aparece en HTML y rutas Kaggle (reloj de *pipeline*, no de participante).
+Convertidos a UTC, los Unix de calendario caen entre **2026-05-19 y 2026-06-08**. Datán capturas; no son fechas de nacimiento.
 
 El detalle de artefactos **no** tiene columnas de tiempo.
 
-No se modificaron fechas en esta auditoría. **No se eliminan automáticamente.**
+### Utilidad científica
 
-**Clasificación de riesgo residual:** riesgo bajo/moderado sujeto a contexto temporal.
+Las columnas relativas permiten verificar duración y alineación CSV–TXT. Los Unix absolutos documentan cuándo se dató cada captura de los 13 códigos numéricos. No se usaron para recalcular BANDPOWER ni modelos.
 
-No hay evidencia en este repositorio de que esos Unix permitan reidentificación **directa** (no hay nombres reales, correos ni documentos de identidad asociados). El riesgo residual es contextual: alguien que ya sepa quién participó en qué día podría cruzar el calendario de sesión con un código numérico. Por eso se conservan (sirven para comprobar duración y alineación CSV–TXT) y podrían generalizarse más adelante si se decide no publicar fechas de calendario, sin cambiar métricas de modelos.
+### Riesgo de reidentificación
+
+Los identificadores ya están pseudonimizados. No se encontró vínculo directo con identidades (nombres reales, correos, documentos). El riesgo residual es **contextual**: alguien que ya sepa quién participó en qué día podría cruzar el calendario con un código numérico. `cano` y `villanueva` no están en este archivo.
+
+### Decisión explícita: CONSERVAR
+
+**CONSERVAR** los timestamps tal como están. No se modifican los valores.
+
+Justificación:
+
+1. No hay evidencia de reidentificación directa en este repositorio.
+2. Los IDs no se presentan como nombres reales; está prohibido reidentificar.
+3. Las duraciones y desfases son necesarias para interpretar el diagnóstico CSV–TXT.
+4. Generalizar o excluir los Unix absolutos reduciría el calendario de captura sin cambiar métricas, pero no es exigido por la evidencia de riesgo **directo** hallada.
+5. EXCLUIR el archivo entero perdería la única tabla de alineación temporal.
+
+No se elige GENERALIZAR ni EXCLUIR en esta versión. Una generalización futura (solo duraciones) seguiría siendo posible sin tocar BANDPOWER ni métricas de modelos.
 
 | Clase | Recurso | Clasificación |
 | --- | --- | --- |
-| A. Necesarias para reproducibilidad | `duracion_csv_segundos`, `duracion_txt_segundos`, `diferencia_inicio_csv_txt`, `diferencia_fin_csv_txt`; `filas_csv`, `eventos_txt`, `conteo_clases` | Permiten comprobar alineación CSV–TXT y duración de registro **sin** fecha de calendario. Se conservan. |
-| A. Necesarias para reproducibilidad | Identificador de corrida `run_20260902_145353` | Nombra el lote computacional. No es un ID de sujeto. Se conserva. |
-| B. Conservadas; no imprescindibles para citar modelos | `timestamp_min`, `timestamp_max`, `txt_time_min`, `txt_time_max` como Unix absoluto | Riesgo bajo/moderado sujeto a contexto temporal. Se conservan en esta versión. Revisión definitiva pendiente. Podrían generalizarse (p. ej. solo duraciones) sin alterar BANDPOWER ni métricas. |
-| C. Inciertas | Si algún PNG o XLSX incrusta la misma marca temporal (no inspeccionado por OCR/binario) | Revisión definitiva pendiente. |
+| A. Necesarias para trazabilidad de resultados | `duracion_csv_segundos`, `duracion_txt_segundos`, `diferencia_inicio_csv_txt`, `diferencia_fin_csv_txt`; `filas_csv`, `eventos_txt`, `conteo_clases` | CONSERVAR |
+| A. Necesarias para trazabilidad de resultados | Identificador de corrida `run_20260902_145353` | CONSERVAR |
+| B. Calendario de captura | `timestamp_min`, `timestamp_max`, `txt_time_min`, `txt_time_max` | CONSERVAR (decisión cerrada; riesgo residual contextual) |
+| C. Inciertas | Si algún PNG o XLSX incrusta la misma marca temporal (no inspeccionado por OCR/binario) | Sin evidencia de columnas de tiempo en PNG; no se modifican archivos de resultados |
 
-## Criterios previos a Zenodo
+## CRÍTICO PARA PUBLICACIÓN vs. DESEABLE PARA REPRODUCCIÓN COMPLETA
 
-Debe cumplirse:
+Este repositorio es un **archivo de resultados**, no el estudio experimental completo. No es obligatorio tener todos los detalles del estudio original para publicar resultados **si se declara su ausencia**.
+
+### Crítico para publicación (archivo de resultados)
+
+- procedencia (dataset Kaggle EEG 25-1 y URL);
+- autoría (cuatro autores de la ficha);
+- privacidad (códigos pseudonimizados; no reidentificación; timestamps CONSERVAR documentado);
+- derechos de redistribución de resultados derivados;
+- descripción clara de **qué son** los resultados (características BANDPOWER derivadas, no EEG crudo ni qEEG clínico);
+- limitaciones y nivel de reproducibilidad;
+- licencias (MIT código; CC BY 4.0 docs y resultados).
+
+Estado de esos ítems: **cumplidos en documentación v0.9.0**, con laboratorio solo parcialmente nombrado (biografía Kaggle) y afiliaciones de tres autores pendientes — declarados, no inventados.
+
+### Deseable para reproducción completa (no necesariamente bloqueante)
+
+- hiperparámetros completos;
+- notebook original y URL de kernel;
+- protocolo experimental exhaustivo;
+- fs, referencia, dispositivo por sujeto, rangos Hz de BANDPOWER;
+- umbrales del protocolo de outliers.
+
+Estos faltantes están **declarados** en [EVIDENCIA_METODOLOGICA.md](EVIDENCIA_METODOLOGICA.md), [MODELOS.md](MODELOS.md) y [metodologia.md](metodologia.md).
+
+## Criterios previos a publicación permanente / Zenodo
 
 - [x] Identificadores revisados
 - [x] Pseudonimización confirmada
 - [x] Redistribución autorizada
 - [x] Autores documentados
-- [x] TESE identificado
 - [x] Fuente Kaggle documentada
-- [x] Licencia de resultados definida
+- [x] Licencias definidas
+- [x] TESE identificado
 - [~] Laboratorio identificado parcialmente
-- [ ] Timestamps revisados definitivamente
-- [ ] Metodología experimental mínima completada
-- [ ] Archivos de release revisados
+- [x] Timestamps cerrados (decisión **CONSERVAR**)
+- [x] Protocolo mínimo documentado (confirmado / parcial / pendiente, sin invención)
+- [x] Adquisición EEG mínima documentada (insuficiente para reconstruir el protocolo; declarado)
+- [x] BANDPOWER definido (nombres de banda; rangos Hz no documentados)
+- [x] Modelos documentados (nombres y métricas; hiperparámetros no documentados)
+- [x] Pipeline fuente identificado (ausente en este repo; corrida `run_20260902_145353` registrada)
 - [x] CITATION.cff validado
+- [ ] Archivos de release revisados (qué incluir en un depósito Zenodo, p. ej. detalle de artefactos)
 - [ ] Release candidate revisada
+
+### Decisión de release readiness (v0.9.0 no se cambia)
+
+**B. LISTO PARA v1.0.0 CON LIMITACIONES DOCUMENTADAS**
+
+Justificación: los criterios **críticos para publicar un repositorio de resultados** están cubiertos y las lagunas científicas de reproducción están escritas de forma explícita. No es **A** porque el notebook, los hiperparámetros, los Hz de BANDPOWER y el protocolo experimental completo siguen ausentes. No es **C** porque esas ausencias no impiden citar y redistribuir **resultados ya computados** con licencia, autoría, procedencia y advertencias.
+
+La versión permanece **0.9.0**. No se crea tag, GitHub Release, Zenodo ni DOI.
+
+Para preparar el **release candidate** v1.0.0 (aún no ejecutado):
+
+1. Revisión humana de la lista de archivos del depósito (en particular `reporte_artefactos_sospechados_detalle.csv` / `.xlsx`).
+2. Pasar la versión a 1.0.0 en `CITATION.cff`, README, CHANGELOG y docs (un solo cambio coordinado).
+3. Crear tag `v1.0.0` y GitHub Release **solo cuando se decida publicar**.
+4. Opcional: añadir notebook/URL si aparece evidencia verificable; no inventarla.
+5. Opcional: completar afiliaciones pendientes si se confirman.
 
 Estado actual:
 
-**Próximo a apto para depósito permanente.** Versión **0.9.0**.
-
-No se pasa todavía a v1.0.0: siguen pendientes la metodología experimental mínima, la revisión definitiva de timestamps y la revisión de una release candidate. El laboratorio está identificado de forma **parcial**. `CITATION.cff` está validado (schema 1.2.0, sin DOI).
+**Listo para v1.0.0 con limitaciones documentadas** (preparación). Versión **0.9.0**. Release candidate **no** revisada todavía.
 
 Esto es una decisión de publicación, no una evaluación científica de los resultados.
 
@@ -165,7 +230,8 @@ El mapa local `docs/MAPA_PSEUDONIMIZACION_LOCAL.md` permanece gitignored y **no*
 - no se borró ningún archivo;
 - no se modificaron CSV, XLSX, PNG ni HTML de resultados;
 - no se recodificaron identificadores;
+- no se alteraron timestamps (decisión CONSERVAR);
+- no se cambió el número de versión (sigue 0.9.0);
 - no se creó tag, GitHub Release ni DOI;
-- no se hizo push;
 - no se conectó Zenodo;
-- no se inventaron ORCID, correos, acrónimo de laboratorio ni un nombre institucional oficial en español para el laboratorio.
+- no se inventaron ORCID, correos, URL de notebook, rangos Hz, hiperparámetros, acrónimo de laboratorio ni un nombre institucional oficial en español para el laboratorio.

@@ -57,7 +57,7 @@ El resumen ejecutivo reporta, en esa corrida: 0 aprobados fuertes sin restriccio
 | Matrices PNG de confusión de balanceo | `reports/balanceo/matrices_confusion_balanceo/` (612 PNG) |
 | HTML resumen | `reports/balanceo/resumen_balanceo.html` |
 
-Estrategias presentes: `sin_balanceo`, `random_oversampling`, `class_weight_balanced`, `smote`, `smote_tomek`, `random_undersampling_controlado`.
+Estrategias presentes: `sin_balanceo`, `random_oversampling`, `class_weight_balanced`, `smote`, `smote_tomek`, `random_undersampling_controlado`. Unidad de análisis y métricas: [MODELOS.md](MODELOS.md). Este inventario no declara qué estrategia es “mejor”.
 
 ## Variantes de limpieza
 
@@ -103,14 +103,20 @@ Columnas del detalle: `sujeto`, `movimiento`, `archivo`, `fila`, `canal`, `banda
 
 | Pregunta estructural | Hallazgo |
 | --- | --- |
-| ¿Identificadores? | Sí: `sujeto` y `archivo` (15 IDs, incluidos apellidos). |
+| ¿Identificadores? | Sí: `sujeto` y `archivo` (15 códigos; `cano` y `villanueva` son códigos institucionales pseudonimizados, no nombres reales). |
 | ¿Timestamps / fechas? | No hay columnas de tiempo ni fecha en este archivo. |
-| ¿Métricas? | Sí: `valor` (BANDPOWER derivado), `z_robusto`, `z_salto`; etiquetas de tipo y `nivel_confirmacion`. |
+| ¿Métricas por persona? | Sí, en el **resumen** (365 filas): `sujeto`, `movimiento`, `tipo_artefacto_sospechado`, `eventos`, `canales_afectados`, `bandas_afectadas`, `z_max_abs`, `salto_max_abs`. |
+| ¿Intervalos temporales? | No. El detalle usa `fila` (índice de registro), no inicio/fin en segundos ni Unix. |
+| ¿Categorías? | Cinco etiquetas en detalle y resumen: `salto_brusco_estadistico` (44 298), `posible_muscular_beta_gamma` (30 457), `posible_no_fisiologico_salto_o_pico` (23 526), `outlier_estadistico_extremo` (12 492), `posible_ocular_frontal_banda_baja` (11 506). El visor también nombra `posible_no_fisiologico_canal_plano` entre tipos eliminados en variantes de limpieza; esa etiqueta no aparece en el conteo del detalle inspeccionado. |
+| ¿Cómo se identifican? | Heurística sobre BANDPOWER: columnas `z_robusto`, `z_salto`, `tipo_artefacto_sospechado`. `observacion` (todas las filas del detalle): clasificación heurística; no equivale a confirmación fisiológica con EEG crudo/EOG/EMG/ECG. |
+| ¿Confirmación / removido? | `nivel_confirmacion = sospecha_sobre_bandpower` y `removido = no` en las **122 279** filas del detalle. |
 | ¿Señal cruda? | No. No hay voltajes continuos, EDF ni series temporales de EEG. |
-| ¿Datos derivados? | Sí. Las 122 279 filas tienen `nivel_confirmacion = sospecha_sobre_bandpower` y `removido = no`. La `observacion` reitera que la clasificación es heurística sobre BANDPOWER. |
-| ¿Movimientos en el detalle? | `all`, `left`, `right`, `pull`, `push` (conteos de filas; no se interpretan aquí). |
+| ¿Datos derivados? | Sí. `valor` por `canal` × `banda` (theta, alpha, betal, betah, gamma). |
+| ¿Movimientos en el detalle? | `all`, `left`, `right`, `pull`, `push` (conteos de filas; no se interpretan clínicamente). |
 
-Este archivo es el principal volumen de características derivadas por sujeto. Requiere revisión humana antes de un depósito permanente; no se modificó en esta auditoría.
+No se interpretan estas etiquetas como diagnóstico clínico ni como artefactos confirmados en EEG crudo.
+
+Este archivo es el principal volumen de características derivadas por sujeto. Redistribución de resultados autorizada; no se declara anonimato absoluto. No se modificó en esta auditoría.
 
 ## Dashboards e informes
 
@@ -129,7 +135,8 @@ Ya listados en la primera tabla. El dashboard muestra, entre otras tarjetas de e
 - código fuente del pipeline y notebooks (0 archivos `.py` / `.ipynb`);
 - EEG crudo / EDF / BDF / FIF / NPY / MAT (0 en el árbol local);
 - ZIP citados por `reports/index_kaggle.html`;
-- XLSX individuales `*_Comparativa_Modelos_Final.xlsx`;
-- `LICENSE` (pendiente de origen, consentimiento y derechos de publicación).
+- XLSX individuales `*_Comparativa_Modelos_Final.xlsx`.
 
-Documentación de auditoría añadida en v0.9.0: `docs/IDENTIFICADORES.md`, `docs/PLAN_PSEUDONIMIZACION.md`, `docs/PIPELINE.md`. El mapa local de identidad no se versiona.
+Clasificación: **C. características derivadas** (ver [EVIDENCIA_METODOLOGICA.md](EVIDENCIA_METODOLOGICA.md)).
+
+Documentación de auditoría: `docs/IDENTIFICADORES.md`, `docs/PLAN_PSEUDONIMIZACION.md`, `docs/PIPELINE.md`, `docs/EVIDENCIA_METODOLOGICA.md`, `docs/MODELOS.md`. El mapa local de identidad no se versiona.
