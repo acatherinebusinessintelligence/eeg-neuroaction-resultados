@@ -33,7 +33,12 @@ Autores del recurso citable EEG NeuroAction Resultados v1.0.0:
 
 El código del repositorio mantiene copyright de Alejandra Catherine Montaña Acevedo bajo MIT; la autoría del recurso científico no implica titularidad conjunta del software.
 
-Afiliación documentada: Griselda Cortés Barrera — Tecnológico de Estudios Superiores de Ecatepec (TESE), México. Las demás afiliaciones: pendientes de confirmación.
+Afiliación o rol documentado:
+
+- Griselda Cortés Barrera — Tecnológico de Estudios Superiores de Ecatepec (TESE), México
+- Alejandra Catherine Montaña Acevedo — Encargada de la automatización del proceso de datos: transformación, verificación con inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub. No se declara institución adicional.
+- Jesús Manuel Olivares Ceja — Apoyo en proyecto
+- Jhacer Kharen Ruiz Garduño — Apoyo en proyecto
 
 Laboratorio (formulación prudente): National Laboratory in Artificial Intelligence and Data Science (denominación tomada de la biografía pública de Griselda Cortés Barrera en la ficha Kaggle). No se inventa acrónimo ni nombre oficial en español.
 

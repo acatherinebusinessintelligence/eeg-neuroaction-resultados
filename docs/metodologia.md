@@ -57,12 +57,16 @@ Se distinguen cuatro capas. La autoría del recurso citable no implica titularid
 
 ## Autoría y afiliaciones
 
-| Autor | Afiliación |
+Fuente de Griselda Cortés Barrera: ficha Kaggle / TESE. Roles de los demás: confirmación de Alejandra Catherine Montaña Acevedo. No se inventan instituciones no dichas.
+
+| Autor | Afiliación o rol documentado |
 | --- | --- |
 | Griselda Cortés Barrera | Tecnológico de Estudios Superiores de Ecatepec (TESE), México |
-| Alejandra Catherine Montaña Acevedo | Afiliación pendiente de confirmación |
-| Jesús Manuel Olivares Ceja | Afiliación pendiente de confirmación |
-| Jhacer Kharen Ruiz Garduño | Afiliación pendiente de confirmación |
+| Alejandra Catherine Montaña Acevedo | Encargada de la automatización del proceso de datos: transformación, verificación con inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub. No se declara aquí una institución adicional. |
+| Jesús Manuel Olivares Ceja | Apoyo en proyecto |
+| Jhacer Kharen Ruiz Garduño | Apoyo en proyecto |
+
+“Apoyo en proyecto” no implica titularidad del código.
 
 **TESE** = Tecnológico de Estudios Superiores de Ecatepec. País: México.
 
@@ -448,7 +452,8 @@ Resuelto o parcialmente resuelto con la ficha Kaggle [EEG 25-1](https://www.kagg
 - TESE = Tecnológico de Estudios Superiores de Ecatepec, México (**resuelto**);
 - fuente del dataset y URL (**resuelto**);
 - autores del dataset/proyecto (**resuelto**);
-- laboratorio: National Laboratory in Artificial Intelligence and Data Science (**parcialmente resuelto**; denominación de la biografía pública de Griselda Cortés Barrera en Kaggle, no un nombre oficial registrado en español).
+- laboratorio: National Laboratory in Artificial Intelligence and Data Science (**parcialmente resuelto**; denominación de la biografía pública de Griselda Cortés Barrera en Kaggle, no un nombre oficial registrado en español);
+- roles de Alejandra Catherine Montaña Acevedo (automatización de datos, IA, software), Jesús Manuel Olivares Ceja y Jhacer Kharen Ruiz Garduño (apoyo en proyecto) (**resuelto** como roles documentados; no se inventan instituciones).
 
 Pendientes **deseables para reproducción completa** (declarados; no se inventan):
 
@@ -458,7 +463,6 @@ Pendientes **deseables para reproducción completa** (declarados; no se inventan
 - hiperparámetros, semillas y notebook fuente;
 - umbrales y software del “protocolo TESE” de outliers;
 - significado formal de los códigos numéricos de sujeto;
-- afiliaciones de Alejandra Catherine Montaña Acevedo, Jesús Manuel Olivares Ceja y Jhacer Kharen Ruiz Garduño;
 - dictamen ético versionado aquí;
 - ORCID.
 

@@ -63,9 +63,11 @@ Se distinguen capas. La autoría del recurso citable no implica titularidad conj
 Afiliaciones:
 
 1. Griselda Cortés Barrera — Tecnológico de Estudios Superiores de Ecatepec (TESE), México
-2. Alejandra Catherine Montaña Acevedo — Afiliación pendiente de confirmación
-3. Jesús Manuel Olivares Ceja — Afiliación pendiente de confirmación
-4. Jhacer Kharen Ruiz Garduño — Afiliación pendiente de confirmación
+2. Alejandra Catherine Montaña Acevedo — Encargada de la automatización del proceso de datos: transformación, verificación con inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub. No se declara institución adicional.
+3. Jesús Manuel Olivares Ceja — Apoyo en proyecto
+4. Jhacer Kharen Ruiz Garduño — Apoyo en proyecto
+
+Los ítems 2–4 son roles confirmados por Alejandra Catherine Montaña Acevedo, no nombres de institución. “Apoyo en proyecto” no implica titularidad del código.
 
 **TESE** = Tecnológico de Estudios Superiores de Ecatepec. País: México.
 
@@ -174,7 +176,7 @@ Este repositorio es un **archivo de resultados**, no el estudio experimental com
 - limitaciones y nivel de reproducibilidad;
 - licencias (MIT código; CC BY 4.0 docs y resultados).
 
-Estado de esos ítems: **cumplidos en documentación v1.0.0 RC**, con laboratorio solo parcialmente nombrado (biografía Kaggle) y afiliaciones de tres autores pendientes — declarados, no inventados.
+Estado de esos ítems: **cumplidos en documentación v1.0.0 RC**, con laboratorio solo parcialmente nombrado (biografía Kaggle). Roles de tres autores documentados (automatización/software; apoyo en proyecto); no se inventan instituciones.
 
 ### Deseable para reproducción completa (no necesariamente bloqueante)
 
@@ -223,7 +225,7 @@ Pendiente para una publicación posterior (no ejecutado aquí):
 1. Revisión humana de la Release Candidate.
 2. Crear tag `v1.0.0` y GitHub Release **solo cuando se decida publicar**.
 3. Archivar en Zenodo e incorporar DOI **solo cuando exista**.
-4. Opcional: notebook/URL o afiliaciones si aparecen con evidencia verificable.
+4. Opcional: notebook/URL si aparecen con evidencia verificable.
 
 Estado actual:
 

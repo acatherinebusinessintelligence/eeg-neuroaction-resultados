@@ -58,7 +58,7 @@ Alejandra Catherine Montaña Acevedo
 Licencia:  
 MIT
 
-Copyright: (c) 2026 Alejandra Catherine Montaña Acevedo (`LICENSE-CODE`). No hay evidencia en este repositorio de contribución de software de los demás autores del dataset; no se les declara titulares del código.
+Copyright: (c) 2026 Alejandra Catherine Montaña Acevedo (`LICENSE-CODE`). Rol documentado: encargada de la automatización del proceso de datos, transformación, verificación con inteligencia artificial y desarrollo de software (código base en Kaggle y GitHub). No hay evidencia en este repositorio de contribución de software de los demás autores del dataset; no se les declara titulares del código.
 
 ### Dataset fuente EEG 25-1
 
@@ -79,14 +79,18 @@ La reutilización requiere atribución a los autores del proyecto EEG 25-1 y rec
 
 Los cuatro autores anteriores figuran como autores del recurso **EEG NeuroAction: resultados, análisis y visualización interactiva**. Esa lista describe la obra conjunta de resultados. No implica que todos sean titulares del copyright del código.
 
-### Afiliaciones documentadas
+### Afiliaciones y roles documentados
 
-| Autor | Afiliación |
+Fuente de Griselda Cortés Barrera: ficha Kaggle / TESE. Fuente de los demás roles: confirmación de Alejandra Catherine Montaña Acevedo. No se inventan instituciones no dichas.
+
+| Autor | Afiliación o rol documentado |
 | --- | --- |
 | Griselda Cortés Barrera | Tecnológico de Estudios Superiores de Ecatepec (TESE), México |
-| Alejandra Catherine Montaña Acevedo | Afiliación pendiente de confirmación |
-| Jesús Manuel Olivares Ceja | Afiliación pendiente de confirmación |
-| Jhacer Kharen Ruiz Garduño | Afiliación pendiente de confirmación |
+| Alejandra Catherine Montaña Acevedo | Encargada de la automatización del proceso de datos: transformación, verificación con inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub. No se declara aquí una institución adicional. |
+| Jesús Manuel Olivares Ceja | Apoyo en proyecto |
+| Jhacer Kharen Ruiz Garduño | Apoyo en proyecto |
+
+“Apoyo en proyecto” es un rol, no una afiliación institucional. No implica titularidad del código (el código permanece bajo MIT con copyright de Alejandra Catherine Montaña Acevedo).
 
 Laboratorio (formulación prudente): **National Laboratory in Artificial Intelligence and Data Science**. Denominación tomada de la biografía pública de Griselda Cortés Barrera en la ficha Kaggle del dataset. No se traduce a un nombre institucional oficial en español ni se inventa un acrónimo.
 
@@ -165,9 +169,9 @@ La referencia de [`CITATION.cff`](CITATION.cff) corresponde al recurso **EEG Neu
 Autores del recurso citable (mismo orden que la ficha Kaggle [EEG 25-1](https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data)):
 
 1. Griselda Cortés Barrera (Tecnológico de Estudios Superiores de Ecatepec, TESE, México)
-2. Alejandra Catherine Montaña Acevedo (afiliación pendiente de confirmación)
-3. Jesús Manuel Olivares Ceja (afiliación pendiente de confirmación)
-4. Jhacer Kharen Ruiz Garduño (afiliación pendiente de confirmación)
+2. Alejandra Catherine Montaña Acevedo (automatización del proceso de datos, transformación, verificación con IA y desarrollo de software; código base en Kaggle y GitHub)
+3. Jesús Manuel Olivares Ceja (apoyo en proyecto)
+4. Jhacer Kharen Ruiz Garduño (apoyo en proyecto)
 
 La autoría del recurso citable no implica titularidad conjunta del código fuente.
 
