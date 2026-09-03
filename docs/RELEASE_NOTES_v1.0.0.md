@@ -36,7 +36,7 @@ El código del repositorio mantiene copyright de Alejandra Catherine Montaña Ac
 Afiliación o rol documentado:
 
 - Griselda Cortés Barrera — Tecnológico de Estudios Superiores de Ecatepec (TESE), México
-- Alejandra Catherine Montaña Acevedo — Coinvestigadora, Corporación Universitaria Minuto de Dios (Uniminuto). Encargada de la automatización del proceso de datos: transformación, verificación con inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub.
+- Alejandra Catherine Montaña Acevedo — Coinvestigadora, Corporación Universitaria Minuto de Dios (Uniminuto). Encargada de la automatización del proceso de datos: transformación, verificación de los procesos de inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub.
 - Jesús Manuel Olivares Ceja — Apoyo en proyecto
 - Jhacer Kharen Ruiz Garduño — Apoyo en proyecto
 

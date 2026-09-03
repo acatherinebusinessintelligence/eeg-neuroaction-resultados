@@ -25,7 +25,7 @@ This file does not create a GitHub Release.
 ### Changed
 
 - aclaración de autoría y derechos: código (MIT, Alejandra Catherine Montaña Acevedo); dataset EEG 25-1 (cuatro autores); resultados derivados (atribución a los cuatro); recurso citable (cuatro autores, sin titularidad conjunta del código).
-- roles documentados: Alejandra Catherine Montaña Acevedo (coinvestigadora, Corporación Universitaria Minuto de Dios (Uniminuto); automatización de datos, IA y software); Jesús Manuel Olivares Ceja y Jhacer Kharen Ruiz Garduño (apoyo en proyecto).
+- roles documentados: Alejandra Catherine Montaña Acevedo (coinvestigadora, Corporación Universitaria Minuto de Dios (Uniminuto); automatización de datos, verificación de los procesos de inteligencia artificial y desarrollo de software); Jesús Manuel Olivares Ceja y Jhacer Kharen Ruiz Garduño (apoyo en proyecto).
 
 ### Known limitations
 

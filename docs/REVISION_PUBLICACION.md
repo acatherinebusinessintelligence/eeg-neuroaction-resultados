@@ -63,7 +63,7 @@ Se distinguen capas. La autoría del recurso citable no implica titularidad conj
 Afiliaciones:
 
 1. Griselda Cortés Barrera — Tecnológico de Estudios Superiores de Ecatepec (TESE), México
-2. Alejandra Catherine Montaña Acevedo — Coinvestigadora, Corporación Universitaria Minuto de Dios (Uniminuto). Encargada de la automatización del proceso de datos: transformación, verificación con inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub.
+2. Alejandra Catherine Montaña Acevedo — Coinvestigadora, Corporación Universitaria Minuto de Dios (Uniminuto). Encargada de la automatización del proceso de datos: transformación, verificación de los procesos de inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub.
 3. Jesús Manuel Olivares Ceja — Apoyo en proyecto
 4. Jhacer Kharen Ruiz Garduño — Apoyo en proyecto
 

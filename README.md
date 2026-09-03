@@ -58,7 +58,7 @@ Alejandra Catherine Montaña Acevedo
 Licencia:  
 MIT
 
-Copyright: (c) 2026 Alejandra Catherine Montaña Acevedo (`LICENSE-CODE`). Rol documentado: encargada de la automatización del proceso de datos, transformación, verificación con inteligencia artificial y desarrollo de software (código base en Kaggle y GitHub). No hay evidencia en este repositorio de contribución de software de los demás autores del dataset; no se les declara titulares del código.
+Copyright: (c) 2026 Alejandra Catherine Montaña Acevedo (`LICENSE-CODE`). Rol documentado: encargada de la automatización del proceso de datos, transformación, verificación de los procesos de inteligencia artificial y desarrollo de software (código base en Kaggle y GitHub). No hay evidencia en este repositorio de contribución de software de los demás autores del dataset; no se les declara titulares del código.
 
 ### Dataset fuente EEG 25-1
 
@@ -86,7 +86,7 @@ Fuente de Griselda Cortés Barrera: ficha Kaggle / TESE. Afiliación y rol de Al
 | Autor | Afiliación o rol documentado |
 | --- | --- |
 | Griselda Cortés Barrera | Tecnológico de Estudios Superiores de Ecatepec (TESE), México |
-| Alejandra Catherine Montaña Acevedo | Coinvestigadora, Corporación Universitaria Minuto de Dios (Uniminuto). Encargada de la automatización del proceso de datos: transformación, verificación con inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub. |
+| Alejandra Catherine Montaña Acevedo | Coinvestigadora, Corporación Universitaria Minuto de Dios (Uniminuto). Encargada de la automatización del proceso de datos: transformación, verificación de los procesos de inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub. |
 | Jesús Manuel Olivares Ceja | Apoyo en proyecto |
 | Jhacer Kharen Ruiz Garduño | Apoyo en proyecto |
 
@@ -169,7 +169,7 @@ La referencia de [`CITATION.cff`](CITATION.cff) corresponde al recurso **EEG Neu
 Autores del recurso citable (mismo orden que la ficha Kaggle [EEG 25-1](https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data)):
 
 1. Griselda Cortés Barrera (Tecnológico de Estudios Superiores de Ecatepec, TESE, México)
-2. Alejandra Catherine Montaña Acevedo (Coinvestigadora, Corporación Universitaria Minuto de Dios (Uniminuto); automatización del proceso de datos, transformación, verificación con IA y desarrollo de software; código base en Kaggle y GitHub)
+2. Alejandra Catherine Montaña Acevedo (Coinvestigadora, Corporación Universitaria Minuto de Dios (Uniminuto); automatización del proceso de datos, transformación, verificación de los procesos de inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub)
 3. Jesús Manuel Olivares Ceja (apoyo en proyecto)
 4. Jhacer Kharen Ruiz Garduño (apoyo en proyecto)
 
