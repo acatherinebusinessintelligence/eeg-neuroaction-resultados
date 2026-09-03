@@ -22,6 +22,10 @@ This file does not create a GitHub Release.
 - documentación de pipeline;
 - definición del alcance del release.
 
+### Changed
+
+- aclaración de autoría y derechos: código (MIT, Alejandra Catherine Montaña Acevedo); dataset EEG 25-1 (cuatro autores); resultados derivados (atribución a los cuatro); recurso citable (cuatro autores, sin titularidad conjunta del código).
+
 ### Known limitations
 
 - notebook fuente no incluido;

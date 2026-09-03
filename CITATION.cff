@@ -1,9 +1,9 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it using the metadata from this file."
+message: "Cite this record as the citable resource EEG NeuroAction: resultados, análisis y visualización interactiva (derived results, reports, and interactive visualization). This citation describes that scientific resource; it does not state that all listed authors hold copyright in the repository source code. Source-code copyright is documented in LICENSE-CODE."
 type: software
 title: "EEG NeuroAction: resultados, análisis y visualización interactiva"
 version: "1.0.0"
-abstract: "Web viewer and technical results from the EEG NeuroAction pipeline for exploring BANDPOWER-derived EEG features, cleaning variants, motor-class models, and interactive visualizations. This repository archives published outputs from a Kaggle run; it does not include raw EEG or the computational pipeline source. Provenance and authorship follow the Kaggle dataset EEG 25-1."
+abstract: "Citable resource of derived EEG NeuroAction results: web viewer, reports, figures, and metrics on BANDPOWER features from a Kaggle run. Provenance follows dataset EEG 25-1. Listed authors are authors of this citable results resource; they are not hereby declared joint copyright holders of the repository source code (see LICENSE-CODE). This archive does not include raw EEG or the computational pipeline source."
 authors:
   - given-names: "Griselda"
     family-names: "Cortés Barrera"

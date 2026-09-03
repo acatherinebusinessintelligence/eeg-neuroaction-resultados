@@ -53,9 +53,14 @@ Eso **no** permite afirmar anonimato absoluto.
 
 ## Autoría y procedencia
 
-Fuente de autoría: ficha Kaggle del dataset [EEG 25-1](https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data).
+Se distinguen capas. La autoría del recurso citable no implica titularidad conjunta del código fuente.
 
-Autores (mismo orden):
+- **Código:** MIT; copyright (c) 2026 Alejandra Catherine Montaña Acevedo (`LICENSE-CODE`).
+- **Dataset fuente EEG 25-1:** ficha Kaggle <https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data>. Autores (mismo orden): Griselda Cortés Barrera; Alejandra Catherine Montaña Acevedo; Jesús Manuel Olivares Ceja; Jhacer Kharen Ruiz Garduño.
+- **Resultados derivados:** atribución a esos cuatro autores (`LICENSE-RESULTS.md`).
+- **Recurso citable:** los mismos cuatro autores en `CITATION.cff` para *EEG NeuroAction: resultados, análisis y visualización interactiva*.
+
+Afiliaciones:
 
 1. Griselda Cortés Barrera — Tecnológico de Estudios Superiores de Ecatepec (TESE), México
 2. Alejandra Catherine Montaña Acevedo — Afiliación pendiente de confirmación
@@ -73,7 +78,7 @@ Laboratorio: **National Laboratory in Artificial Intelligence and Data Science**
 - **URL:** <https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data>
 - **Autores:** Griselda Cortés Barrera; Alejandra Catherine Montaña Acevedo; Jesús Manuel Olivares Ceja; Jhacer Kharen Ruiz Garduño
 
-Esta ficha se utiliza como fuente de procedencia y autoría.
+Esta ficha se utiliza como fuente de procedencia y autoría del dataset/proyecto, no como titularidad conjunta del código.
 
 ## Condiciones de redistribución
 
@@ -99,13 +104,13 @@ Texto oficial CC BY 4.0: <https://creativecommons.org/licenses/by/4.0/>
 
 | Componente | Qué hay en este repositorio | Licencia aplicada |
 | --- | --- | --- |
-| Código de interfaz | HTML/CSS/JS del visor, dashboard, `index.html` e informe | MIT (`LICENSE-CODE`). Copyright (c) 2026 Alejandra Catherine Montaña Acevedo. |
-| Documentación | `README.md`, `CHANGELOG.md`, `docs/` | CC BY 4.0 (`LICENSE-DOCS.md`). Atribución a los cuatro autores documentados, TESE cuando corresponda y el laboratorio descrito en Kaggle. |
-| Resultados derivados | CSV, XLSX, PNG, HTML de evaluación, matrices, métricas | CC BY 4.0 (`LICENSE-RESULTS.md`). Redistribución autorizada. Requiere reconocimiento a los autores del dataset/proyecto, a TESE cuando corresponda y al laboratorio descrito públicamente. No otorga derechos adicionales sobre datos fuente de terceros. No autoriza reidentificación. |
+| Código de interfaz | HTML/CSS/JS del visor, dashboard, `index.html` e informe | MIT (`LICENSE-CODE`). Copyright (c) 2026 Alejandra Catherine Montaña Acevedo. Los demás autores del dataset **no** se declaran titulares de este código. |
+| Documentación | `README.md`, `CHANGELOG.md`, `docs/` | CC BY 4.0 (`LICENSE-DOCS.md`). Preparada y organizada por Alejandra Catherine Montaña Acevedo, incorporando procedencia de EEG 25-1. No altera derechos del dataset fuente. |
+| Resultados derivados | CSV, XLSX, PNG, HTML de evaluación, matrices, métricas | CC BY 4.0 (`LICENSE-RESULTS.md`). Atribución a los cuatro autores del proyecto EEG 25-1, TESE cuando corresponda y el laboratorio descrito públicamente. No transfiere copyright entre autores. No otorga derechos adicionales sobre datos fuente de terceros. No autoriza reidentificación. No implica titularidad conjunta del código. |
 | Datos fuente | CSV/TXT EEG originales **no están** en este repositorio | Fuera de estas licencias. |
 | Archivos de terceros | Plotly.js v2.35.2 embebido (MIT de Plotly, Inc.) | Conservar atribución. No relicenciar Plotly. |
 
-**Advertencia:** no hay un único archivo `LICENSE` que cubra todo el árbol. Usar los tres archivos según el tipo de material. No se afirma propiedad institucional más allá de lo documentado.
+**Advertencia:** no hay un único archivo `LICENSE` que cubra todo el árbol. Usar los tres archivos según el tipo de material. No se afirma propiedad institucional más allá de lo documentado. El campo `license: MIT` de `CITATION.cff` identifica la licencia del software de interfaz; no afirma que los cuatro autores del recurso sean titulares del código.
 
 ## Fechas y timestamps
 

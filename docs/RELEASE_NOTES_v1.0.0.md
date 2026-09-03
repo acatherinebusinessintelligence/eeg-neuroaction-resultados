@@ -22,12 +22,16 @@ Inventario: [RELEASE_SCOPE_v1.0.0.md](RELEASE_SCOPE_v1.0.0.md).
 
 El dataset fuente **no** se duplica en este release. Este repositorio publica **resultados derivados**, no los CSV/TXT de señal ni EDF.
 
-## Autores
+## Autoría y atribución
+
+Autores del recurso citable EEG NeuroAction Resultados v1.0.0:
 
 - Griselda Cortés Barrera
 - Alejandra Catherine Montaña Acevedo
 - Jesús Manuel Olivares Ceja
 - Jhacer Kharen Ruiz Garduño
+
+El código del repositorio mantiene copyright de Alejandra Catherine Montaña Acevedo bajo MIT; la autoría del recurso científico no implica titularidad conjunta del software.
 
 Afiliación documentada: Griselda Cortés Barrera — Tecnológico de Estudios Superiores de Ecatepec (TESE), México. Las demás afiliaciones: pendientes de confirmación.
 
@@ -68,7 +72,7 @@ CC BY 4.0
 Resultados derivados:  
 CC BY 4.0
 
-Atribución a los autores del dataset/proyecto, a TESE cuando corresponda y al laboratorio descrito públicamente. La licencia de resultados no otorga derechos adicionales sobre datos fuente de terceros.
+Atribución a los autores del proyecto EEG 25-1, a TESE cuando corresponda y al laboratorio descrito públicamente. El código permanece bajo MIT con copyright de Alejandra Catherine Montaña Acevedo. La autoría del recurso científico no implica titularidad conjunta del software. La licencia de resultados no otorga derechos adicionales sobre datos fuente de terceros.
 
 ## Limitaciones
 

@@ -42,7 +42,18 @@ Autores (orden de la ficha oficial):
 - Jesús Manuel Olivares Ceja
 - Jhacer Kharen Ruiz Garduño
 
-Esta ficha se utiliza como fuente de procedencia y autoría.
+Esta ficha se utiliza como fuente de procedencia y autoría del dataset/proyecto. No declara titularidad conjunta del código de este repositorio.
+
+## Autoría y procedencia
+
+Se distinguen cuatro capas. La autoría del recurso citable no implica titularidad conjunta del código fuente.
+
+| Capa | Autores / titular | Qué cubre |
+| --- | --- | --- |
+| Código de este repositorio | Alejandra Catherine Montaña Acevedo (copyright MIT, `LICENSE-CODE`) | HTML/CSS/JS de visor, dashboard, `index.html` e informe. No hay evidencia aquí de contribución de software de los demás autores del dataset. |
+| Dataset fuente EEG 25-1 | Griselda Cortés Barrera; Alejandra Catherine Montaña Acevedo; Jesús Manuel Olivares Ceja; Jhacer Kharen Ruiz Garduño | Proyecto/dataset en Kaggle: <https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data> |
+| Resultados derivados | Atribución a los cuatro autores del proyecto EEG 25-1; reconocimiento de TESE y del laboratorio descrito en la ficha cuando corresponda (`LICENSE-RESULTS.md`, CC BY 4.0) | Reportes, figuras, métricas y visualizaciones de este archivo. |
+| Recurso citable v1.0.0 | Los mismos cuatro autores en `CITATION.cff` | Obra conjunta de **resultados** titulada *EEG NeuroAction: resultados, análisis y visualización interactiva*. No es cesión conjunta de derechos sobre el código. |
 
 ## Autoría y afiliaciones
 

@@ -44,9 +44,42 @@ Autores (orden de la ficha Kaggle):
 - Jesús Manuel Olivares Ceja
 - Jhacer Kharen Ruiz Garduño
 
-Esta ficha se utiliza como fuente de procedencia y autoría de los resultados publicados aquí.
+Esta ficha se utiliza como fuente de procedencia y autoría del dataset/proyecto, no como declaración de titularidad conjunta del código de este repositorio.
 
-## Autoría y afiliaciones
+## Autoría, atribución y derechos
+
+La autoría del recurso citable no implica titularidad conjunta del código fuente.
+
+### Código
+
+Autora:  
+Alejandra Catherine Montaña Acevedo
+
+Licencia:  
+MIT
+
+Copyright: (c) 2026 Alejandra Catherine Montaña Acevedo (`LICENSE-CODE`). No hay evidencia en este repositorio de contribución de software de los demás autores del dataset; no se les declara titulares del código.
+
+### Dataset fuente EEG 25-1
+
+Autores:
+
+- Griselda Cortés Barrera
+- Alejandra Catherine Montaña Acevedo
+- Jesús Manuel Olivares Ceja
+- Jhacer Kharen Ruiz Garduño
+
+Fuente: <https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data>
+
+### Resultados derivados
+
+La reutilización requiere atribución a los autores del proyecto EEG 25-1 y reconocimiento institucional cuando corresponda (TESE; National Laboratory in Artificial Intelligence and Data Science, según la formulación documentada en la ficha Kaggle). Licencia: CC BY 4.0 (`LICENSE-RESULTS.md`).
+
+### Recurso citable (CITATION.cff)
+
+Los cuatro autores anteriores figuran como autores del recurso **EEG NeuroAction: resultados, análisis y visualización interactiva**. Esa lista describe la obra conjunta de resultados. No implica que todos sean titulares del copyright del código.
+
+### Afiliaciones documentadas
 
 | Autor | Afiliación |
 | --- | --- |
@@ -127,22 +160,24 @@ Este repo permite consultar las salidas. No permite reejecutar el experimento. N
 
 ## Citación
 
-Autores (mismo orden que la ficha Kaggle [EEG 25-1](https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data)):
+La referencia de [`CITATION.cff`](CITATION.cff) corresponde al recurso **EEG NeuroAction: resultados, análisis y visualización interactiva** (resultados derivados, reportes y visualización interactiva), versión **1.0.0** (Release Candidate documental).
+
+Autores del recurso citable (mismo orden que la ficha Kaggle [EEG 25-1](https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data)):
 
 1. Griselda Cortés Barrera (Tecnológico de Estudios Superiores de Ecatepec, TESE, México)
 2. Alejandra Catherine Montaña Acevedo (afiliación pendiente de confirmación)
 3. Jesús Manuel Olivares Ceja (afiliación pendiente de confirmación)
 4. Jhacer Kharen Ruiz Garduño (afiliación pendiente de confirmación)
 
-Versión: **1.0.0** (Release Candidate documental)
+La autoría del recurso citable no implica titularidad conjunta del código fuente.
 
-Citar este software con los metadatos de [`CITATION.cff`](CITATION.cff). El DOI de Zenodo se añadirá **solo cuando exista**; no hay DOI en esta versión.
+El DOI de Zenodo se añadirá **solo cuando exista**; no hay DOI en esta versión.
 
 ## Licencias y atribución
 
-- **Código:** MIT
-- **Documentación:** CC BY 4.0
-- **Resultados derivados:** CC BY 4.0
+- **Código:** MIT — sola titular documentada: Alejandra Catherine Montaña Acevedo (`LICENSE-CODE`)
+- **Documentación:** CC BY 4.0 — preparada y organizada por Alejandra Catherine Montaña Acevedo (`LICENSE-DOCS.md`)
+- **Resultados derivados:** CC BY 4.0 — atribución a los cuatro autores del proyecto EEG 25-1 (`LICENSE-RESULTS.md`)
 
 Enlaces:
 
@@ -150,11 +185,11 @@ Enlaces:
 - [Licencia de documentación](LICENSE-DOCS.md)
 - [Licencia de resultados](LICENSE-RESULTS.md)
 
-La reutilización de resultados debe reconocer a los autores del dataset/proyecto, a Tecnológico de Estudios Superiores de Ecatepec (TESE) cuando corresponda, y al laboratorio descrito públicamente como National Laboratory in Artificial Intelligence and Data Science.
+La reutilización de resultados debe reconocer a los autores del dataset/proyecto EEG 25-1, a Tecnológico de Estudios Superiores de Ecatepec (TESE) cuando corresponda, y al laboratorio descrito públicamente como National Laboratory in Artificial Intelligence and Data Science.
 
 Denominación del laboratorio tomada de la biografía pública de Griselda Cortés Barrera en la ficha Kaggle del dataset. No se afirma un nombre institucional oficial en español ni se inventa un acrónimo.
 
-La licencia de resultados no otorga derechos adicionales sobre datos fuente de terceros y no autoriza reidentificación de participantes.
+La licencia de resultados no transfiere copyright entre autores, no otorga derechos adicionales sobre datos fuente de terceros, no autoriza reidentificación y no implica que todos los autores sean titulares del código.
 
 Texto oficial CC BY 4.0: <https://creativecommons.org/licenses/by/4.0/>
 

@@ -12,8 +12,6 @@ Código legal:
 
 https://creativecommons.org/licenses/by/4.0/legalcode
 
-Copyright (c) 2026 Alejandra Catherine Montaña Acevedo
-
 ## Alcance
 
 Esta licencia **aplica a los resultados derivados publicados en este repositorio**.
@@ -27,23 +25,33 @@ No cubre:
 
 ## Atribución
 
-La reutilización requiere reconocimiento a:
+Los resultados derivados publicados en este repositorio deben atribuirse a:
 
-1. los autores del dataset/proyecto, según la ficha Kaggle [EEG 25-1](https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data):
-   - Griselda Cortés Barrera
-   - Alejandra Catherine Montaña Acevedo
-   - Jesús Manuel Olivares Ceja
-   - Jhacer Kharen Ruiz Garduño
-2. Tecnológico de Estudios Superiores de Ecatepec (TESE), México, cuando corresponda (afiliación documentada de Griselda Cortés Barrera);
-3. el laboratorio descrito públicamente como **National Laboratory in Artificial Intelligence and Data Science**.
+- Griselda Cortés Barrera
+- Alejandra Catherine Montaña Acevedo
+- Jesús Manuel Olivares Ceja
+- Jhacer Kharen Ruiz Garduño
 
-Denominación del laboratorio tomada de la biografía pública de Griselda Cortés Barrera en la ficha Kaggle del dataset. No se afirma que ese sea el nombre institucional oficial registrado en español, ni se inventa un acrónimo.
+y reconocer, cuando corresponda:
 
-No se afirma propiedad institucional más allá de lo documentado.
+- Tecnológico de Estudios Superiores de Ecatepec (TESE)
+- National Laboratory in Artificial Intelligence and Data Science
+
+Fuente de autoría del proyecto/dataset: ficha Kaggle [EEG 25-1](https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data).
+
+Denominación del laboratorio tomada de la biografía pública de Griselda Cortés Barrera en esa ficha. No se afirma que ese sea el nombre institucional oficial registrado en español, ni se inventa un acrónimo. No se afirma propiedad institucional más allá de lo documentado.
 
 ## Límites
 
-- Esta licencia **no otorga derechos adicionales** sobre datos fuente de terceros.
-- Esta licencia **no autoriza la reidentificación** de participantes.
-- Los códigos de sujeto (`cano`, `villanueva` y códigos numéricos) no deben presentarse como nombres reales.
-- Los resultados son características BANDPOWER derivadas; no equivalen a qEEG clínico normativo ni a confirmación fisiológica con EEG crudo/EOG/EMG/ECG.
+Esta licencia:
+
+- no transfiere derechos de copyright entre autores;
+- no concede derechos adicionales sobre datos fuente de terceros;
+- no autoriza reidentificación;
+- no implica que todos los autores sean titulares del código fuente del repositorio.
+
+El copyright del código de este repositorio está documentado en `LICENSE-CODE` (MIT; Copyright (c) 2026 Alejandra Catherine Montaña Acevedo).
+
+Los códigos de sujeto (`cano`, `villanueva` y códigos numéricos) no deben presentarse como nombres reales.
+
+Los resultados son características BANDPOWER derivadas; no equivalen a qEEG clínico normativo ni a confirmación fisiológica con EEG crudo/EOG/EMG/ECG.

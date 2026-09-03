@@ -33,6 +33,15 @@ Las visualizaciones corresponden a características EEG BANDPOWER derivadas y no
 
 No se copian CSV/TXT de señal ni EDF del dataset fuente ni de Kaggle Working.
 
+## Autoría y derechos
+
+- **Código:** MIT; copyright de Alejandra Catherine Montaña Acevedo (`LICENSE-CODE`). No se declara a los demás autores como titulares del código.
+- **Dataset fuente EEG 25-1:** cuatro autores (Griselda Cortés Barrera; Alejandra Catherine Montaña Acevedo; Jesús Manuel Olivares Ceja; Jhacer Kharen Ruiz Garduño), alojado en Kaggle.
+- **Resultados derivados:** atribución a esos cuatro autores, con reconocimiento de TESE y del laboratorio descrito en la ficha Kaggle cuando corresponda (CC BY 4.0).
+- **Recurso citable / futura publicación Zenodo:** los cuatro autores del recurso de **resultados**. Eso no es una cesión conjunta de derechos sobre todo el repositorio ni sobre el código.
+
+La autoría del recurso citable no implica titularidad conjunta del código fuente.
+
 ## Inventario del release
 
 | Recurso | Incluir en release | Justificación |
