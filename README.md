@@ -1,10 +1,122 @@
-# EEG NeuroAction - Visor Interactivo
+# EEG NeuroAction
 
-Repositorio publicado desde Kaggle para visualizar resultados del pipeline EEG NeuroAction.
+## Resultados y visor interactivo
 
-Archivos principales:
+Visor web y archivo de resultados técnicos del pipeline EEG NeuroAction: reportes, figuras y métricas de clasificación sobre características EEG BANDPOWER asociadas a movimientos motores.
 
-- `index.html`
-- `visor_interactivo_eeg.html`
+**Versión de preparación:** v0.9.0  
+**Estado:** candidata a primera versión estable. Aún no hay tag `v1.0.0`, GitHub Release ni DOI de Zenodo.
 
-Nota metodológica: las visualizaciones corresponden a características EEG BANDPOWER derivadas. No equivalen a qEEG clínico normativo ni a confirmación fisiológica con EEG crudo/EOG/EMG/ECG.
+Las visualizaciones corresponden a características EEG BANDPOWER derivadas. No equivalen a qEEG clínico normativo ni a confirmación fisiológica con EEG crudo/EOG/EMG/ECG.
+
+## Descripción
+
+Este repositorio publica salidas de una corrida Kaggle (`run_20260902_145353`) para explorar, por sujeto y por variante de limpieza:
+
+- figuras de BANDPOWER (scroll, topomapas, espectros);
+- sospechas de artefactos sobre características derivadas;
+- modelos de clasificación y matrices de confusión;
+- comparación controlada de estrategias de balanceo.
+
+No contiene el código del pipeline ni las series EEG crudas.
+
+## Objetivo
+
+Dejar documentadas, trazables y citables las salidas del análisis EEG NeuroAction, de forma que una futura v1.0.0 pueda archivarse en Zenodo sin alterar los resultados computacionales.
+
+## Visor
+
+Página de entrada: [`index.html`](index.html)
+
+Visor interactivo: [`visor_interactivo_eeg.html`](visor_interactivo_eeg.html)
+
+GitHub Pages: <https://acatherinebusinessintelligence.github.io/eeg-neuroaction-resultados/>
+
+El visor permite filtrar por sujeto, tipo de figura, variante de limpieza/modelado y estrategia de balanceo, y muestra galería, métricas, artefactos sospechados y matrices.
+
+## Dashboard
+
+[`dashboard_eeg_neuroaction.html`](dashboard_eeg_neuroaction.html)
+
+Resumen ejecutivo de la corrida (sujetos, retención, outliers, artefactos sospechados) con gráficos Plotly embebidos.
+
+## Informe de evaluación
+
+[`informe_evaluacion_resultados.html`](informe_evaluacion_resultados.html)
+
+También: [`reports/resumen_ejecutivo_resultados.txt`](reports/resumen_ejecutivo_resultados.txt)
+
+Clasifica la evidencia de modelado por sujeto (aprobado, revisión, no confiable). Esa clasificación no es un diagnóstico médico.
+
+## Estructura de resultados
+
+```text
+.
+├── index.html
+├── visor_interactivo_eeg.html
+├── dashboard_eeg_neuroaction.html
+├── informe_evaluacion_resultados.html
+├── figures/          # PNG por sujeto, topomapas, scroll, spectral, master
+├── reports/          # CSV, XLSX, HTML auxiliares, balanceo
+└── docs/             # metodología, inventario y revisión de publicación
+```
+
+Inventario detallado: [Resultados](docs/RESULTADOS.md)
+
+## Metodología
+
+[Metodología](docs/metodologia.md)
+
+Las visualizaciones corresponden a características EEG BANDPOWER derivadas. No equivalen a qEEG clínico normativo ni a confirmación fisiológica con EEG crudo/EOG/EMG/ECG.
+
+## Limitaciones
+
+- No hay EEG crudo, EOG, EMG ni ECG en este repositorio.
+- No hay scripts ni notebooks que regeneren las métricas.
+- Los artefactos son sospechas sobre BANDPOWER, no confirmación fisiológica.
+- Algunos identificadores de sujeto son apellidos; ver la revisión de publicación.
+- No debe usarse como qEEG clínico, diagnóstico médico ni sustituto de evaluación clínica.
+
+## Reproducibilidad
+
+Cadena observada:
+
+**Kaggle (`TESE_pruebas` / `run_20260902_145353`)** → **procesamiento (no versionado aquí)** → **reportes** → **visualizaciones** → **GitHub Pages**
+
+Este repo permite consultar las salidas. No permite reejecutar el experimento.
+
+## Citación
+
+Autora: Alejandra Catherine Montaña Acevedo
+
+Versión de preparación: **0.9.0**
+
+Citar este software con los metadatos de [`CITATION.cff`](CITATION.cff). El DOI de Zenodo se añadirá **solo cuando exista**; no hay DOI en esta versión.
+
+## Licencia
+
+Pendiente de decisión. Hay incertidumbre sobre origen, consentimiento y derechos de los resultados derivados, por lo que **no se añade `LICENSE` todavía**.
+
+Propuesta documentada (no aplicada): código MIT; documentación CC BY 4.0; resultados derivados CC BY 4.0 solo si no hay restricciones de origen.
+
+Detalle: [Revisión para publicación](docs/REVISION_PUBLICACION.md)
+
+## Estado del proyecto
+
+| Ítem | Estado |
+| --- | --- |
+| Documentación metodológica | Añadida en v0.9.0 |
+| Inventario de resultados | Añadido en v0.9.0 |
+| Revisión de publicación / privacidad | Añadida en v0.9.0; pendiente decisión humana |
+| `CITATION.cff` | 0.9.0, sin DOI |
+| Licencia | No aplicada todavía |
+| Tag / GitHub Release | No creado |
+| Zenodo / DOI | No creado |
+| Convención futura | v1.0.0, v1.1.0, v2.0.0 |
+
+## Enlaces
+
+- [Metodología](docs/metodologia.md)
+- [Revisión para publicación](docs/REVISION_PUBLICACION.md)
+- [Inventario de resultados](docs/RESULTADOS.md)
+- [CHANGELOG](CHANGELOG.md)

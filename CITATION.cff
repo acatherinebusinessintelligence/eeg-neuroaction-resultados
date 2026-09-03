@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+title: "EEG NeuroAction: resultados, análisis y visualización interactiva"
+version: "0.9.0"
+date-released: "2026-09-03"
+abstract: "Web viewer and technical results from the EEG NeuroAction pipeline for exploring BANDPOWER-derived EEG features, cleaning variants, motor-class models, and interactive visualizations. This repository archives published outputs from a Kaggle run; it does not include raw EEG or the computational pipeline source."
+authors:
+  - given-names: "Alejandra Catherine"
+    family-names: "Montaña Acevedo"
+repository-code: "https://github.com/acatherinebusinessintelligence/eeg-neuroaction-resultados"
+url: "https://github.com/acatherinebusinessintelligence/eeg-neuroaction-resultados"
+keywords:
+  - EEG
+  - electroencephalography
+  - bandpower
+  - signal processing
+  - machine learning
+  - data visualization
+  - neuroscience
+  - reproducible research
