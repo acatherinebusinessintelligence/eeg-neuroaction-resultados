@@ -2,7 +2,7 @@
 
 **Repositorio:** `acatherinebusinessintelligence/eeg-neuroaction-resultados`  
 **Rama:** `main` (HEAD alineado con `origin/main` al iniciar esta auditoría)  
-**Versión de preparación:** v0.9.0  
+**Versión:** v1.0.0 Release Candidate  
 **Fecha de auditoría:** 2026-09-03  
 
 Fuentes primarias usadas:

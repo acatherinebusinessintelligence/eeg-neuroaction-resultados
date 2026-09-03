@@ -1,6 +1,6 @@
 # Modelos e hiperparámetros
 
-**Versión de preparación:** v0.9.0  
+**Versión:** v1.0.0 Release Candidate  
 **Corrida:** `run_20260902_145353`  
 **Alcance:** solo lo tabulados en reportes de este repositorio. No se reconstruyen defaults de sklearn, Weka ni de ningún otro framework.
 

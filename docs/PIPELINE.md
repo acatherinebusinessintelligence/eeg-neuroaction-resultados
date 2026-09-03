@@ -1,6 +1,6 @@
 # Pipeline EEG NeuroAction (trazabilidad de salidas)
 
-**Versión de preparación:** v0.9.0  
+**Versión:** v1.0.0 Release Candidate  
 **Corrida registrada en los HTML y reportes:** `run_20260902_145353`  
 **Ruta Kaggle observada:** `/kaggle/working/outputs/TESE_pruebas/run_20260902_145353`
 

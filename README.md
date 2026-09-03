@@ -4,8 +4,17 @@
 
 Visor web y archivo de resultados técnicos del pipeline EEG NeuroAction: reportes, figuras y métricas de clasificación sobre características EEG BANDPOWER asociadas a movimientos motores.
 
-**Versión de preparación:** v0.9.0  
-**Estado:** listo para v1.0.0 con limitaciones documentadas. Aún no hay tag `v1.0.0`, GitHub Release ni DOI de Zenodo. La versión no se ha cambiado.
+**Versión:** v1.0.0 Release Candidate  
+**Estado:** Release Candidate documental. No hay tag `v1.0.0`, GitHub Release ni DOI de Zenodo.
+
+## Estado de la versión
+
+EEG NeuroAction Resultados v1.0.0 preserva los resultados derivados, reportes y visualizaciones disponibles en el repositorio.
+
+La versión se publica con limitaciones documentadas de reproducibilidad.
+
+[Alcance de v1.0.0](docs/RELEASE_SCOPE_v1.0.0.md)  
+[Notas de v1.0.0](docs/RELEASE_NOTES_v1.0.0.md)
 
 Las visualizaciones corresponden a características EEG BANDPOWER derivadas. No equivalen a qEEG clínico normativo ni a confirmación fisiológica con EEG crudo/EOG/EMG/ECG.
 
@@ -125,7 +134,7 @@ Autores (mismo orden que la ficha Kaggle [EEG 25-1](https://www.kaggle.com/datas
 3. Jesús Manuel Olivares Ceja (afiliación pendiente de confirmación)
 4. Jhacer Kharen Ruiz Garduño (afiliación pendiente de confirmación)
 
-Versión de preparación: **0.9.0**
+Versión: **1.0.0** (Release Candidate documental)
 
 Citar este software con los metadatos de [`CITATION.cff`](CITATION.cff). El DOI de Zenodo se añadirá **solo cuando exista**; no hay DOI en esta versión.
 
@@ -151,27 +160,29 @@ Texto oficial CC BY 4.0: <https://creativecommons.org/licenses/by/4.0/>
 
 Detalle de publicación: [Revisión para publicación](docs/REVISION_PUBLICACION.md)
 
-Estado Zenodo / v1.0.0: **B. listo para v1.0.0 con limitaciones documentadas**. Versión actual **0.9.0**. No hay tag `v1.0.0` ni DOI. La RC no se ha creado.
+Estado: **APTO PARA RELEASE CANDIDATE v1.0.0 CON LIMITACIONES DOCUMENTADAS.** Versión **1.0.0**. No hay tag `v1.0.0` ni DOI. No se ha creado GitHub Release ni depósito Zenodo.
 
 ## Estado del proyecto
 
 | Ítem | Estado |
 | --- | --- |
-| Documentación metodológica | Auditoría mínima cerrada en docs (protocolo, adquisición, BANDPOWER, modelos); versión sigue 0.9.0 |
-| Inventario de resultados | Añadido en v0.9.0 |
-| Revisión de publicación / privacidad | Códigos institucionales confirmados; timestamps **CONSERVAR**; decisión **B** para v1.0.0 con limitaciones |
+| Documentación metodológica | v1.0.0 RC; limitaciones de reproducibilidad explícitas |
+| Inventario de resultados | Incluido; alcance en [RELEASE_SCOPE_v1.0.0.md](docs/RELEASE_SCOPE_v1.0.0.md) |
+| Revisión de publicación / privacidad | Códigos institucionales confirmados; timestamps **CONSERVAR**; RC documental |
 | Identificadores | `cano` / `villanueva`: códigos institucionales pseudonimizados (no nombres reales) |
 | Autores | Cuatro autores de la ficha Kaggle EEG 25-1 |
 | TESE | Tecnológico de Estudios Superiores de Ecatepec, México |
 | Laboratorio | National Laboratory in Artificial Intelligence and Data Science (parcial; ficha Kaggle) |
 | Licencias | MIT (código); CC BY 4.0 (docs y resultados derivados) |
-| `CITATION.cff` | 0.9.0, `license: MIT`, sin DOI |
+| `CITATION.cff` | 1.0.0, `license: MIT`, sin DOI, sin `date-released` |
 | Tag / GitHub Release | No creado |
 | Zenodo / DOI | No creado |
 | Convención futura | v1.0.0, v1.1.0, v2.0.0 |
 
 ## Enlaces
 
+- [Alcance de v1.0.0](docs/RELEASE_SCOPE_v1.0.0.md)
+- [Notas de v1.0.0](docs/RELEASE_NOTES_v1.0.0.md)
 - [Metodología](docs/metodologia.md)
 - [Evidencia metodológica](docs/EVIDENCIA_METODOLOGICA.md)
 - [Modelos](docs/MODELOS.md)

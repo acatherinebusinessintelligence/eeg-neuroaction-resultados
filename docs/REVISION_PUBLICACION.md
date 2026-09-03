@@ -2,8 +2,8 @@
 
 Documento de preparación para una futura versión estable y un posible archivo citable en Zenodo.
 
-**Versión de preparación:** v0.9.0  
-**Estado:** listo para v1.0.0 con limitaciones documentadas (versión actual 0.9.0; RC no creada).  
+**Versión:** v1.0.0  
+**Estado:** APTO PARA RELEASE CANDIDATE v1.0.0 CON LIMITACIONES DOCUMENTADAS.  
 **Fecha de revisión:** 2026-09-03  
 **Alcance:** inspección de nombres de archivo, encabezados CSV, filas de muestra y texto de reportes/HTML. No se modificó ningún resultado computacional.
 
@@ -169,7 +169,7 @@ Este repositorio es un **archivo de resultados**, no el estudio experimental com
 - limitaciones y nivel de reproducibilidad;
 - licencias (MIT código; CC BY 4.0 docs y resultados).
 
-Estado de esos ítems: **cumplidos en documentación v0.9.0**, con laboratorio solo parcialmente nombrado (biografía Kaggle) y afiliaciones de tres autores pendientes — declarados, no inventados.
+Estado de esos ítems: **cumplidos en documentación v1.0.0 RC**, con laboratorio solo parcialmente nombrado (biografía Kaggle) y afiliaciones de tres autores pendientes — declarados, no inventados.
 
 ### Deseable para reproducción completa (no necesariamente bloqueante)
 
@@ -191,35 +191,38 @@ Estos faltantes están **declarados** en [EVIDENCIA_METODOLOGICA.md](EVIDENCIA_M
 - [x] Licencias definidas
 - [x] TESE identificado
 - [~] Laboratorio identificado parcialmente
-- [x] Timestamps cerrados (decisión **CONSERVAR**)
-- [x] Protocolo mínimo documentado (confirmado / parcial / pendiente, sin invención)
-- [x] Adquisición EEG mínima documentada (insuficiente para reconstruir el protocolo; declarado)
-- [x] BANDPOWER definido (nombres de banda; rangos Hz no documentados)
-- [x] Modelos documentados (nombres y métricas; hiperparámetros no documentados)
-- [x] Pipeline fuente identificado (ausente en este repo; corrida `run_20260902_145353` registrada)
-- [x] CITATION.cff validado
-- [ ] Archivos de release revisados (qué incluir en un depósito Zenodo, p. ej. detalle de artefactos)
-- [ ] Release candidate revisada
+- [x] Timestamps revisados
+- [x] Protocolo mínimo documentado con limitaciones
+- [x] Adquisición EEG documentada con limitaciones
+- [x] BANDPOWER documentado con limitaciones
+- [x] Modelos documentados
+- [x] Pipeline documentado con limitaciones
+- [x] Alcance del release definido
+- [x] CITATION.cff validado (`version: 1.0.0`, sin DOI, sin `date-released`)
+- [x] Detalle de artefactos (122 279 filas): **INCLUIR** en v1.0.0 (derivados; códigos pseudonimizados)
+- [ ] Release candidate revisada humanamente
+- [ ] GitHub Release creada
+- [ ] Zenodo archivado
+- [ ] DOI incorporado
 
-### Decisión de release readiness (v0.9.0 no se cambia)
+### Decisión de release readiness
 
-**B. LISTO PARA v1.0.0 CON LIMITACIONES DOCUMENTADAS**
+**APTO PARA RELEASE CANDIDATE v1.0.0 CON LIMITACIONES DOCUMENTADAS.**
 
-Justificación: los criterios **críticos para publicar un repositorio de resultados** están cubiertos y las lagunas científicas de reproducción están escritas de forma explícita. No es **A** porque el notebook, los hiperparámetros, los Hz de BANDPOWER y el protocolo experimental completo siguen ausentes. No es **C** porque esas ausencias no impiden citar y redistribuir **resultados ya computados** con licencia, autoría, procedencia y advertencias.
+La versión documental es **1.0.0**. No se crea tag, GitHub Release, Zenodo ni DOI en esta pasada.
 
-La versión permanece **0.9.0**. No se crea tag, GitHub Release, Zenodo ni DOI.
+Alcance: [RELEASE_SCOPE_v1.0.0.md](RELEASE_SCOPE_v1.0.0.md). Notas: [RELEASE_NOTES_v1.0.0.md](RELEASE_NOTES_v1.0.0.md).
 
-Para preparar el **release candidate** v1.0.0 (aún no ejecutado):
+Pendiente para una publicación posterior (no ejecutado aquí):
 
-1. Revisión humana de la lista de archivos del depósito (en particular `reporte_artefactos_sospechados_detalle.csv` / `.xlsx`).
-2. Pasar la versión a 1.0.0 en `CITATION.cff`, README, CHANGELOG y docs (un solo cambio coordinado).
-3. Crear tag `v1.0.0` y GitHub Release **solo cuando se decida publicar**.
-4. Opcional: añadir notebook/URL si aparece evidencia verificable; no inventarla.
-5. Opcional: completar afiliaciones pendientes si se confirman.
+1. Revisión humana de la Release Candidate.
+2. Crear tag `v1.0.0` y GitHub Release **solo cuando se decida publicar**.
+3. Archivar en Zenodo e incorporar DOI **solo cuando exista**.
+4. Opcional: notebook/URL o afiliaciones si aparecen con evidencia verificable.
 
 Estado actual:
 
-**Listo para v1.0.0 con limitaciones documentadas** (preparación). Versión **0.9.0**. Release candidate **no** revisada todavía.
+**APTO PARA RELEASE CANDIDATE v1.0.0 CON LIMITACIONES DOCUMENTADAS.** Versión **1.0.0**. Tag / GitHub Release / Zenodo / DOI: no creados.
 
 Esto es una decisión de publicación, no una evaluación científica de los resultados.
 
@@ -231,7 +234,7 @@ El mapa local `docs/MAPA_PSEUDONIMIZACION_LOCAL.md` permanece gitignored y **no*
 - no se modificaron CSV, XLSX, PNG ni HTML de resultados;
 - no se recodificaron identificadores;
 - no se alteraron timestamps (decisión CONSERVAR);
-- no se cambió el número de versión (sigue 0.9.0);
 - no se creó tag, GitHub Release ni DOI;
 - no se conectó Zenodo;
+- no se añadió `date-released` ni badge Zenodo;
 - no se inventaron ORCID, correos, URL de notebook, rangos Hz, hiperparámetros, acrónimo de laboratorio ni un nombre institucional oficial en español para el laboratorio.

@@ -3,8 +3,38 @@
 All notable documentation and packaging changes for EEG NeuroAction Resultados are recorded here.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
-Versioning follows the future convention v1.0.0 / v1.1.0 / v2.0.0.
-This file documents the preparation version; it does not create a GitHub Release.
+Versioning follows the convention v1.0.0 / v1.1.0 / v2.0.0.
+This file does not create a GitHub Release.
+
+## [1.0.0] - Unreleased
+
+### Added
+
+- documentación formal de metodología;
+- documentación de procedencia;
+- autores y afiliaciones verificadas disponibles;
+- revisión de privacidad;
+- revisión de pseudonimización;
+- esquema de licencias;
+- inventario de resultados;
+- auditoría metodológica;
+- documentación de modelos;
+- documentación de pipeline;
+- definición del alcance del release.
+
+### Known limitations
+
+- notebook fuente no incluido;
+- hiperparámetros incompletos;
+- frecuencias BANDPOWER no documentadas;
+- adquisición EEG incompleta;
+- protocolo experimental parcialmente documentado.
+
+### Notes
+
+- Release Candidate documental. No hay tag, GitHub Release, Zenodo, DOI ni `date-released`.
+- El detalle de artefactos (122 279 filas) **se incluye** en v1.0.0 como resultados derivados con códigos pseudonimizados.
+- No se modificaron CSV, XLSX, PNG ni HTML de resultados.
 
 ## [0.9.0] - 2026
 
@@ -28,9 +58,9 @@ This file documents the preparation version; it does not create a GitHub Release
 
 - Confirmación de la autora: `cano` y `villanueva` son códigos institucionales pseudonimizados (no nombres reales); riesgo documentado como bajo/controlado.
 - Redistribución de resultados autorizada, con atribución a la autora y al laboratorio (nombre formal pendiente).
-- `CITATION.cff`: campo `license: MIT`; versión **0.9.0** (v1.0.0 diferida).
+- `CITATION.cff`: campo `license: MIT`; versión **0.9.0** (v1.0.0 diferida en esa etapa).
 - Timestamps: decisión cerrada **CONSERVAR**; riesgo residual contextual; valores no modificados.
-- Criterios de publicación: **B. listo para v1.0.0 con limitaciones documentadas**; versión permanece 0.9.0; RC no creada.
+- Criterios de publicación: **B. listo para v1.0.0 con limitaciones documentadas**.
 
 ### Changed (autoría y procedencia)
 
@@ -43,6 +73,5 @@ This file documents the preparation version; it does not create a GitHub Release
 ### Notes
 
 - Decisión B: limitaciones (notebook ausente, hiperparámetros no documentados, Hz de BANDPOWER no documentados, protocolo experimental incompleto) están declaradas y no se inventan.
-- No se pasó el número de versión a v1.0.0.
 - No se modificaron CSV, XLSX, PNG ni HTML de resultados.
 - No se creó tag, GitHub Release, Zenodo ni DOI.

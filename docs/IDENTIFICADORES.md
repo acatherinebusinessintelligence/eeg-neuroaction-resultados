@@ -2,7 +2,7 @@
 
 Inventario de identificadores únicos. **No se declara anonimato absoluto.** Los códigos **no deben presentarse como nombres reales** ni usarse para reidentificar participantes.
 
-**Versión de preparación:** v0.9.0  
+**Versión:** v1.0.0 Release Candidate  
 **Fuente canónica de la lista:** columna `sujeto` de `reports/evaluacion_sujetos.csv` (15 valores únicos).  
 **Métrica de apariciones:** número de archivos en los que el identificador aparece en la **ruta** o en **contenido de texto inspeccionable** (`.csv`, `.html`, `.txt`, `.md`).
 

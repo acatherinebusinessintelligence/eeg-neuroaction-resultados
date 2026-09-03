@@ -2,8 +2,8 @@
 
 ## Metodología de procesamiento, análisis y visualización de resultados EEG
 
-**Versión de preparación:** v0.9.0  
-**Estado:** listo para v1.0.0 con limitaciones documentadas (el número de versión no se ha cambiado).  
+**Versión:** v1.0.0  
+**Estado:** Release Candidate  
 **Fuente de esta descripción:** archivos del repositorio `acatherinebusinessintelligence/eeg-neuroaction-resultados` (rama `main`) y la ficha Kaggle del dataset [EEG 25-1](https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data).
 
 Matriz de evidencia (elemento × fuente × estado): [EVIDENCIA_METODOLOGICA.md](EVIDENCIA_METODOLOGICA.md). Modelos: [MODELOS.md](MODELOS.md).
@@ -389,6 +389,20 @@ La cadena observada es:
 **fuente computacional (Kaggle, corrida `run_20260902_145353`)** → **procesamiento (no versionado aquí)** → **reportes** → **visualizaciones** → **GitHub / GitHub Pages**.
 
 Esto es un **registro de resultados**, no un **pipeline totalmente reproducible**.
+
+## Estado de reproducibilidad de v1.0.0
+
+EEG NeuroAction Resultados v1.0.0 se publica como Release Candidate documental con estas limitaciones, sin suavizarlas:
+
+- resultados preservados;
+- documentación metodológica parcial;
+- código fuente completo no incluido;
+- notebook fuente no disponible en el repositorio;
+- hiperparámetros incompletos;
+- rangos Hz BANDPOWER no documentados;
+- adquisición EEG parcialmente documentada.
+
+Alcance del snapshot: [RELEASE_SCOPE_v1.0.0.md](RELEASE_SCOPE_v1.0.0.md).
 
 ## Alcance científico
 

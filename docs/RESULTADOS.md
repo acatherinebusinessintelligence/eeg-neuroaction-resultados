@@ -1,6 +1,6 @@
 # Inventario de resultados
 
-**Versión de preparación:** v0.9.0  
+**Versión:** v1.0.0 Release Candidate  
 **Rama inspeccionada:** `main`  
 **Corrida de origen registrada en los HTML:** `/kaggle/working/outputs/TESE_pruebas/run_20260902_145353`
 

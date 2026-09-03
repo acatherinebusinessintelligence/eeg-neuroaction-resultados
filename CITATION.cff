@@ -2,8 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it using the metadata from this file."
 type: software
 title: "EEG NeuroAction: resultados, análisis y visualización interactiva"
-version: "0.9.0"
-date-released: "2026-09-03"
+version: "1.0.0"
 abstract: "Web viewer and technical results from the EEG NeuroAction pipeline for exploring BANDPOWER-derived EEG features, cleaning variants, motor-class models, and interactive visualizations. This repository archives published outputs from a Kaggle run; it does not include raw EEG or the computational pipeline source. Provenance and authorship follow the Kaggle dataset EEG 25-1."
 authors:
   - given-names: "Griselda"
