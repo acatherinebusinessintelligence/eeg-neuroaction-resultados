@@ -19,8 +19,11 @@ This file does not create a GitHub Release.
 - inventario de resultados;
 - auditoría metodológica;
 - documentación de modelos;
+- visor interactivo en español (`visor_interactivo_eeg.html`);
+- visor interactivo in English (`visor_interactivo_eeg_en.html`): traducción de presentación de los mismos resultados;
 - documentación de pipeline;
-- definición del alcance del release.
+- selector de idioma Español \| English en ambos visores;
+- portada (`index.html`) con acceso a las dos versiones y aviso de que no hay un nuevo procesamiento.
 
 ### Changed
 
@@ -37,9 +40,9 @@ This file does not create a GitHub Release.
 
 ### Notes
 
-- Release Candidate documental. No hay tag, GitHub Release, Zenodo, DOI ni `date-released`.
+- Esta incorporación bilingüe forma parte de v1.0.0; no se cambia el número a v1.1.0. No se añade DOI ni `date-released`. Esta pasada no crea GitHub Release ni depósito Zenodo.
 - El detalle de artefactos (122 279 filas) **se incluye** en v1.0.0 como resultados derivados con códigos pseudonimizados.
-- No se modificaron CSV, XLSX, PNG ni HTML de resultados.
+- No se modificaron CSV, XLSX, PNG ni HTML de resultados científicos (dashboard, informe, reportes). El visor español solo recibió el selector de idioma; el visor inglés replica los mismos datos embebidos.
 
 ## [0.9.0] - 2026
 

@@ -44,7 +44,8 @@ Laboratorio (formulación prudente): National Laboratory in Artificial Intellige
 
 ## Contenido del release
 
-- visor, dashboard e informe HTML;
+- visor HTML en español y en inglés (mismos resultados; la versión inglesa es traducción de interfaz y narrativa);
+- dashboard e informe HTML;
 - figuras PNG (BANDPOWER, topomapas, espectros, matrices);
 - reportes CSV/XLSX de evaluación, modelos, balanceo, artefactos, inventario y verificación de la corrida `run_20260902_145353`;
 - detalle de artefactos sospechados (122 279 filas): **incluido** (características derivadas; códigos pseudonimizados);

@@ -54,8 +54,9 @@ La autoría del recurso citable no implica titularidad conjunta del código fuen
 | `LICENSE-RESULTS.md` | **Sí** | CC BY 4.0 para resultados derivados. |
 | `docs/` (versionado) | **Sí** | Metodología, evidencia, modelos, pipeline, privacidad, alcance y notas de release. |
 | `docs/MAPA_PSEUDONIMIZACION_LOCAL.md` | **No** | Gitignored; no debe entrar en tag, Release ni Zenodo. |
-| `index.html` | **Sí** | Entrada de GitHub Pages. |
-| `visor_interactivo_eeg.html` | **Sí** | Visor de la corrida. No se modifica. |
+| `index.html` | **Sí** | Entrada de GitHub Pages; enlaces a visores en español e inglés. |
+| `visor_interactivo_eeg.html` | **Sí** | Visor oficial en español. Único cambio de interfaz: selector Español \| English. Datos embebidos no modificados. |
+| `visor_interactivo_eeg_en.html` | **Sí** | Traducción de presentación del mismo visor. Mismos datos, métricas, figuras y metodología. |
 | `dashboard_eeg_neuroaction.html` | **Sí** | Dashboard de la corrida. No se modifica. |
 | `informe_evaluacion_resultados.html` | **Sí** | Informe por sujeto. No se modifica. |
 | `figures/` | **Sí** | Figuras PNG derivadas (BANDPOWER, topomapas, matrices). No se modifican. |

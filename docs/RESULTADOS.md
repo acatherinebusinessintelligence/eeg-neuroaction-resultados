@@ -13,7 +13,8 @@ Conteo de archivos versionados en `main` al momento de la inspección: **2417** 
 | Recurso | Ubicación | Notas |
 | --- | --- | --- |
 | Entrada GitHub Pages | `index.html` | Enlaza el visor. |
-| Visor interactivo | `visor_interactivo_eeg.html` | Copia en `reports/visor_interactivo_eeg.html`. |
+| Visor interactivo (español) | `visor_interactivo_eeg.html` | Copia en `reports/visor_interactivo_eeg.html`. Selector Español \| English. |
+| Visor interactivo (English) | `visor_interactivo_eeg_en.html` | Traducción de la interfaz y la narrativa. Mismos datos embebidos que el visor español. |
 | Dashboard | `dashboard_eeg_neuroaction.html` | Copia en `figures/dashboard_eeg_neuroaction.html`. Plotly.js v2.35.2 embebido. |
 | Informe de evaluación | `informe_evaluacion_resultados.html` | Copia en `reports/informe_evaluacion_resultados.html`. |
 | Índice de salidas Kaggle | `reports/index_kaggle.html` | Enlaza ZIP externos que no están en este repo. |

@@ -102,9 +102,15 @@ Dejar documentadas, trazables y citables las salidas del análisis EEG NeuroActi
 
 Página de entrada: [`index.html`](index.html)
 
-Visor interactivo: [`visor_interactivo_eeg.html`](visor_interactivo_eeg.html)
+- Visor en español: [`visor_interactivo_eeg.html`](visor_interactivo_eeg.html)
+- Interactive viewer in English: [`visor_interactivo_eeg_en.html`](visor_interactivo_eeg_en.html)
 
-GitHub Pages: <https://acatherinebusinessintelligence.github.io/eeg-neuroaction-resultados/>
+GitHub Pages:
+
+- Español: <https://acatherinebusinessintelligence.github.io/eeg-neuroaction-resultados/visor_interactivo_eeg.html>
+- English: <https://acatherinebusinessintelligence.github.io/eeg-neuroaction-resultados/visor_interactivo_eeg_en.html>
+
+Ambos visores contienen los mismos datos, resultados, métricas, figuras y metodología. La versión inglesa es una **traducción de presentación** (interfaz y narrativa); no es un nuevo procesamiento de los datos.
 
 El visor permite filtrar por sujeto, tipo de figura, variante de limpieza/modelado y estrategia de balanceo, y muestra galería, métricas, artefactos sospechados y matrices.
 
@@ -128,6 +134,7 @@ Clasifica la evidencia de modelado por sujeto (aprobado, revisión, no confiable
 .
 ├── index.html
 ├── visor_interactivo_eeg.html
+├── visor_interactivo_eeg_en.html
 ├── dashboard_eeg_neuroaction.html
 ├── informe_evaluacion_resultados.html
 ├── figures/          # PNG por sujeto, topomapas, scroll, spectral, master
