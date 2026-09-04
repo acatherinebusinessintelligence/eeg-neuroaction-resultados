@@ -87,6 +87,53 @@ tbody tr:hover { background: #f7fbff; cursor: pointer; }
 .lang-switch .lang-active { font-weight: 700; color: var(--ink); }
 .lang-switch .lang-sep { color: var(--muted); }
 @media (max-width: 980px) { .lang-switch { justify-content: flex-start; } }
+/* ===== FIX-TABLAS v1 — solo CSS, aditivo. No modificar JS ni ids ===== */
+
+/* 2.1 Más ancho útil en pantallas grandes */
+header, main { max-width: 1760px; }
+
+/* 2.2 La columna de tablas pasa a ser la ancha.
+   Va dentro de min-width:981px para NO pisar el @media (max-width:980px) previo. */
+@media (min-width: 981px) {
+  .grid { grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); }
+}
+.grid > * { min-width: 0; }
+
+/* 2.3 Comparación de balanceo: una columna por defecto, dos solo si sobra ancho */
+.balance-grid { grid-template-columns: minmax(0, 1fr); }
+.balance-grid > * { min-width: 0; }
+@media (min-width: 1500px) {
+  .balance-grid { grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); }
+}
+
+/* 2.4 El panel deja de recortar; el scroll lo gestiona .table-wrap */
+.panel { overflow: visible; min-width: 0; }
+
+/* 2.5 Contenedor de tabla desplazable, con encabezado fijo */
+.table-wrap {
+  overflow: auto;
+  max-height: 70vh;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+
+/* 2.6 La tabla se adapta al contenedor y crece solo lo que necesita */
+table { width: max-content; min-width: 100%; }
+th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  white-space: nowrap;
+}
+td { overflow-wrap: anywhere; }
+th:first-child, td:first-child { white-space: nowrap; }
+
+/* 2.7 Densidad en pantallas medianas */
+@media (max-width: 1200px) {
+  table { font-size: 12px; }
+  th, td { padding: 7px 8px; }
+}
+/* ===== FIN FIX-TABLAS v1 ===== */
 </style>
 </head>
 <body>
