@@ -2,7 +2,16 @@ cff-version: 1.2.0
 message: "Cite this record as the citable resource EEG NeuroAction: resultados, análisis y visualización interactiva (derived results, reports, and interactive visualization in Spanish and English). This citation describes that scientific resource; it does not state that all listed authors hold copyright in the repository source code. Source-code copyright is documented in LICENSE-CODE."
 type: software
 title: "EEG NeuroAction: resultados, análisis y visualización interactiva"
-version: "1.0.0"
+version: "1.0.1"
+doi: 10.5281/zenodo.22286625
+date-released: 2026-09-03
+identifiers:
+  - description: "This version on Zenodo"
+    type: doi
+    value: "10.5281/zenodo.22286625"
+  - description: "All versions (concept DOI)"
+    type: doi
+    value: "10.5281/zenodo.22286624"
 abstract: "Citable resource of derived EEG NeuroAction results: web viewers in Spanish and English, reports, figures, and metrics on BANDPOWER features from a Kaggle run. The English viewer is a presentation translation of the same results, not a new data processing. Provenance follows dataset EEG 25-1. Listed authors are authors of this citable results resource; they are not hereby declared joint copyright holders of the repository source code (see LICENSE-CODE). This archive does not include raw EEG or the computational pipeline source."
 authors:
   - given-names: "Griselda"
@@ -10,6 +19,7 @@ authors:
     affiliation: "Tecnológico de Estudios Superiores de Ecatepec (TESE), México"
   - given-names: "Alejandra Catherine"
     family-names: "Montaña Acevedo"
+    orcid: "https://orcid.org/0009-0004-5991-2861"
     affiliation: "Coinvestigadora, Corporación Universitaria Minuto de Dios (Uniminuto); automatización del proceso de datos, transformación, verificación de los procesos de inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub"
   - given-names: "Jesús Manuel"
     family-names: "Olivares Ceja"

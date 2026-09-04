@@ -99,4 +99,8 @@ Resultados preservados con documentación parcial.
 
 ## DOI
 
-DOI pendiente de asignación mediante Zenodo.
+DOI de esta versión (registro Zenodo **v1.0.1**): [10.5281/zenodo.22286625](https://doi.org/10.5281/zenodo.22286625).  
+DOI de concepto: [10.5281/zenodo.22286624](https://doi.org/10.5281/zenodo.22286624).  
+Registro: <https://zenodo.org/records/22286625>.
+
+El tag GitHub archivado es `v1.0.0`. El DOI de Kaggle del dataset EEG 25-1 no es el DOI de este visor.

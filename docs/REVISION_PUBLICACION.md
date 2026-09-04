@@ -206,12 +206,11 @@ Estos faltantes están **declarados** en [EVIDENCIA_METODOLOGICA.md](EVIDENCIA_M
 - [x] Modelos documentados
 - [x] Pipeline documentado con limitaciones
 - [x] Alcance del release definido
-- [x] CITATION.cff validado (`version: 1.0.0`, sin DOI, sin `date-released`)
+- [x] CITATION.cff validado (`version: 1.0.1`, DOI `10.5281/zenodo.22286625`, `date-released: 2026-09-03`)
 - [x] Detalle de artefactos (122 279 filas): **INCLUIR** en v1.0.0 (derivados; códigos pseudonimizados)
-- [ ] Release candidate revisada humanamente
-- [ ] GitHub Release creada
-- [ ] Zenodo archivado
-- [ ] DOI incorporado
+- [x] GitHub Release creada (`v1.0.0`)
+- [x] Zenodo archivado (registro **v1.0.1**)
+- [x] DOI incorporado: [10.5281/zenodo.22286625](https://doi.org/10.5281/zenodo.22286625)
 
 ### Decisión de release readiness
 
@@ -228,9 +227,9 @@ Pendiente para una publicación posterior (no ejecutado aquí):
 3. Archivar en Zenodo e incorporar DOI **solo cuando exista**.
 4. Opcional: notebook/URL si aparecen con evidencia verificable.
 
-Estado actual:
+Estado actual (actualización 2026-09-04):
 
-**APTO PARA RELEASE CANDIDATE v1.0.0 CON LIMITACIONES DOCUMENTADAS.** Versión **1.0.0**. Tag / GitHub Release / Zenodo / DOI: no creados.
+Publicado. Tag y GitHub Release: `v1.0.0`. Registro Zenodo: **v1.0.1**. DOI: [10.5281/zenodo.22286625](https://doi.org/10.5281/zenodo.22286625). Concepto: [10.5281/zenodo.22286624](https://doi.org/10.5281/zenodo.22286624).
 
 Esto es una decisión de publicación, no una evaluación científica de los resultados.
 

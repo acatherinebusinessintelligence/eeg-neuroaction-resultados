@@ -4,12 +4,17 @@
 
 Visor web y archivo de resultados técnicos del pipeline EEG NeuroAction: reportes, figuras y métricas de clasificación sobre características EEG BANDPOWER asociadas a movimientos motores.
 
-**Versión:** v1.0.0 Release Candidate  
-**Estado:** Release Candidate documental. No hay tag `v1.0.0`, GitHub Release ni DOI de Zenodo.
+**Versión:** v1.0.1  
+**DOI:** [10.5281/zenodo.22286625](https://doi.org/10.5281/zenodo.22286625)  
+**Estado:** Recurso citable publicado en Zenodo. El tag y GitHub Release `v1.0.0` son el snapshot archivado; el registro Zenodo está versionado como **v1.0.1**.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22286625.svg)](https://doi.org/10.5281/zenodo.22286625)
 
 ## Estado de la versión
 
-EEG NeuroAction Resultados v1.0.0 preserva los resultados derivados, reportes y visualizaciones disponibles en el repositorio.
+EEG NeuroAction Resultados **v1.0.1** es el registro citable en Zenodo de los resultados derivados, reportes y visualizaciones. DOI de esta versión: <https://doi.org/10.5281/zenodo.22286625>. DOI de concepto (todas las versiones): <https://doi.org/10.5281/zenodo.22286624>.
+
+El DOI de Kaggle del dataset EEG 25-1 no es el DOI de este visor ni de este archivo de resultados.
 
 La versión se publica con limitaciones documentadas de reproducibilidad.
 
@@ -86,7 +91,7 @@ Fuente de Griselda Cortés Barrera: ficha Kaggle / TESE. Afiliación y rol de Al
 | Autor | Afiliación o rol documentado |
 | --- | --- |
 | Griselda Cortés Barrera | Tecnológico de Estudios Superiores de Ecatepec (TESE), México |
-| Alejandra Catherine Montaña Acevedo | Coinvestigadora, Corporación Universitaria Minuto de Dios (Uniminuto). Encargada de la automatización del proceso de datos: transformación, verificación de los procesos de inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub. |
+| Alejandra Catherine Montaña Acevedo | Coinvestigadora, Corporación Universitaria Minuto de Dios (Uniminuto). Encargada de la automatización del proceso de datos: transformación, verificación de los procesos de inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub. ORCID: <https://orcid.org/0009-0004-5991-2861>. GitHub: <https://github.com/acatherinebusinessintelligence>. |
 | Jesús Manuel Olivares Ceja | Apoyo en proyecto |
 | Jhacer Kharen Ruiz Garduño | Apoyo en proyecto |
 
@@ -96,7 +101,7 @@ Laboratorio (formulación prudente): **National Laboratory in Artificial Intelli
 
 ## Objetivo
 
-Dejar documentadas, trazables y citables las salidas del análisis EEG NeuroAction, de forma que una futura v1.0.0 pueda archivarse en Zenodo sin alterar los resultados computacionales.
+Dejar documentadas, trazables y citables las salidas del análisis EEG NeuroAction. El archivo citable está en Zenodo como v1.0.1 ([10.5281/zenodo.22286625](https://doi.org/10.5281/zenodo.22286625)), sin alterar los resultados computacionales.
 
 ## Visor
 
@@ -171,18 +176,22 @@ Este repo permite consultar las salidas. No permite reejecutar el experimento. N
 
 ## Citación
 
-La referencia de [`CITATION.cff`](CITATION.cff) corresponde al recurso **EEG NeuroAction: resultados, análisis y visualización interactiva** (resultados derivados, reportes y visualización interactiva), versión **1.0.0** (Release Candidate documental).
+La referencia de [`CITATION.cff`](CITATION.cff) corresponde al recurso **EEG NeuroAction: resultados, análisis y visualización interactiva** (resultados derivados, reportes y visualización interactiva), versión **1.0.1**.
 
 Autores del recurso citable (mismo orden que la ficha Kaggle [EEG 25-1](https://www.kaggle.com/datasets/griseldacortes/eeg-25-1/data)):
 
 1. Griselda Cortés Barrera (Tecnológico de Estudios Superiores de Ecatepec, TESE, México)
-2. Alejandra Catherine Montaña Acevedo (Coinvestigadora, Corporación Universitaria Minuto de Dios (Uniminuto); automatización del proceso de datos, transformación, verificación de los procesos de inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub)
+2. Alejandra Catherine Montaña Acevedo (Coinvestigadora, Corporación Universitaria Minuto de Dios (Uniminuto); automatización del proceso de datos, transformación, verificación de los procesos de inteligencia artificial y desarrollo de software; código base en Kaggle y GitHub; ORCID: <https://orcid.org/0009-0004-5991-2861>; GitHub: <https://github.com/acatherinebusinessintelligence>)
 3. Jesús Manuel Olivares Ceja (apoyo en proyecto)
 4. Jhacer Kharen Ruiz Garduño (apoyo en proyecto)
 
 La autoría del recurso citable no implica titularidad conjunta del código fuente.
 
-El DOI de Zenodo se añadirá **solo cuando exista**; no hay DOI en esta versión.
+DOI de esta versión (Zenodo v1.0.1): <https://doi.org/10.5281/zenodo.22286625>.  
+DOI de concepto: <https://doi.org/10.5281/zenodo.22286624>.  
+Registro: <https://zenodo.org/records/22286625>.
+
+No usar el DOI de Kaggle del dataset EEG 25-1 como DOI de este visor.
 
 ## Licencias y atribución
 
@@ -206,27 +215,30 @@ Texto oficial CC BY 4.0: <https://creativecommons.org/licenses/by/4.0/>
 
 Detalle de publicación: [Revisión para publicación](docs/REVISION_PUBLICACION.md)
 
-Estado: **APTO PARA RELEASE CANDIDATE v1.0.0 CON LIMITACIONES DOCUMENTADAS.** Versión **1.0.0**. No hay tag `v1.0.0` ni DOI. No se ha creado GitHub Release ni depósito Zenodo.
+Estado: recurso citable publicado. Versión Zenodo **v1.0.1**. DOI: [10.5281/zenodo.22286625](https://doi.org/10.5281/zenodo.22286625). Tag y GitHub Release: `v1.0.0`.
 
 ## Estado del proyecto
 
 | Ítem | Estado |
 | --- | --- |
-| Documentación metodológica | v1.0.0 RC; limitaciones de reproducibilidad explícitas |
+| Documentación metodológica | Limitaciones de reproducibilidad explícitas |
 | Inventario de resultados | Incluido; alcance en [RELEASE_SCOPE_v1.0.0.md](docs/RELEASE_SCOPE_v1.0.0.md) |
-| Revisión de publicación / privacidad | Códigos institucionales confirmados; timestamps **CONSERVAR**; RC documental |
+| Revisión de publicación / privacidad | Códigos institucionales confirmados; timestamps **CONSERVAR** |
 | Identificadores | `cano` / `villanueva`: códigos institucionales pseudonimizados (no nombres reales) |
 | Autores | Cuatro autores de la ficha Kaggle EEG 25-1 |
 | TESE | Tecnológico de Estudios Superiores de Ecatepec, México |
 | Laboratorio | National Laboratory in Artificial Intelligence and Data Science (parcial; ficha Kaggle) |
 | Licencias | MIT (código); CC BY 4.0 (docs y resultados derivados) |
-| `CITATION.cff` | 1.0.0, `license: MIT`, sin DOI, sin `date-released` |
-| Tag / GitHub Release | No creado |
-| Zenodo / DOI | No creado |
-| Convención futura | v1.0.0, v1.1.0, v2.0.0 |
+| `CITATION.cff` | 1.0.1, `license: MIT`, DOI `10.5281/zenodo.22286625`, `date-released: 2026-09-03` |
+| Tag / GitHub Release | `v1.0.0` |
+| Zenodo / DOI | v1.0.1; [10.5281/zenodo.22286625](https://doi.org/10.5281/zenodo.22286625) |
+| Convención | v1.0.0, v1.0.1, v1.1.0, v2.0.0 |
 
 ## Enlaces
 
+- [DOI Zenodo v1.0.1](https://doi.org/10.5281/zenodo.22286625)
+- [ORCID Alejandra Catherine Montaña Acevedo](https://orcid.org/0009-0004-5991-2861)
+- [GitHub de la investigadora](https://github.com/acatherinebusinessintelligence)
 - [Alcance de v1.0.0](docs/RELEASE_SCOPE_v1.0.0.md)
 - [Notas de v1.0.0](docs/RELEASE_NOTES_v1.0.0.md)
 - [Metodología](docs/metodologia.md)

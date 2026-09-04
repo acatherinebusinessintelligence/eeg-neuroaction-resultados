@@ -3,10 +3,28 @@
 All notable documentation and packaging changes for EEG NeuroAction Resultados are recorded here.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
-Versioning follows the convention v1.0.0 / v1.1.0 / v2.0.0.
+Versioning follows the convention v1.0.0 / v1.0.1 / v1.1.0 / v2.0.0.
 This file does not create a GitHub Release.
 
-## [1.0.0] - Unreleased
+## [1.0.1] - 2026-09-03
+
+### Added
+
+- DOI de Zenodo del recurso citable: [10.5281/zenodo.22286625](https://doi.org/10.5281/zenodo.22286625) (concepto: [10.5281/zenodo.22286624](https://doi.org/10.5281/zenodo.22286624)).
+- ORCID de Alejandra Catherine Montaña Acevedo en `CITATION.cff` y README: <https://orcid.org/0009-0004-5991-2861>.
+- Enlace de GitHub de la investigadora en README: <https://github.com/acatherinebusinessintelligence>.
+
+### Changed
+
+- `CITATION.cff` y README alineados con el registro Zenodo **v1.0.1**.
+- No se recalcularon métricas ni se modificaron CSV, XLSX, PNG ni resultados científicos.
+
+### Notes
+
+- El depósito Zenodo versiona el registro como v1.0.1; el archivo archivado corresponde al tag GitHub `v1.0.0`.
+- El DOI de Kaggle del dataset EEG 25-1 no se presenta como DOI de este visor.
+
+## [1.0.0] - 2026-09-03
 
 ### Added
 
